@@ -29,10 +29,11 @@ import java.math.BigDecimal;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 
 import org.adempiere.base.event.AbstractEventHandler;
+import org.adempiere.base.event.FactsEventData;
 import org.adempiere.base.event.IEventManager;
 import org.adempiere.base.event.IEventTopics;
 import org.adempiere.base.event.LoginEventData;
@@ -91,7 +92,7 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 		registerTableEvent(IEventTopics.DOC_AFTER_COMPLETE, MInvoice.Table_Name);
 		registerTableEvent(IEventTopics.DOC_BEFORE_COMPLETE, MPayment.Table_Name);
 		registerTableEvent(IEventTopics.DOC_AFTER_COMPLETE, MAllocationHdr.Table_Name);
-		registerTableEvent(IEventTopics.DOC_BEFORE_POST, MAllocationHdr.Table_Name);
+		registerTableEvent(IEventTopics.ACCT_FACTS_VALIDATE, MAllocationHdr.Table_Name);
 		registerTableEvent(IEventTopics.DOC_AFTER_VOID, MAllocationHdr.Table_Name);
 		registerTableEvent(IEventTopics.DOC_AFTER_REVERSECORRECT, MAllocationHdr.Table_Name);
 		registerTableEvent(IEventTopics.DOC_AFTER_REVERSEACCRUAL, MAllocationHdr.Table_Name);
@@ -120,7 +121,13 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 		if (! MSysConfig.getBooleanValue("LCO_USE_WITHHOLDINGS", true, Env.getAD_Client_ID(Env.getCtx())))
 			return;
 
-		PO po = getPO(event);
+		PO po = null;
+		if (type.equals(IEventTopics.ACCT_FACTS_VALIDATE)) {
+			FactsEventData fed = getEventData(event);
+			po = fed.getPo();
+		} else {
+			po = getPO(event);
+		}
 		log.info(po.get_TableName() + " Type: "+type);
 		String msg;
 
@@ -261,8 +268,8 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 		}
 
 		// before posting the allocation - post the payment withholdings vs writeoff amount
-		if (po instanceof MAllocationHdr && type.equals(IEventTopics.DOC_BEFORE_POST)) {
-			msg = accountingForInvoiceWithholdingOnPayment((MAllocationHdr) po);
+		if (po instanceof MAllocationHdr && type.equals(IEventTopics.ACCT_FACTS_VALIDATE)) {
+			msg = accountingForInvoiceWithholdingOnPayment((MAllocationHdr) po, event);
 			if (msg != null)
 				throw new RuntimeException(msg);
 		}
@@ -390,6 +397,8 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 					pay.getC_Invoice_ID());
 			if (sumwhamt == null)
 				sumwhamt = Env.ZERO;
+			if (MInvoice.get(pay.getCtx(), pay.getC_Invoice_ID()).isCreditMemo())
+				sumwhamt = sumwhamt.negate();
 			if (wo.compareTo(sumwhamt) < 0 && sumwhamt.compareTo(Env.ZERO) != 0)
 				return Msg.getMsg(pay.getCtx(), "LCO_WriteOffLowerThanWithholdings");
 		} else {
@@ -420,6 +429,8 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 							pal.getC_Invoice_ID());
 					if (sumwhamt == null)
 						sumwhamt = Env.ZERO;
+					if (MInvoice.get(pay.getCtx(), pal.getC_Invoice_ID()).isCreditMemo())
+						sumwhamt = sumwhamt.negate();
 					if (wo.compareTo(sumwhamt) < 0 && sumwhamt.compareTo(Env.ZERO) != 0)
 						return Msg.getMsg(pay.getCtx(), "LCO_WriteOffLowerThanWithholdings");
 				}
@@ -516,15 +527,16 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 		return null;
 	}
 
-	private String accountingForInvoiceWithholdingOnPayment(MAllocationHdr ah) {
+	private String accountingForInvoiceWithholdingOnPayment(MAllocationHdr ah, Event event) {
 		// Accounting like Doc_Allocation
 		// (Write off) vs (invoice withholding where iscalconpayment=Y)
 		// 20070807 - globalqss - instead of adding a new WriteOff post, find the
 		//  current WriteOff and subtract from the posting
 
 		Doc doc = ah.getDoc();
+		FactsEventData fed = getEventData(event);
+		List<Fact> facts = fed.getFacts();
 
-		ArrayList<Fact> facts = doc.getFacts();
 		// one fact per acctschema
 		for (int i = 0; i < facts.size(); i++)
 		{
@@ -568,6 +580,10 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 						int tax_ID = rs.getInt(1);
 						BigDecimal taxBaseAmt = rs.getBigDecimal(2);
 						BigDecimal amount = rs.getBigDecimal(3);
+						if (invoice.isCreditMemo()) {
+							taxBaseAmt = taxBaseAmt.negate();
+							amount = amount.negate();
+						}
 						String name = rs.getString(4);
 						BigDecimal rate = rs.getBigDecimal(5);
 						boolean salesTax = rs.getString(6).equals("Y") ? true : false;
@@ -587,6 +603,10 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 							}
 							if (tl != null)
 								tl.setC_Tax_ID(taxLine.getC_Tax_ID());
+							//MPo, 22/10/2016 Add PrCtr to tax line
+							if (tl != null)
+								tl.setUser1_ID(invoice.getUser1_ID());
+							//
 							tottax = tottax.add(amount);
 						}
 					}
@@ -620,26 +640,26 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 								// both zeros, remove the line
 								fact.remove(fl);
 							} else if (Env.ZERO.compareTo(newbalamt) > 0) {
-								fl.setAmtAcct(fl.getC_Currency_ID(), Env.ZERO, newbalamt);
 								fl.setAmtSource(fl.getC_Currency_ID(), Env.ZERO, newbalamt);
+								fl.convert();
 							} else {
-								fl.setAmtAcct(fl.getC_Currency_ID(), newbalamt, Env.ZERO);
 								fl.setAmtSource(fl.getC_Currency_ID(), newbalamt, Env.ZERO);
+								fl.convert();
 							}
 							break;
 						}
 					}
 
 					if (! foundflwriteoff) {
-						// Create a new line
-						DocLine line = new DocLine(alloc_line, doc);
+						// Create a new line - never expected to arrive here as it must always be a write-off line
+						DocLine_Allocation line = new DocLine_Allocation(alloc_line, doc);
 						FactLine fl = null;
 						if (invoice.isSOTrx()) {
 							fl = fact.createLine (line, doc.getAccount(Doc.ACCTTYPE_WriteOff, as),
-									as.getC_Currency_ID(), null, tottax);
+									ah.getC_Currency_ID(), null, tottax);
 						} else {
 							fl = fact.createLine (line, doc.getAccount(Doc.ACCTTYPE_WriteOff, as),
-									as.getC_Currency_ID(), tottax, null);
+									ah.getC_Currency_ID(), tottax, null);
 						}
 						if (fl != null)
 							fl.setAD_Org_ID(ah.getAD_Org_ID());
