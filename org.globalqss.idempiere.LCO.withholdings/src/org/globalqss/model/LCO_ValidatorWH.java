@@ -603,6 +603,10 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 							}
 							if (tl != null)
 								tl.setC_Tax_ID(taxLine.getC_Tax_ID());
+							//MPo, 22/10/2016 Add PrCtr to tax line
+							if (tl != null)
+								tl.setUser1_ID(invoice.getUser1_ID());
+							//
 							tottax = tottax.add(amount);
 						}
 					}
