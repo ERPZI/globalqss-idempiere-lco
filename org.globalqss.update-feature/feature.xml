@@ -2,7 +2,7 @@
 <feature
       id="org.globalqss.update"
       label="GlobalQSS Update"
-      version="4.1.0.qualifier"
+      version="5.1.0.qualifier"
       provider-name="GlobalQSS">
 
    <description url="http://www.example.com/description">
@@ -19,6 +19,7 @@
 
    <includes
          id="org.globalqss.idempiere.LCO"
+<<<<<<< local
          version="4.1.0.qualifier"/>
          
    <plugin
@@ -572,6 +573,9 @@
          unpack="false"/>
 =======
 >>>>>>> merge rev
+=======
+         version="5.1.0.qualifier"/>
+>>>>>>> other
 
    <plugin
          id="org.eclipse.osgi.services"
