@@ -19,8 +19,7 @@
 
    <includes
          id="org.globalqss.idempiere.LCO"
-<<<<<<< local
-         version="4.1.0.qualifier"/>
+         version="5.1.0.qualifier"/>
          
    <plugin
          id="javax.xml"
