@@ -183,8 +183,8 @@
   <value column="Description" original=""/>
  </row>
  <row id="53022" trl="Y">
-  <value column="Name" original="Bill of Material &amp; Formulas"><![CDATA[Lista de Materiales & Fórmulas]]></value>
-  <value column="Description" original="Bill of Material &amp; Formulas"><![CDATA[Lista de Materiales & Fórmulas]]></value>
+  <value column="Name" original="Bill of Material &amp; Formulas" xml:space="preserve"><![CDATA[Lista de Materiales & Fórmulas]]></value>
+  <value column="Description" original="Bill of Material &amp; Formulas" xml:space="preserve"><![CDATA[Lista de Materiales & Fórmulas]]></value>
  </row>
  <row id="53029" trl="Y">
   <value column="Name" original="Planning Management">Administración de Planeación</value>

@@ -368,7 +368,7 @@
   <value column="Help" original="The Import Loader Format Window is used for defining the file layout for product information which will be imported.">Esta ventana es usada para la definición del archivo con información de productos que se quiere importar al sistema.</value>
  </row>
  <row id="191" trl="Y">
-  <value column="Name" original="Production (multi product)">Producción (multi producto)</value>
+  <value column="Name" original="Production">Producción (multi producto)</value>
   <value column="Description" original="Production based on Bill of Materials">Producción basada en Lista de Partes</value>
   <value column="Help" original="The Production Window defines those plan and inventory movements that occur when a product is created from a bill of materials">La ventana define los movimientos planeados y de inventario que ocurren cuando un producto es creado desde una lista de partes (LDP o BOM en Inglés).</value>
  </row>
@@ -796,7 +796,7 @@ Tenga en cuenta que el acceso a la información está en caché y requiere volve
  <row id="284" trl="Y">
   <value column="Name" original="Replication">Replicación</value>
   <value column="Description" original="Maintain Data Replication Targets">Mantener los destinos de replicación de datos</value>
-  <value column="Help" original="Data Replication Target Details. Set up your system completely on the central system, before setting up the replication. Define the Replication target here and export the database and import it on the remote system.&lt;p&gt;&#10;Before(!) entering transactions, Start the Replication Run to set up the remote system."><![CDATA[Detalles de la tarjeta de la réplica de los datos. Instale su sistema totalmente en el sistema central, antes de la creación de réplica. Defina la tarjeta de la réplica aquí y exporte la base de datos e impórtela en el alejado system.<p >
+  <value column="Help" original="Data Replication Target Details. Set up your system completely on the central system, before setting up the replication. Define the Replication target here and export the database and import it on the remote system.&lt;p&gt;&#10;Before(!) entering transactions, Start the Replication Run to set up the remote system." xml:space="preserve"><![CDATA[Detalles de la tarjeta de la réplica de los datos. Instale su sistema totalmente en el sistema central, antes de la creación de réplica. Defina la tarjeta de la réplica aquí y exporte la base de datos e impórtela en el alejado system.<p >
 Antes(!) incorporando transacciones, comience la réplica funcionada al sistema para arriba el sistema alejado.]]></value>
  </row>
  <row id="285" trl="Y">
@@ -1388,8 +1388,8 @@ Una instalación de producción específica consistiendo de una o más personas 
   <value column="Help" original="Manufacturing Workflows (Routing) is a set of information detailing the method of manufacture of a particular item .It includes the operations to be performed their sequence the various work centers to be involved and the standards for setup and run. In some companies routing also includes information on tooling operator skill levels inspection operationstesting requirements etc.">El flujo de trabajo de manufactura (enrutamiento) es un conjunto de información detallando el metodo de manufacturar un artículo particular. Incluye las operaciones a ser ejecutadas y su secuencia, los diferentes centros de trabajo envueltos y los estándares para configurar y ejecutar. En algunas compañías el enrutamiento incluye información de las herramientas, niveles de inspección, aptitudes, requerimientos de pruebas, etc.</value>
  </row>
  <row id="53006" trl="Y">
-  <value column="Name" original="Bill of Materials &amp; Formula "><![CDATA[Lista de Materiales & Fórmula]]></value>
-  <value column="Description" original="Maintain Product Bill of Materials &amp; Formula "><![CDATA[Mantiene listas de materiales de producdtos & fórmula]]></value>
+  <value column="Name" original="Bill of Materials &amp; Formula " xml:space="preserve"><![CDATA[Lista de Materiales & Fórmula]]></value>
+  <value column="Description" original="Maintain Product Bill of Materials &amp; Formula " xml:space="preserve"><![CDATA[Mantiene listas de materiales de producdtos & fórmula]]></value>
   <value column="Help" original="It is a list of all the subassemblies, intermediates, parts and raw material that go into a parent assembly showing the quantity of each required to make an assembly. There are a variety of display formats of bill of material, including single level bill of material, indented bill of material, modular (planning), costed bill of material, etc. May also be called &quot;formula&quot;, &quot;recipe&quot;, &quot;ingredients list&quot; in certain industries.&#10;It answers the question, what are the components of the product?">Es una lista de todos los subensamblajes, pasos intermedios, partes y materia prima que se usan para ensamblar un padre mostrando la cantidad requerida de cada uno. Hay una variedad de formatos de despliegue de una lista de materiales, incluyendo LDM de nivel simple, LDM indentada, modular (planeación), LDM costeada, etc. Puede ser llamada también fórmula, receta, lista de ingredientes en ciertas industrias.
 
 Responde la pregunta: ¿de qué está compuesto el producto?</value>
@@ -2097,6 +2097,36 @@ y otros</value>
  <row id="200086" trl="Y">
   <value column="Name" original="CSS Style">Estilo CSS</value>
   <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200087" trl="Y">
+  <value column="Name" original="Field Suggestions">Sugerencias de Campo</value>
+  <value column="Description" original="Suggestions for field name, description and help.">Sugerencias para nombre, descripción y ayuda de campo.</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200088" trl="Y">
+  <value column="Name" original="Context Help Suggestion">Sugerencia de Ayuda Contextual</value>
+  <value column="Description" original="Review context help suggestion from tenant">Revisar sugerencias de ayuda contextual</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200089" trl="Y">
+  <value column="Name" original="Post-it">Post-it</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200090" trl="Y">
+  <value column="Name" original="Document Status">Estado Documento</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200092" trl="Y">
+  <value column="Name" original="All Clients">Todos los Clientes</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200093" trl="Y">
+  <value column="Name" original="All Users">Todos los Usuarios</value>
+  <value column="Description" original="Users from All Clients">Usuarios de todos los Grupos Empresariales</value>
   <value column="Help" original=""/>
  </row>
  <row trl="Y" uuid="ecd46492-ebb1-410a-8627-44df151cdfbb">

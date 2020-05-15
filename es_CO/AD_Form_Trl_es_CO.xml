@@ -65,7 +65,7 @@
  <row id="112" trl="Y">
   <value column="Name" original="Merge Entities">Mezclar Entidades</value>
   <value column="Description" original="Merge From Entity to To Entity - Delete From">Mezclar de Entidad Origen a Entidad Destino - Borrar Desde</value>
-  <value column="Help" original="&lt;i&gt;Dangerous - Please are aware of what you are doing!&lt;/i&gt;&#10;All instances of the From entity (e.g. Customer A) are changed to the To entity (e.g. Customer B). &#10;The From entity (e.g. Customer A) is deleted. &#10;&lt;p&gt;&lt;b&gt;There is NO undo nor trace !  Please do a backup first&lt;/b&gt; Please be aware that you may be changing history records (e.g. invoices, etc.) ! &lt;/p&gt;&#10;&lt;p&gt;&lt;b&gt;Side effects:&lt;/b&gt; Merging Products are likely to distort product costs; Merging Business Partners may result in incorrect open item balance. Check with support on remedies.&#10;&lt;p&gt;&lt;b&gt;Restrictions:&lt;/b&gt; Accounting and Inventory conflicts are not resolved in this version."><![CDATA[<i>Peligroso - Por favor esté bien consciente de lo que está haciendo!</i>
+  <value column="Help" original="&lt;i&gt;Dangerous - Please are aware of what you are doing!&lt;/i&gt;&#10;All instances of the From entity (e.g. Customer A) are changed to the To entity (e.g. Customer B). &#10;The From entity (e.g. Customer A) is deleted. &#10;&lt;p&gt;&lt;b&gt;There is NO undo nor trace !  Please do a backup first&lt;/b&gt; Please be aware that you may be changing history records (e.g. invoices, etc.) ! &lt;/p&gt;&#10;&lt;p&gt;&lt;b&gt;Side effects:&lt;/b&gt; Merging Products are likely to distort product costs; Merging Business Partners may result in incorrect open item balance. Check with support on remedies.&lt;/p&gt;&#10;&lt;p&gt;&lt;b&gt;Restrictions:&lt;/b&gt; Accounting and Inventory conflicts are not resolved in this version.&lt;/p&gt;" xml:space="preserve"><![CDATA[<i>Peligroso - Por favor esté bien consciente de lo que está haciendo!</i>
 Todos los registros relacionados con la entidad origen (ej. Cliente A) son cambiados hacia la entidad destino (ej. Cliente B). 
 <p><b>No hay forma de deshacer esta operación! Por favor haga una copia de respaldo</b> Es importante anotar que puede estar cambiando datos históricos (ej. facturas, etc.)!
 <p><b>Efectos Secundarios:</b> combinándose los productos es problable dañar costos del producto: La combinación de terceros puede dar lugar a un saldo incorrecto del tercero.]]></value>
@@ -235,6 +235,16 @@ Seleccionando "dónde es usado" mostrará las LDM que usan este producto.</value
  <row id="200008" trl="Y">
   <value column="Name" original="Captured Process Parameter">Captura Parámetros Proceso</value>
   <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200009" trl="Y">
+  <value column="Name" original="Compare Field Suggestion">Comparar Sugerencias de Campos</value>
+  <value column="Description" original="Review field changes for label, descriptipn and help">Revisar cambios en los campos para rótulo, descripción y ayuda</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200010" trl="Y">
+  <value column="Name" original="Compare Context Help Suggestion">Compara Sugerencias de Ayuda Contextual</value>
+  <value column="Description" original="Review changes for context help">Revisar cambios para ayuda contextual</value>
   <value column="Help" original=""/>
  </row>
 </idempiereTrl>
