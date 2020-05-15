@@ -108,13 +108,13 @@
   <value column="Help" original=""/>
  </row>
  <row id="50002" trl="Y">
-  <value column="Name" original="Bill of Material &amp; Formula Setup"><![CDATA[Configuración List de Materiales & Fórmula]]></value>
+  <value column="Name" original="Bill of Material &amp; Formula Setup" xml:space="preserve"><![CDATA[Configuración List de Materiales & Fórmula]]></value>
   <value column="Description" original="Setup Manufacturing Management">Configuración Administración Manufactura</value>
   <value column="Help" original=""/>
  </row>
  <row id="50003" trl="Y">
-  <value column="Name" original="Warehouse &amp; Locators"><![CDATA[Almacén & Ubicaciones]]></value>
-  <value column="Description" original="Warehouse &amp; Locators"><![CDATA[Almacén & Ubicaciones]]></value>
+  <value column="Name" original="Warehouse &amp; Locators" xml:space="preserve"><![CDATA[Almacén & Ubicaciones]]></value>
+  <value column="Description" original="Warehouse &amp; Locators" xml:space="preserve"><![CDATA[Almacén & Ubicaciones]]></value>
   <value column="Help" original=""/>
  </row>
  <row id="50004" trl="Y">
@@ -258,18 +258,18 @@
   <value column="Help" original=""/>
  </row>
  <row id="50049" trl="Y">
-  <value column="Name" original="Multi Level BOM &amp; Formula Detail"><![CDATA[Detalle LDM Multi Nivel & Fórmula]]></value>
+  <value column="Name" original="Multi Level BOM &amp; Formula Detail" xml:space="preserve"><![CDATA[Detalle LDM Multi Nivel & Fórmula]]></value>
   <value column="Description" original="Shows in two different panels the parent-component relationship for the product entered in the Product field.">Muestra en dos páneles diferentes la relación padre-componente para el producto ingresado en el campo Producto.</value>
   <value column="Help" original=""/>
  </row>
  <row id="50050" trl="Y">
-  <value column="Name" original="BOM &amp; Formula Info"><![CDATA[Información LDM & Fórmula]]></value>
+  <value column="Name" original="BOM &amp; Formula Info" xml:space="preserve"><![CDATA[Información LDM & Fórmula]]></value>
   <value column="Description" original="Shows in two different panels the parent-component relationship for the product entered in the Product field.">Muestra en dos páneles diferentes la relación padre-componente para el producto ingresado en el campo Producto.</value>
   <value column="Help" original=""/>
  </row>
  <row id="50051" trl="Y">
-  <value column="Name" original="Bill of Materials &amp; Formula"><![CDATA[Lista de Materiales & Fórmula]]></value>
-  <value column="Description" original="Maintain Product Bill of Materials &amp; Formula "><![CDATA[Mantiene Productos Lista de Materiales & Fórmula]]></value>
+  <value column="Name" original="Bill of Materials &amp; Formula" xml:space="preserve"><![CDATA[Lista de Materiales & Fórmula]]></value>
+  <value column="Description" original="Maintain Product Bill of Materials &amp; Formula " xml:space="preserve"><![CDATA[Mantiene Productos Lista de Materiales & Fórmula]]></value>
   <value column="Help" original=""/>
  </row>
  <row id="50052" trl="Y">
