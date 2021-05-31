@@ -662,7 +662,14 @@ public class LCO_ValidatorWH extends AbstractEventHandler
 									ah.getC_Currency_ID(), tottax, null);
 						}
 						if (fl != null)
+						//MPo, 29/5/2021 Add PrCtr to Write-off line
+						{
+							fl.setDescription("No WHT WriteOff / "+fl.getDescription().toString());
+							fl.setUser1_ID(invoice.getUser1_ID());
 							fl.setAD_Org_ID(ah.getAD_Org_ID());
+						}
+						//
+							
 					}
 
 				}
