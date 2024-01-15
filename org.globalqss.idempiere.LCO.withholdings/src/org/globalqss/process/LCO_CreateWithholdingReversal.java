@@ -92,6 +92,10 @@ public class LCO_CreateWithholdingReversal extends SvrProcess
 		iwhrev.setProcessed(false);
 		iwhrev.setTaxAmt(iwh.getTaxAmt().negate());
 		iwhrev.setTaxBaseAmt(iwh.getTaxBaseAmt().negate());
+		// MPo, 15/1/24 WHT rule used to group WHT with WHT-reversals in HSBC WHT interface
+		// IDEMPIERE-3864 states that WHT reversal shouldn't have WHT rule. Nonetheless, implemented here. 
+		iwhrev.setLCO_WithholdingRule_ID(iwh.getLCO_WithholdingRule_ID());
+		//
 		iwhrev.saveEx();
 
 		return "@OK@";
