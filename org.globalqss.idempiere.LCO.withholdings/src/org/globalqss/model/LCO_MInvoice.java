@@ -32,8 +32,10 @@ import java.util.Properties;
 
 import org.compiere.model.MBPartner;
 import org.compiere.model.MBPartnerLocation;
-import org.compiere.model.MClientInfo;
-import org.compiere.model.MCurrency;
+//MPo, 13/3/25 remove QSS 
+//import org.compiere.model.MClientInfo;
+//import org.compiere.model.MCurrency;
+//
 import org.compiere.model.MDocType;
 import org.compiere.model.MInvoice;
 import org.compiere.model.MLocation;
@@ -43,6 +45,9 @@ import org.compiere.model.MTax;
 import org.compiere.model.Query;
 import org.compiere.util.DB;
 import org.compiere.util.Env;
+//MPo, 13/3/25
+import org.compiere.model.MPriceList;
+//
 
 /**
  *	LCO_MInvoice
@@ -352,16 +357,22 @@ public class LCO_MInvoice extends MInvoice
 					iwh.setC_Tax_ID(tax.getC_Tax_ID());
 					iwh.setPercent(tax.getRate());
 					iwh.setProcessed(false);
-
+					
+					//MPo, 13/3/25 precision logic doesn't cover invoice in THB/IDR in THB/IDR schema 
 					// When the currency of the invoice is different from the currency of the accounting
 					// use costing precision to avoid problems with rounding
-					MClientInfo ci = MClientInfo.get();
-					MCurrency c = MCurrency.get(getCtx(), getC_Currency_ID());
-					int precision = Integer.valueOf(c.getStdPrecision());
-					if (c.getC_Currency_ID() != ci.getC_Currency_ID())
-						precision = Integer.valueOf(c.getCostingPrecision());
-
-					BigDecimal taxamt = tax.calculateTax(base, false, precision);
+					//MClientInfo ci = MClientInfo.get();
+					//MCurrency c = MCurrency.get(getCtx(), getC_Currency_ID());
+					//int precision = Integer.valueOf(c.getStdPrecision());
+					//if (c.getC_Currency_ID() != ci.getC_Currency_ID())
+					//	precision = Integer.valueOf(c.getCostingPrecision());
+					//
+					//BigDecimal taxamt = tax.calculateTax(base, false, precision);
+										
+					int stdPrecision = MPriceList.getStandardPrecision(getCtx(), getM_PriceList_ID());					
+					BigDecimal taxamt = tax.calculateTax(base, false, stdPrecision);
+					//MPo, 13/3/25
+					
 					if (wc.getAmountRefunded() != null &&
 							wc.getAmountRefunded().compareTo(Env.ZERO) > 0) {
 						taxamt = taxamt.subtract(wc.getAmountRefunded());
