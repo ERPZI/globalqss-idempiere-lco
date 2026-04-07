@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
 <!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://jenkins.idempiere.org/job/iDempiere/ws/utils_dev/trl/idempiereTrl.dtd">-->
-<idempiereTrl language="es_CO" table="PP_Order_BOMLine">
+<idempiereTrl language="es_CO" table="AD_ChartDatasource">
  <row id="50000" trl="Y">
-  <value column="Description" original=""/>
-  <value column="Help" original=""/>
+  <value column="Name" original="Total">Total</value>
  </row>
  <row id="50001" trl="Y">
-  <value column="Description" original=""/>
-  <value column="Help" original=""/>
+  <value column="Name" original="Opportunity">Oportunidad</value>
  </row>
  <row id="50002" trl="Y">
-  <value column="Description" original=""/>
-  <value column="Help" original=""/>
+  <value column="Name" original="Expected">Esperado</value>
  </row>
  <row id="50003" trl="Y">
-  <value column="Description" original=""/>
-  <value column="Help" original=""/>
+  <value column="Name" original="Current">Actual</value>
+ </row>
+ <row id="50004" trl="Y">
+  <value column="Name" original="Previous">Anterior</value>
+ </row>
+ <row id="50005" trl="Y">
+  <value column="Name" original="Number of Requests">Número de Solicitudes</value>
  </row>
 </idempiereTrl>

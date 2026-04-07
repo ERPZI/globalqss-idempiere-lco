@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://jenkins.idempiere.org/job/iDempiere/ws/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="AD_FieldGroup">
  <row id="101" trl="Y">
   <value column="Name" original="Status">Estado</value>
@@ -212,16 +212,31 @@
  <row id="200022" trl="Y">
   <value column="Name" original="Placeholders">Marcadores</value>
  </row>
+ <row id="200024" trl="Y">
+  <value column="Name" original="FROM BANK ACCOUNT">CUENTA BANCARIA ORIGEN</value>
+ </row>
+ <row id="200025" trl="Y">
+  <value column="Name" original="TO BANK ACCOUNT">CUENTA BANCARIA DESTINO</value>
+ </row>
  <row id="200027" trl="Y">
   <value column="Name" original="EMail">Correo Electrónico</value>
  </row>
  <row id="200028" trl="Y">
   <value column="Name" original="TOTP">TOTP</value>
  </row>
- <row trl="Y" uuid="a5a3386b-4128-4801-8e68-79d21dea64fb">
-  <value column="Name" original="Withholding Information">Información Retenciones</value>
+ <row id="200029" trl="Y">
+  <value column="Name" original="Source">Fuente</value>
  </row>
- <row trl="Y" uuid="3e05164b-db4f-4482-a17d-faf6dada8d68">
-  <value column="Name" original="Printed Form Information">Información de forma impresa</value>
+ <row id="200030" trl="Y">
+  <value column="Name" original="Printing">Imprimiendo</value>
+ </row>
+ <row id="200031" trl="Y">
+  <value column="Name" original="( None )">( Ninguno )</value>
+ </row>
+ <row id="200032" trl="Y">
+  <value column="Name" original="Additional Dimensions">Dimensiones Adicionales</value>
+ </row>
+ <row id="200033" trl="Y">
+  <value column="Name" original="Security Checklist">Lista de Chequeo de Seguridad</value>
  </row>
 </idempiereTrl>

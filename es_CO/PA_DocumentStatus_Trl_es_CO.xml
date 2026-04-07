@@ -1,23 +1,104 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://jenkins.idempiere.org/job/iDempiere/ws/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="PA_DocumentStatus">
  <row id="200000" trl="Y">
   <value column="Name" original="Sales Orders received today">Órdenes de Venta recibidas hoy</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
  </row>
  <row id="200001" trl="Y">
   <value column="Name" original="Pending Customer Shipments">Despachos de Cliente Pendientes</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
  </row>
  <row id="200002" trl="Y">
   <value column="Name" original="Notice">Avisos</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
  </row>
  <row id="200003" trl="Y">
   <value column="Name" original="Request">Solicitudes</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
  </row>
  <row id="200004" trl="Y">
   <value column="Name" original="Workflow Activities">Actividades de Flujo de Trabajo</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
  </row>
  <row id="200005" trl="Y">
   <value column="Name" original="Unprocessed Documents">Documentos sin Procesar</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200006" trl="Y">
+  <value column="Name" original="Passwords are not hashed">Las contraseñas no están hasheadas</value>
+  <value column="Description" original="Password hashing is not enabled">El hash de contraseñas no está habilitado</value>
+  <value column="Help" original="Storing passwords in plain text or using reversible encryption is insecure. We recommend running the 'Convert password to hashes' process to implement a one-way hashing algorithm instead.">Almacenar contraseñas en texto plano o usar cifrado reversible es inseguro. Recomendamos ejecutar el proceso 'Convertir contraseñas a hashes' para implementar un algoritmo de hash unidireccional.</value>
+ </row>
+ <row id="200007" trl="Y">
+  <value column="Name" original="Default Passwords">Contraseñas por Defecto</value>
+  <value column="Description" original="Users with default passwords have been found">Se encontraron usuarios con contraseñas predeterminadas</value>
+  <value column="Help" original="To prevent unauthorized access, locate the affected users within the tenant and assign them strong, unique passwords.">Para prevenir accesos no autorizados, ubique los usuarios afectados dentro de la empresa y asígneles contraseñas fuertes y únicas.</value>
+ </row>
+ <row id="200008" trl="Y">
+  <value column="Name" original="System Status">Estado del Sistema</value>
+  <value column="Description" original="System Status Evaluation">Evaluación del Estado del Sistema</value>
+  <value column="Help" original="When System Status remains in Evaluation some critical information may be disclosed on the login page.&#10;Consider changing the System Status to 'Implementation' or 'Production' and also setting the SysConfig values for:&#10;APPLICATION_MAIN_VERSION_SHOWN&#10;APPLICATION_DATABASE_VERSION_SHOWN&#10;APPLICATION_IMPLEMENTATION_VENDOR_SHOWN&#10;APPLICATION_JVM_VERSION_SHOWN&#10;APPLICATION_OS_INFO_SHOWN&#10;APPLICATION_HOST_SHOWN">Cuando el Estado del Sistema permanece en Evaluación, cierta información crítica puede ser revelada en la página de inicio de sesión.
+Considere cambiar el Estado del Sistema a 'Implementación' o 'Producción' y también configurar los valores de SysConfig para:
+APPLICATION_MAIN_VERSION_SHOWN
+APPLICATION_DATABASE_VERSION_SHOWN
+APPLICATION_IMPLEMENTATION_VENDOR_SHOWN
+APPLICATION_JVM_VERSION_SHOWN
+APPLICATION_OS_INFO_SHOWN
+APPLICATION_HOST_SHOWN</value>
+ </row>
+ <row id="200009" trl="Y">
+  <value column="Name" original="No password policy">Sin política de contraseñas</value>
+  <value column="Description" original="No password policy is configured">No hay política de contraseñas configurada</value>
+  <value column="Help" original="We recommend setting up password rules to ensure that users create strong and secure passwords. Once configured, make sure that the policy is assigned to the System tenant.">Recomendamos configurar reglas de contraseñas para garantizar que los usuarios creen contraseñas seguras. Una vez configuradas, asegúrese de que la política esté asignada a la empresa del Sistema.</value>
+ </row>
+ <row id="200010" trl="Y">
+  <value column="Name" original="Users without MFA">Usuarios sin MFA</value>
+  <value column="Description" original="Users without Multifactor Authentication">Usuarios sin Autenticación Multifactor</value>
+  <value column="Help" original="There are users without multi-factor authentication configured.  Consider advising these users to enable and configure MFA.">Hay usuarios sin autenticación multifactor configurada. Considere recomendar a estos usuarios que habiliten y configuren MFA.</value>
+ </row>
+ <row id="200011" trl="Y">
+  <value column="Name" original="Default Root Folder Browser">Carpeta Raíz del Explorador por Defecto</value>
+  <value column="Description" original="The SysConfig ZK_ROOT_FOLDER_BROWSER has not been configured">El SysConfig ZK_ROOT_FOLDER_BROWSER no ha sido configurado</value>
+  <value column="Help" original="The System Configurator specifies the base directory for 'Folder' fields and parameters. It currently defaults to IDEMPIERE_HOME. For enhanced security and to prevent unauthorized access to sensitive system files, such as logs or plugin binaries, we recommend setting a more restricted directory.">El Configurador del Sistema especifica el directorio base para los campos y parámetros de tipo 'Carpeta'. Actualmente tiene como valor predeterminado IDEMPIERE_HOME. Para mayor seguridad y prevenir accesos no autorizados a archivos sensibles del sistema (como logs o binarios de plugins), recomendamos establecer un directorio más restringido.</value>
+ </row>
+ <row id="200012" trl="Y">
+  <value column="Name" original="Advanced Roles">Roles Avanzados</value>
+  <value column="Description" original="Advanced Roles assigned to Users">Roles Avanzados asignados a Usuarios</value>
+  <value column="Help" original="Be careful about which advanced roles you assign to which users.  Consider advanced roles as SuperUser; they have access to all security vulnerabilities.  You must also consider the SuperUser role as having access to the operating system user that was used to install iDempiere on the server.  In other words, advanced roles provide access to iDempiere features that can easily be exploited to gain access to SuperUser in the application, the database as a DBA and the operating system as the user running the iDempiere server.">Sea cuidadoso con los roles avanzados que asigna a los usuarios. Los roles avanzados equivalen a SuperUsuario; tienen acceso a todas las vulnerabilidades de seguridad. También debe considerar que el rol SuperUsuario tiene acceso al usuario del sistema operativo utilizado para instalar iDempiere en el servidor. En otras palabras, los roles avanzados proporcionan acceso a funciones de iDempiere que pueden explotarse fácilmente para obtener acceso de SuperUsuario en la aplicación, en la base de datos como DBA y en el sistema operativo como el usuario que ejecuta el servidor iDempiere.</value>
+ </row>
+ <row id="200013" trl="Y">
+  <value column="Name" original="No User Locking">Sin Bloqueo de Usuarios</value>
+  <value column="Description" original="User locking is not configured">El bloqueo de usuarios no está configurado</value>
+  <value column="Help" original="Consider configuring a user locking mechanism.">Considere configurar un mecanismo de bloqueo de usuarios.</value>
+ </row>
+ <row id="200014" trl="Y">
+  <value column="Name" original="Unencrypted sensitive data">Datos sensibles sin cifrar</value>
+  <value column="Description" original="Sensitive columns not encrypted">Columnas sensibles sin cifrar</value>
+  <value column="Help" original="We have detected columns containing sensitive data that lack encryption. Make sure that all fields storing passwords, credit card numbers or other sensitive business data are properly encrypted.">Se han detectado columnas con datos sensibles que no tienen cifrado. Asegúrese de que todos los campos que almacenan contraseñas, números de tarjetas de crédito u otros datos empresariales sensibles estén correctamente cifrados.</value>
+ </row>
+ <row id="200015" trl="Y">
+  <value column="Name" original="Legacy Encryption key">Clave de Cifrado Heredada</value>
+  <value column="Description" original="Legacy Encryption key detected">Se detectó clave de cifrado heredada</value>
+  <value column="Help" original="Legacy key algorithm DES encryption detected – migration to a stronger algorithm is recommended.&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;&lt;b&gt;WARNING!&lt;/b&gt; Before changing the algorithm, please note that if you already have encrypted data in your database, changing the key will render all the encrypted information unreadable. First, decrypt all encrypted columns, then apply the new encryption key and re-encrypt the columns.&#10;&#10;&lt;br&gt;&#10;This can be done simply by adding the file 'idempiere-ks.properties' to your 'IDEMPIERE_HOME' folder with the following content:&#10;&lt;pre&gt;&#10;algorithm=AES&#10;password=mySecurePassword&#10;&lt;/pre&gt;&#10;&#10;You can use AES or another supported algorithm and replace 'mySecurePassword' with a password of your choice.  Please save this password carefully, as if you lose it, you will also lose access to all your encrypted data." xml:space="preserve"><![CDATA[Se detectó cifrado DES con algoritmo de clave heredado — se recomienda migrar a un algoritmo más robusto.
+
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;¡ADVERTENCIA!&lt;/b&gt; Antes de cambiar el algoritmo, tenga en cuenta que si ya tiene datos cifrados en su base de datos, el cambio de clave hará que toda la información cifrada sea ilegible. Primero descifre todas las columnas cifradas, luego aplique la nueva clave de cifrado y vuelva a cifrar las columnas.
+
+&lt;br&gt;
+Esto se puede hacer simplemente agregando el archivo 'idempiere-ks.properties' a su carpeta 'IDEMPIERE_HOME' con el siguiente contenido:
+&lt;pre&gt;
+algorithm=AES
+password=miContraseñaSegura
+&lt;/pre&gt;
+
+Puede usar AES u otro algoritmo soportado y reemplazar 'miContraseñaSegura' con una contraseña de su elección. Por favor guarde esta contraseña cuidadosamente, ya que si la pierde, también perderá el acceso a todos sus datos cifrados.]]></value>
  </row>
 </idempiereTrl>

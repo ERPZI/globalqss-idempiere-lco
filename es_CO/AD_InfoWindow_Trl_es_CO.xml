@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://jenkins.idempiere.org/job/iDempiere/ws/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="AD_InfoWindow">
  <row id="200000" trl="Y">
   <value column="Name" original="Product Info">Información de Producto</value>
@@ -42,6 +42,16 @@
   <value column="Description" original=""/>
   <value column="Help" original=""/>
  </row>
+ <row id="200008" trl="Y">
+  <value column="Name" original="Generate Shipments (manual)">Generar Despachos (Manual)</value>
+  <value column="Description" original="Select and generate shipments">Seleccionar y generar despachos</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200011" trl="Y">
+  <value column="Name" original="Generate Invoices (manual)">Generar Facturas (Manual)</value>
+  <value column="Description" original="Select and generate invoices">Seleccionar y generar facturas</value>
+  <value column="Help" original=""/>
+ </row>
  <row id="200013" trl="Y">
   <value column="Name" original="Role (All)">Rol (Todos)</value>
   <value column="Description" original=""/>
@@ -55,6 +65,26 @@
  <row id="200019" trl="Y">
   <value column="Name" original="Period Control Management">Control Administratido de Períodos</value>
   <value column="Description" original="Management of Calendars, Years and Periods">Administración de Calendarios, Años y Períodos</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200020" trl="Y">
+  <value column="Name" original="Payment Into Batch Info">Información de Pago en Lote</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200022" trl="Y">
+  <value column="Name" original="Create lines from Shipment/Receipt">Crear líneas desde Despacho/Recibo</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200023" trl="Y">
+  <value column="Name" original="Create lines from RMA">Crear líneas desde RMA</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200024" trl="Y">
+  <value column="Name" original="Create lines from Invoice">Crear líneas desde Factura</value>
+  <value column="Description" original=""/>
   <value column="Help" original=""/>
  </row>
 </idempiereTrl>

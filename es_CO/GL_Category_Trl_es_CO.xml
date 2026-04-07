@@ -1,35 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://jenkins.idempiere.org/job/iDempiere/ws/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="GL_Category">
  <row id="0" trl="Y">
   <value column="Name" original="None">Ninguna</value>
+  <value column="PrintName" original=""/>
  </row>
  <row id="108" trl="Y">
   <value column="Name" original="Manual">Manual</value>
+  <value column="PrintName" original=""/>
  </row>
  <row id="109" trl="Y">
   <value column="Name" original="AR Invoice">Factura CxC</value>
+  <value column="PrintName" original=""/>
  </row>
  <row id="110" trl="Y">
   <value column="Name" original="AR Receipt">Recibo CxC</value>
+  <value column="PrintName" original=""/>
  </row>
  <row id="111" trl="Y">
   <value column="Name" original="Material Management">Administración de Materiales</value>
+  <value column="PrintName" original=""/>
  </row>
  <row id="112" trl="Y">
   <value column="Name" original="AP Invoice">Factura CxP</value>
+  <value column="PrintName" original=""/>
  </row>
  <row id="113" trl="Y">
   <value column="Name" original="AP Payment">Pago CxP</value>
+  <value column="PrintName" original=""/>
  </row>
  <row id="50000" trl="Y">
   <value column="Name" original="Payroll">Nómina</value>
+  <value column="PrintName" original=""/>
  </row>
  <row id="50001" trl="Y">
   <value column="Name" original="Manufacturing">Manufactura</value>
+  <value column="PrintName" original=""/>
  </row>
  <row id="50002" trl="Y">
   <value column="Name" original="Distribution">Distribución</value>
+  <value column="PrintName" original=""/>
  </row>
 </idempiereTrl>

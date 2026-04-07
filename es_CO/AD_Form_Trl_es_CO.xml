@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://jenkins.idempiere.org/job/iDempiere/ws/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="AD_Form">
  <row id="100" trl="Y">
   <value column="Name" original="Generate Invoices (manual)">Generar Facturas por Selección</value>
@@ -11,6 +11,11 @@
   <value column="Name" original="Import File Loader">Cargador de Archivos</value>
   <value column="Description" original="Load flat Files into import tables">Cargar archivos planos en las tablas de importación</value>
   <value column="Help" original="The Import File Loader parses the content of a flat file and loads it into import tables. Comments start with a '[' and end with a ']' and are ignored; example: [Some Heading].">El Cargador de Archivos parcela el contenido de un archivo plano y lo importa en tablas. Los comentarios comienzan con un '[' y terminan con un ']' y son ignorados; ejemplo: [Un Encabezado].</value>
+ </row>
+ <row id="102" trl="Y">
+  <value column="Name" original="Initial Tenant Setup Form (deprecated)">Configuración Inicial Grupo Empresarial</value>
+  <value column="Description" original="Initial new Tenant Setup">Configuración Inicial Grupo Empresarial</value>
+  <value column="Help" original="Set up a new Tenant of the system">Configurar un nuevo grupo empresarial del sistema</value>
  </row>
  <row id="103" trl="Y">
   <value column="Name" original="Material Transactions">Transacciones de Materiales</value>
@@ -42,6 +47,11 @@
   <value column="Description" original="Match Purchase Orders, Receipts, Vendor Invoices">Asignar Órdenes de Compra, Recibos de Producto, Facturas de Proveedores</value>
   <value column="Help" original="Make sure that the Receipts and Invoices are processed. If you want to match partial shipment, make sure that &quot;Same Quantity&quot; is not selected.">Asegúrese que los recibos y facturas estén procesados. Si quiere un asignamiento parcial, asegúrese que "Misma Cantidad" no esté seleccionado.</value>
  </row>
+ <row id="109" trl="Y">
+  <value column="Name" original="Translation Import/Export Form (deprecated)">Importar/Exportar Traducción</value>
+  <value column="Description" original="Import or Export Language Translation">Importar o Exportar Traducción de Lenguaje.</value>
+  <value column="Help" original="Export/Import Translation info to/from xml for translation in external tool. Please note that the Language MUST be an enabled and verified System Language.">Importar/Exportar Traducción desde/hacia xml para traducir con una herramienta externa. Por favor note que el lenguaje DEBE estar habilitado y verificado en Lenguaje del Sistema</value>
+ </row>
  <row id="110" trl="Y">
   <value column="Name" original="Generate Shipments (manual)">Generar Entregas por Selección</value>
   <value column="Description" original="Select and generate shipments">Seleccionar y Generar Entregas</value>
@@ -63,7 +73,7 @@ Todos los registros relacionados con la entidad origen (ej. Cliente A) son cambi
  <row id="113" trl="Y">
   <value column="Name" original="POS">Punto de Venta</value>
   <value column="Description" original="Point Of Sales Terminal">Terminal de Punto de Venta</value>
-  <value column="Help" original="Enter Transactions via a POS Terminal.  Automatically, scans or credit card swipes are recongized.">Ingresar transacciones a través de una terminal de punto de venta. Automáticamente, tarjetas de crédito son reconocidas.</value>
+  <value column="Help" original="Enter Transactions via a POS Terminal.  Automatically, scans or credit card swipes are recognized.">Ingresar transacciones a través de una terminal de punto de venta. Automáticamente, tarjetas de crédito son reconocidas.</value>
  </row>
  <row id="114" trl="Y">
   <value column="Name" original="BOM Drop">Expansión LDM</value>
@@ -83,12 +93,12 @@ Todos los registros relacionados con la entidad origen (ej. Cliente A) son cambi
  <row id="117" trl="Y">
   <value column="Name" original="Workflow Activities">Actividades Flujo de Trabajo</value>
   <value column="Description" original="My active workflow activities">Actividades Flujo de Trabajo activas</value>
-  <value column="Help" original="View active worflow activities">Ver actividades de flujo de trabajo activas</value>
+  <value column="Help" original="View active workflow activities">Ver actividades de flujo de trabajo activas</value>
  </row>
  <row id="118" trl="Y">
   <value column="Name" original="Archive Viewer">Visualizador de Archivo</value>
   <value column="Description" original="View automatically archived Documents">Visualiza automáticamente los documentos archivados</value>
-  <value column="Help" original="Depending on the Client Automatic Archive Level documents and reports are saved and available for view. In the Report Viewer you can manually archive Documents or Reports.  You can only view archives, if you have access to the original document.">Dependiendo del nivel automático de archivos del grupo empresarial los documentos y reportes que son guardados y puestos a disposición para su visualización.</value>
+  <value column="Help" original="Depending on the Tenant Automatic Archive Level documents and reports are saved and available for view. In the Report Viewer you can manually archive Documents or Reports.  You can only view archives, if you have access to the original document.">Dependiendo del nivel automático de archivos del grupo empresarial los documentos y reportes que son guardados y puestos a disposición para su visualización.</value>
  </row>
  <row id="119" trl="Y">
   <value column="Name" original="Performance Indicators">Indicadores de Desempeño</value>
@@ -101,7 +111,7 @@ Todos los registros relacionados con la entidad origen (ej. Cliente A) son cambi
   <value column="Help" original="Select one or two attributes if a Product Attribute and display/maintain products in a row or table grid.">Selecciona uno o dos atributos de un atributo de producto y muestra / mantiene productos en una fila o en una grilla.</value>
  </row>
  <row id="53001" trl="Y">
-  <value column="Name" original="BOM &amp; Formula Info">Info LDM y Formula</value>
+  <value column="Name" original="BOM and Formula Info">Info LDM y Formula</value>
   <value column="Description" original="Shows in two different panels the parent-component relationship for the product entered in the Product field.">Muestra en dos paneles la relación componente padre para el producto seleccionado.</value>
   <value column="Help" original="The BOM &amp; Formula Review option menu shows in two different panels the parent-component relationship for the product entered in the Product field.&#10;&#10;You need to introduce the parent product you want to see its components then click the OK button, next drag the left margin of the panel to the right and you will have the two panels.&#10;&#10;When you need to consult an implosion, click the implosion check box and enter the component you wish to consult and tick the Implosion check box.&#10;&#10;You need to introduce the parent product you want to see its components then click the OK button, next drag the left margin of the panel to the right and you will have the two panels.&#10;&#10;The left panel shows the BOM hierarchies in a tree form. The right panel shows the information connected with the BOM for every product in it">La ventana Info LDM y Formula muestra en dos páneles diferentes la relación de padre-componentes para el producto que se ingresa en el campo de Producto.
 
@@ -114,7 +124,7 @@ El pánel de la izquierda muestra las jerarquías de la LDM en forma de árbol. 
  <row id="53002" trl="Y">
   <value column="Name" original="Product Configuration BOM">Configuración LDM Producto</value>
   <value column="Description" original="This form let create a product configure with multy level using options and variants">Esta forma permite crear la configuración de un producto con múltiples niveles usando opciones y variantes</value>
-  <value column="Help" original="A configurable Bill of Material (CBOM) is used by industries that have multiple options and highly configurable products.&#10;&#10;The CBOM is used to dynamically create &quot;end-items&quot; that a company sells. The benefit of using CBOM structure is it reduces the work-effort needed to maintain product structures. The configurable BOM is most frequently driven by &quot;configurator&quot; software, however it can be enabled manually (manual maintenance is infrequent because its unwieldy to manage the number of permutaions and combinations of possible configurations) The development of the CBOM is dependent on having a Modular BOM structure in place (see Modular BOM). The Modular BOM structure provides the assemblies/sub-systems that can be selected to &quot;configure&quot; an end-item.">Una Lista de Materiales (LDM) configurable es utilizada por las industrias que tienen múltiples opciones y productos altamente configurables.
+  <value column="Help" original="A configurable Bill of Material (CBOM) is used by industries that have multiple options and highly configurable products.&#10;&#10;The CBOM is used to dynamically create &quot;end-items&quot; that a company sells. The benefit of using CBOM structure is it reduces the work-effort needed to maintain product structures. The configurable BOM is most frequently driven by &quot;configurator&quot; software, however it can be enabled manually (manual maintenance is infrequent because its unwieldy to manage the number of permutations and combinations of possible configurations) The development of the CBOM is dependent on having a Modular BOM structure in place (see Modular BOM). The Modular BOM structure provides the assemblies/sub-systems that can be selected to &quot;configure&quot; an end-item.">Una Lista de Materiales (LDM) configurable es utilizada por las industrias que tienen múltiples opciones y productos altamente configurables.
 
 La configuración de LDM es utilizada para crear dinámicamente "items-finales" que la compañía vende.  El beneficio de utilizar estructuras de LDM configurables es que reduce el esfuerzo-trabajo requerido para mantener estructuras de producto.  La LDM configurable es manejada frecuentemente por un programa "configurador", sin embargo puede ser habilitada en forma manual (el mantenimiento manual es poco frecuente porque es complejo manejar el número de permutaciones y combinaciones de configuraciones posibles)</value>
  </row>
@@ -141,8 +151,8 @@ Cuando aprueba una orden planeada le está diciendo al sistema que la orden de m
   <value column="Help" original="It shows graphically of the required and available time for each manufacturing resource.">Muestra gráficamente el requerimiento y disponibilidad en el tiempo de cada recurso de manufactura.</value>
  </row>
  <row id="53007" trl="Y">
-  <value column="Name" original="Order Receipt &amp; Issue">Recibo Orden y Emisión</value>
-  <value column="Description" original="Order Receipt &amp; Issue">Recibo Orden y Emisión</value>
+  <value column="Name" original="Order Receipt and Issue">Recibo Orden y Emisión</value>
+  <value column="Description" original="Order Receipt and Issue">Recibo Orden y Emisión</value>
   <value column="Help" original="The form shows at the upper side static information around the product and the manufacturing resource where it has to be made, it also shows a summary of the quantities to be controlled in the MO such as the Original and delivered quantities and the Quantity to deliver for the MO up to date.&#10;&#10;If the production process requires production in batch, then the Qty Batchs shows the Number of batches the shop floor needs to do and the Qty Batch Size contains the size of every batch to be produced.&#10;&#10;&#10;If you want to issue the MO components before you receive the finished product you should tick the checkbox Is Delivery, this case is recommended when you have a long to medium lead time and you want to have the inventory quantities as reliable as possible at every moment.&#10;&#10;If you have small lead time and you wish to save clerk time then you must tick Is Backflush checkbox and you will receive the finished product at the same time you issue automatically the components&#10;&#10;The Backflush Group field is used when you want to issue just components belonging to this group. (This characteristic could not be included in the current version).&#10;&#10;At the lower part of the window you can find the list of every MO component, this can be modified according with the real products and quantities given to the shop floor.&#10;&#10;The quantities to be issued are selected with the checkbox at the first column of the list of components. If the actual quantity is different from the standard quantity showed in the column Qty to deliver you should edit this field to enter the right quantity to be issued.&#10;&#10;Finally a message box asks if you want to close the OM document, you should click the ok button if this MO does not have any more transactions and has to be closed.&#10;&#10;">La forma muestra en la parte superior información estática acerca del producto y el recurso de manufactura donde debe ser hecho, también muestra un resumen de las cantidades a ser controladas en la Orden de Manufactura tal como las cantidades original y despachadas y la cantidad a despachar para la OM a la fecha.
 
 Si el proceso de producción requiere producción en lote, entonces las cantidades de lote muestran el número de lotes que el control de piso necesita hacer y el tamaño de la cantidad lote contiene el tamaño de cada lote a producir.
@@ -166,11 +176,11 @@ Finalmente una caja de mensaje le preguntará si desea cerrar el documento de OM
  </row>
  <row id="53009" trl="Y">
   <value column="Name" original="Payroll Action Notice">Novedades de Nómina</value>
-  <value column="Description" original="Payroll Action Notice let entry the events that happend with any Employee">Novedades de nómina permite ingresar los eventos que ocurrieron con los empleados</value>
+  <value column="Description" original="Payroll Action Notice allows to entry the events that happened with any Employee">Novedades de nómina permite ingresar los eventos que ocurrieron con los empleados</value>
   <value column="Help" original=""/>
  </row>
  <row id="53010" trl="Y">
-  <value column="Name" original="Generate Shipments &amp; Invoices (manual)">Generar Entregas y Facturas por Selección</value>
+  <value column="Name" original="Generate Shipments and Invoices (manual)">Generar Entregas y Facturas por Selección</value>
   <value column="Description" original="Select and generate shipments &amp; Invoices">Seleccionar y generar entregas y facturas</value>
   <value column="Help" original="Generate Shipments &amp; Invoices from Orders.  &#10;Select the orders to generate the shipments &amp; Invoices for.">Generar Entregas y Facturas a partir de órdenes.
 Seleccione las órdenes con las cuales desea generar entregas y facturas</value>
@@ -186,7 +196,7 @@ Seleccione las órdenes con las cuales desea generar entregas y facturas</value>
   <value column="Help" original="Edit the graphical layout of manufacturing workflows">Edita el esquema gráfico de los flujos de trabajo de manufactura</value>
  </row>
  <row id="53016" trl="Y">
-  <value column="Name" original="Accounting Fact Reconcilation (manual)">Conciliación Asientos Contables (manual)</value>
+  <value column="Name" original="Accounting Fact Reconciliation (manual)">Conciliación Asientos Contables (manual)</value>
   <value column="Description" original=""/>
   <value column="Help" original=""/>
  </row>
@@ -261,5 +271,25 @@ Seleccionando "dónde es usado" mostrará las LDM que usan este producto.</value
   <value column="Name" original="Register MFA">Registrar AMF</value>
   <value column="Description" original="Register a multi-factor authentication mechanism">Registrar un mecanismo de autenticación de múltiples factores</value>
   <value column="Help" original=""/>
+ </row>
+ <row id="200018" trl="Y">
+  <value column="Name" original="SQL Query">Consulta SQL</value>
+  <value column="Description" original="Process SQL Queries">Procesar Consultas SQL</value>
+  <value column="Help" original="Process SQL Queries">Procesar Consultas SQL</value>
+ </row>
+ <row id="200019" trl="Y">
+  <value column="Name" original="Customize Grid View">Personalizar Vista de Grilla</value>
+  <value column="Description" original="Form to customize the grid view of tabs in window customization">Formulario para personalizar la vista de grilla de las pestañas en la personalización de ventanas</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200020" trl="Y">
+  <value column="Name" original="Account Info">Información de Cuenta</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200021" trl="Y">
+  <value column="Name" original="Extension Management">Gestión de Extensiones</value>
+  <value column="Description" original="Interface to manage the installation and status of iDempiere extensions">Interfaz para gestionar la instalación y el estado de las extensiones de iDempiere</value>
+  <value column="Help" original="Use this form to manage bundled and external extensions. You can install new extensions, update installed extensions and disable or uninstall extensions that are no longer required">Use este formulario para gestionar las extensiones incluidas y externas. Puede instalar nuevas extensiones, actualizar las extensiones instaladas y deshabilitar o desinstalar las extensiones que ya no se requieran.</value>
  </row>
 </idempiereTrl>

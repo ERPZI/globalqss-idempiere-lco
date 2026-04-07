@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
 <!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://jenkins.idempiere.org/job/iDempiere/ws/utils_dev/trl/idempiereTrl.dtd">-->
-<idempiereTrl language="es_CO" table="C_Greeting">
- <row id="100" trl="Y">
-  <value column="Name" original="Mr">Sr</value>
-  <value column="Greeting" original="Mr">Sr</value>
- </row>
-</idempiereTrl>
+<idempiereTrl language="es_CO" table="AD_LabelCategory"/>
