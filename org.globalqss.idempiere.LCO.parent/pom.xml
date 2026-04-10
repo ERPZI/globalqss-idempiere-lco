@@ -1,6 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.globalqss.idempiere.LCO</groupId>
@@ -17,7 +17,7 @@
 		<download.maven.version>1.4.1</download.maven.version>
 		<lifecycle.mapping.version>1.0.0</lifecycle.mapping.version>
 		<!-- default value of properties, use when run without profile -->
-		<idempiere.core.repository.url>file:/${basedir}/../../iDempiere11/org.idempiere.p2/target/repository</idempiere.core.repository.url>
+		<idempiere.core.repository.url>file:/${basedir}/../../iDempiere13/org.idempiere.p2/target/repository</idempiere.core.repository.url>
 	</properties>
 
 	<build>
@@ -142,11 +142,16 @@
 			    </repository>
 			    <repository>
 				    <id>Central</id>
-				    <url>http://central.maven.org/maven2</url>
+				    <url>https://repo.maven.apache.org/maven2</url>
 			    </repository>
 			    <repository>
 				    <id>zkoss</id>
-				    <url>http://mavensync.zkoss.org/maven2</url>
+				    <url>https://mavensync.zkoss.org/maven2</url>
+			    </repository>
+			    <repository>
+				  <id>redhat-ga</id>
+				  <name>Red Hat GA Repository</name>
+				  <url>https://maven.repository.redhat.com/ga/</url>
 			    </repository>
 			</repositories>
 			<build>
