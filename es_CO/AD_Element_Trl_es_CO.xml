@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://jenkins.idempiere.org/job/iDempiere/ws/utils_dev/trl/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="AD_Element">
  <row id="101" trl="Y">
   <value column="Name" original="Attachment">Adjunto</value>
@@ -66128,6 +66128,28 @@ Las cadenas pueden estar entre comillas simples (opcional)]]></value>
   <value column="PO_Name" original=""/>
   <value column="PO_PrintName" original=""/>
  </row>
+ <row id="204036" trl="Y">
+  <value column="Name" original="From Document Type">Tipo de Documento Desde</value>
+  <value column="PrintName" original="From Document Type">Tipo de Documento Desde</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+  <value column="Placeholder" original=""/>
+  <value column="PO_Description" original=""/>
+  <value column="PO_Help" original=""/>
+  <value column="PO_Name" original=""/>
+  <value column="PO_PrintName" original=""/>
+ </row>
+ <row id="204037" trl="Y">
+  <value column="Name" original="To Document Type">Tipo de Documento Hacia</value>
+  <value column="PrintName" original="To Document Type">Tipo de Documento Hacia</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+  <value column="Placeholder" original=""/>
+  <value column="PO_Description" original=""/>
+  <value column="PO_Help" original=""/>
+  <value column="PO_Name" original=""/>
+  <value column="PO_PrintName" original=""/>
+ </row>
  <row id="204050" trl="Y">
   <value column="Name" original="Extension">Extensión</value>
   <value column="PrintName" original="Extension">Extensión</value>
@@ -66221,6 +66243,17 @@ Las cadenas pueden estar entre comillas simples (opcional)]]></value>
   <value column="PrintName" original="Extension Entity UUID">UUID de Entidad de Extensión</value>
   <value column="Description" original="System Extension Entity UUID">UUID de Entidad de Extensión del Sistema</value>
   <value column="Help" original="Internal UUID for a System Extension Entity record">UUID interno para un registro de Entidad de Extensión del Sistema</value>
+  <value column="Placeholder" original=""/>
+  <value column="PO_Description" original=""/>
+  <value column="PO_Help" original=""/>
+  <value column="PO_Name" original=""/>
+  <value column="PO_PrintName" original=""/>
+ </row>
+ <row id="204060" trl="Y">
+  <value column="Name" original="External Trace ID">Identificador Externo Rastreo</value>
+  <value column="PrintName" original="External Trace ID">Identificador Externo Rastreo</value>
+  <value column="Description" original="External identifier used for audit tracing">Identificador externo utilizado para rastreo de auditoría</value>
+  <value column="Help" original=""/>
   <value column="Placeholder" original=""/>
   <value column="PO_Description" original=""/>
   <value column="PO_Help" original=""/>

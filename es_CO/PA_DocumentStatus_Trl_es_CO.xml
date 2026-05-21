@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://jenkins.idempiere.org/job/iDempiere/ws/utils_dev/trl/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="PA_DocumentStatus">
  <row id="200000" trl="Y">
   <value column="Name" original="Sales Orders received today">Órdenes de Venta recibidas hoy</value>
@@ -89,15 +89,15 @@ APPLICATION_HOST_SHOWN</value>
   <value column="Description" original="Legacy Encryption key detected">Se detectó clave de cifrado heredada</value>
   <value column="Help" original="Legacy key algorithm DES encryption detected – migration to a stronger algorithm is recommended.&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;&lt;b&gt;WARNING!&lt;/b&gt; Before changing the algorithm, please note that if you already have encrypted data in your database, changing the key will render all the encrypted information unreadable. First, decrypt all encrypted columns, then apply the new encryption key and re-encrypt the columns.&#10;&#10;&lt;br&gt;&#10;This can be done simply by adding the file 'idempiere-ks.properties' to your 'IDEMPIERE_HOME' folder with the following content:&#10;&lt;pre&gt;&#10;algorithm=AES&#10;password=mySecurePassword&#10;&lt;/pre&gt;&#10;&#10;You can use AES or another supported algorithm and replace 'mySecurePassword' with a password of your choice.  Please save this password carefully, as if you lose it, you will also lose access to all your encrypted data." xml:space="preserve"><![CDATA[Se detectó cifrado DES con algoritmo de clave heredado — se recomienda migrar a un algoritmo más robusto.
 
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;¡ADVERTENCIA!&lt;/b&gt; Antes de cambiar el algoritmo, tenga en cuenta que si ya tiene datos cifrados en su base de datos, el cambio de clave hará que toda la información cifrada sea ilegible. Primero descifre todas las columnas cifradas, luego aplique la nueva clave de cifrado y vuelva a cifrar las columnas.
+<br><br>
+<b>¡ADVERTENCIA!</b> Antes de cambiar el algoritmo, tenga en cuenta que si ya tiene datos cifrados en su base de datos, el cambio de clave hará que toda la información cifrada sea ilegible. Primero descifre todas las columnas cifradas, luego aplique la nueva clave de cifrado y vuelva a cifrar las columnas.
 
-&lt;br&gt;
+<br>
 Esto se puede hacer simplemente agregando el archivo 'idempiere-ks.properties' a su carpeta 'IDEMPIERE_HOME' con el siguiente contenido:
-&lt;pre&gt;
+<pre>
 algorithm=AES
 password=miContraseñaSegura
-&lt;/pre&gt;
+</pre>
 
 Puede usar AES u otro algoritmo soportado y reemplazar 'miContraseñaSegura' con una contraseña de su elección. Por favor guarde esta contraseña cuidadosamente, ya que si la pierde, también perderá el acceso a todos sus datos cifrados.]]></value>
  </row>
