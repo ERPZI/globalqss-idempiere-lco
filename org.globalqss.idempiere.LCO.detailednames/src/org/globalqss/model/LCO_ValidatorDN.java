@@ -35,6 +35,7 @@ import org.compiere.model.PO;
 import org.compiere.util.CLogger;
 import org.compiere.util.Env;
 import org.compiere.util.Msg;
+import org.compiere.util.Util;
 import org.globalqss.util.LCO_Utils;
 import org.osgi.service.event.Event;
 
@@ -208,10 +209,11 @@ public class LCO_ValidatorDN extends AbstractEventHandler
 		String ln1 = bpartner.get_ValueAsString("LastName1");
 		String ln2 = bpartner.get_ValueAsString("LastName2");
 
-		if (fn1 == null || fn1.length() == 0)
+		int clientId = Env.getAD_Client_ID(bpartner.getCtx());
+		if (Util.isEmpty(fn1, true) && MSysConfig.getBooleanValue("QSSLCO_FirstNameMandatory", true, clientId))
 			 return Msg.getMsg(bpartner.getCtx(), "LCO_FirstName1Required");
 
-		 if (ln1 == null || ln1.length() == 0)
+		 if (Util.isEmpty(ln1, true) && MSysConfig.getBooleanValue("QSSLCO_LastNameMandatory", true, clientId))
 			return Msg.getMsg(bpartner.getCtx(), "LCO_LastName1Required");
 
 		String fullName = LCO_Utils.getFullName(fn1, fn2, ln1, ln2, bpartner.getAD_Client_ID());
