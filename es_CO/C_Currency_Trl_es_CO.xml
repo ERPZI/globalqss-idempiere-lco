@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="C_Currency">
  <row id="100" trl="Y">
   <value column="Description" original="US Dollar">Dólar EE.UU.</value>
@@ -39,7 +39,7 @@
   <value column="CurSymbol" original="Fl">Fl</value>
  </row>
  <row id="110" trl="Y">
-  <value column="Description" original="Portugese Escudo">Escudo Portugués</value>
+  <value column="Description" original="Portuguese Escudo">Escudo Portugués</value>
   <value column="CurSymbol" original="Es">Es</value>
  </row>
  <row id="111" trl="Y">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="AD_PrintFormatItem">
  <row id="2147" trl="Y">
   <value column="Name" original="Rectangle">Rectángulo</value>
@@ -200,6 +200,16 @@
  <row id="200153" trl="Y">
   <value column="Name" original="Master BOM">LDM Maestra</value>
   <value column="PrintName" original="Master BOM">LDM Maestra</value>
+  <value column="PrintNameSuffix" original=""/>
+ </row>
+ <row id="200408" trl="Y">
+  <value column="Name" original="Test Print Format for UUID Based Table">Formato de Impresión de Prueba para Tabla Basada en UUID</value>
+  <value column="PrintName" original=""/>
+  <value column="PrintNameSuffix" original=""/>
+ </row>
+ <row id="200413" trl="Y">
+  <value column="Name" original="Detail">Detalle</value>
+  <value column="PrintName" original=""/>
   <value column="PrintNameSuffix" original=""/>
  </row>
 </idempiereTrl>
