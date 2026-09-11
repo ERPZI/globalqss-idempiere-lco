@@ -46,10 +46,15 @@ public class LCO_UtilsDNC
 		if (fn1.length() == 0 && ln1.length() == 0)
 			return null;
 
-		if (namesFirst)
-			fullName.append(fn1).append(nameSeparator).append(ln1);
-		else
-			fullName.append(ln1).append(nameSeparator).append(fn1);
+		if (namesFirst) {
+			fullName = fullName.append(fn1);
+			if (ln1.length() > 0)
+				fullName.append(nameSeparator).append(ln1);
+		} else {
+			fullName = fullName.append(ln1);
+			if (fn1.length() > 0)
+				fullName.append(nameSeparator).append(fn1);
+		}
 
 		return fullName.toString();
 	}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="AD_PrintColor">
  <row id="100" trl="Y">
   <value column="Name" original="Black">Negro</value>
@@ -61,5 +61,14 @@
  </row>
  <row id="121" trl="Y">
   <value column="Name" original="Brown dark">Marrón oscuro</value>
+ </row>
+ <row id="200000" trl="Y">
+  <value column="Name" original="Metabase Red">Metabase Rojo</value>
+ </row>
+ <row id="200001" trl="Y">
+  <value column="Name" original="Metabase Yellow">Metabase Amarillo</value>
+ </row>
+ <row id="200002" trl="Y">
+  <value column="Name" original="Metabase Green">Metabase Verde</value>
  </row>
 </idempiereTrl>

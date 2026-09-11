@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="M_Product">
  <row id="122" trl="Y">
   <value column="Name" original="Standard">Estándar</value>
@@ -264,6 +264,16 @@
  </row>
  <row id="50027" trl="Y">
   <value column="Name" original="Fertilizer Inspection Area">Area de Inspección de Fertilizante</value>
+  <value column="Description" original=""/>
+  <value column="DocumentNote" original=""/>
+ </row>
+ <row id="200001" trl="Y">
+  <value column="Name" original="Asset Vehicle">Activo Vehículo</value>
+  <value column="Description" original=""/>
+  <value column="DocumentNote" original=""/>
+ </row>
+ <row id="200002" trl="Y">
+  <value column="Name" original="Computers">Computadores</value>
   <value column="Description" original=""/>
   <value column="DocumentNote" original=""/>
  </row>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="AD_Message">
  <row id="101" trl="Y">
   <value column="MsgText" original="zero">cero</value>
@@ -67,7 +67,7 @@
   <value column="MsgTip" original="You don't have the privileges">Usted no tiene los privilegios requeridos</value>
  </row>
  <row id="117" trl="Y">
-  <value column="MsgText" original="Client &amp; Organization Data">Datos de Grupo Empresarial y Organización</value>
+  <value column="MsgText" original="Tenant &amp; Organization Data">Datos de Grupo Empresarial y Organización</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="118" trl="Y">
@@ -87,7 +87,7 @@
   <value column="MsgTip" original=""/>
  </row>
  <row id="122" trl="Y">
-  <value column="MsgText" original="System &amp; Client Data">Datos del Sistema y Grupo Empresarial</value>
+  <value column="MsgText" original="System &amp; Tenant Data">Datos del Sistema y Grupo Empresarial</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="123" trl="Y">
@@ -219,8 +219,8 @@
   <value column="MsgTip" original="Automatic calculation of write-off amount to close the open item"/>
  </row>
  <row id="155" trl="Y">
-  <value column="MsgText" original="Automatic Commit">Guardar automáticamente</value>
-  <value column="MsgTip" original="Automatic saving of data">Guarda automáticamente los datos</value>
+  <value column="MsgText" original="Save on Navigate">Guardar automáticamente</value>
+  <value column="MsgTip" original="Automatically save changes to the current record when the user navigates to another record, switches to a detail tab, or performs an action (e.g., running a process) that requires saving the current changes.">Guarda automáticamente los datos</value>
  </row>
  <row id="156" trl="Y">
   <value column="MsgText" original="Automatic Login">Entrada automática al sistema</value>
@@ -312,7 +312,7 @@ Por favor cambie la caja PDV solo después de completar la transacción</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="178" trl="Y">
-  <value column="MsgText" original="Client">Grupo Empresarial</value>
+  <value column="MsgText" original="Tenant">Grupo Empresarial</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="179" trl="Y">
@@ -1221,7 +1221,7 @@ Entre el pago después de completar la transacción</value>
  </row>
  <row id="404" trl="Y">
   <value column="MsgText" original="Calendar Period not found">Período calendario no fue encontrado</value>
-  <value column="MsgTip" original="Check setup of Calendar and Accounting Schema as well as Accounting Schema assignment to Client or Organization">Revisar definición de calendario y esquema contable así como asignación de esquema contable a grupo empresarial u organización.</value>
+  <value column="MsgTip" original="Check setup of Calendar and Accounting Schema as well as Accounting Schema assignment to Tenant or Organization">Revisar definición de calendario y esquema contable así como asignación de esquema contable a grupo empresarial u organización.</value>
  </row>
  <row id="405" trl="Y">
   <value column="MsgText" original="No valid period for this accounting date.">No existe período válido para ésta fecha contable.</value>
@@ -1296,7 +1296,7 @@ Entre el pago después de completar la transacción</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="423" trl="Y">
-  <value column="MsgText" original="Pricelist Version">Versión de lista de precios</value>
+  <value column="MsgText" original="Price List Version">Versión de lista de precios</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="424" trl="Y">
@@ -1526,7 +1526,7 @@ no existe dirección origen - por favor revise usuario</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="480" trl="Y">
-  <value column="MsgText" original="Cannot send EMail:&#10;No Mail Server (SMTP) found; Check Client Info">No fue posible enviar Email:
+  <value column="MsgText" original="Cannot send EMail:&#10;No Mail Server (SMTP) found; Check Tenant Info">No fue posible enviar Email:
 no se encontró servidor SMTP; por favor revise configuración del grupo empresarial</value>
   <value column="MsgTip" original=""/>
  </row>
@@ -1564,7 +1564,7 @@ No existe dirección del destinatario - revise información de contacto</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="489" trl="Y">
-  <value column="MsgText" original="Role and Client/Organization inconsistent">El rol y configuración grupo empresarial/organización son inconsistentes</value>
+  <value column="MsgText" original="Role and Tenant/Organization inconsistent">El rol y configuración grupo empresarial/organización son inconsistentes</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="490" trl="Y">
@@ -1974,7 +1974,7 @@ Detalles: </value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="590" trl="Y">
-  <value column="MsgText" original="Initial Client Setup">Definición Inicial de Grupo Empresarial</value>
+  <value column="MsgText" original="Initial Tenant Setup">Definición Inicial de Grupo Empresarial</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="591" trl="Y">
@@ -2418,7 +2418,7 @@ Por favor deténgase y migre la base de datos inmediatamente.</value>
   <value column="MsgTip" original="You don't have the privileges">No tiene los privilegios necesarios</value>
  </row>
  <row id="708" trl="Y">
-  <value column="MsgText" original="Client Data">Datos de Cliente</value>
+  <value column="MsgText" original="Tenant Data">Datos de Cliente</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="709" trl="Y">
@@ -2439,7 +2439,7 @@ Por favor deténgase y migre la base de datos inmediatamente.</value>
  </row>
  <row id="713" trl="Y">
   <value column="MsgText" original="Dictionary Maintenance">Mantenimiento del Diccionario</value>
-  <value column="MsgTip" original="Only for internal iDempiere Dictionary Maintenence - DO NOT SELECT">Solamente para Mantenimiento del diccionario Interno de iDempiere - NO SELECCIONAR</value>
+  <value column="MsgTip" original="Only for internal iDempiere Dictionary Maintenance - DO NOT SELECT">Solamente para Mantenimiento del diccionario Interno de iDempiere - NO SELECCIONAR</value>
  </row>
  <row id="714" trl="Y">
   <value column="MsgText" original="No Translation">No Traducción</value>
@@ -2806,7 +2806,7 @@ Ejemplo: Para convertir Cada a Par, la tasa de multiplicación es 0.5M más pequ
   <value column="MsgTip" original=""/>
  </row>
  <row id="805" trl="Y">
-  <value column="MsgText" original="Product is not on PriceList">Producto no esta en lista de precios</value>
+  <value column="MsgText" original="Product is not on Price List">Producto no esta en lista de precios</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="806" trl="Y">
@@ -2814,7 +2814,7 @@ Ejemplo: Para convertir Cada a Par, la tasa de multiplicación es 0.5M más pequ
   <value column="MsgTip" original=""/>
  </row>
  <row id="807" trl="Y">
-  <value column="MsgText" original="Error while creating the Accounting Setup. &#10;Check the error log and the format of the Accounting*.cvs file - No duplicate Accounts and all all defaut accounts must be included (even if you will not use them).">Error mientras se crea la configuración de la contabilidad.
+  <value column="MsgText" original="Error while creating the Accounting Setup. &#10;Check the error log and the format of the Accounting*.csv file - No duplicate Accounts and all default accounts must be included (even if you will not use them).">Error mientras se crea la configuración de la contabilidad.
 Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ningún duplicado se considera y todas las cuentas por defaut deben ser incluidas (incluso si usted no las utiliza).</value>
   <value column="MsgTip" original=""/>
  </row>
@@ -2975,7 +2975,7 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
   <value column="MsgTip" original=""/>
  </row>
  <row id="847" trl="Y">
-  <value column="MsgText" original="Costing Level defined on Client Level - You cannot specify Organization nor Attribute">Nivel de Costeo Definido en Nivel de Grupo Empresarial - Usted no puede especificar Organización o Atributo.</value>
+  <value column="MsgText" original="Costing Level defined on Tenant Level - You cannot specify Organization nor Attribute">Nivel de Costeo Definido en Nivel de Grupo Empresarial - Usted no puede especificar Organización o Atributo.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="848" trl="Y">
@@ -2996,7 +2996,7 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
   <value column="MsgTip" original=""/>
  </row>
  <row id="852" trl="Y">
-  <value column="MsgText" original="Query returned more records then allowed in role - requery">Consulta devuelve mas registros de los permitidos en el Rol - Repita el proceso.</value>
+  <value column="MsgText" original="The query returned more records than allowed, consider adding more filters.">Consulta devuelve mas registros de los permitidos en el Rol - Repita el proceso.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="853" trl="Y">
@@ -3049,7 +3049,7 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="865" trl="Y">
   <value column="MsgText" original="Cache Windows">Caché de Ventana</value>
-  <value column="MsgTip" original="Cache Window Definitions on Client">Definición del Caché de Ventana en Grupo Empresarial</value>
+  <value column="MsgTip" original="Cache Window Definitions on Tenant">Definición del Caché de Ventana en Grupo Empresarial</value>
  </row>
  <row id="866" trl="Y">
   <value column="MsgText" original="Performance">Desempeño</value>
@@ -3188,7 +3188,7 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
   <value column="MsgTip" original=""/>
  </row>
  <row id="50010" trl="Y">
-  <value column="MsgText" original="If you change the attachment storage method, the old attachments are no longer available to your client.">Si cambia el método de almacenamiento de archivo adjunto, los antiguos archivos adjuntos ya no están disponibles para su grupo empresarial.</value>
+  <value column="MsgText" original="If you change the attachment storage method, the old attachments are no longer available to your tenant.">Si cambia el método de almacenamiento de archivo adjunto, los antiguos archivos adjuntos ya no están disponibles para su grupo empresarial.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="50011" trl="Y">
@@ -3200,7 +3200,7 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
   <value column="MsgTip" original=""/>
  </row>
  <row id="50015" trl="Y">
-  <value column="MsgText" original="If you change the archive storage method, the old archive entries are no longer available to your client.">Si cambia el método de archivo, las entradas antiguas no estarán disponibles para su grupo empresarial</value>
+  <value column="MsgText" original="If you change the archive storage method, the old archive entries are no longer available to your tenant.">Si cambia el método de archivo, las entradas antiguas no estarán disponibles para su grupo empresarial</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="50016" trl="Y">
@@ -3225,23 +3225,23 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52003" trl="Y">
   <value column="MsgText" original="1000 Rupees">1000 Rupias</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52004" trl="Y">
   <value column="MsgText" original="100 dollars">100 dólares</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52005" trl="Y">
   <value column="MsgText" original="100 Rupees">100 Rupias</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52006" trl="Y">
   <value column="MsgText" original="10 dollars">10 dólares</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52007" trl="Y">
   <value column="MsgText" original="10 Rupees">10 Rupias</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52008" trl="Y">
   <value column="MsgText" original="1 cent">1 céntimo</value>
@@ -3249,15 +3249,15 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52009" trl="Y">
   <value column="MsgText" original="1 dollar">1 dólar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52011" trl="Y">
   <value column="MsgText" original="2000 Rupees">2000 Rupias</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52012" trl="Y">
   <value column="MsgText" original="200 Rupees">200 Rupias</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52013" trl="Y">
   <value column="MsgText" original="20 cents">20 céntimos</value>
@@ -3265,15 +3265,15 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52014" trl="Y">
   <value column="MsgText" original="20 dollars">20 dólares</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52015" trl="Y">
   <value column="MsgText" original="25 Rupees">25 Rupias</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52016" trl="Y">
   <value column="MsgText" original="500 Rupees">500 Rupias</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52017" trl="Y">
   <value column="MsgText" original="50 cents">50 céntimos</value>
@@ -3281,11 +3281,11 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52018" trl="Y">
   <value column="MsgText" original="50 dollars">50 dólares</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52019" trl="Y">
   <value column="MsgText" original="50 Rupees">50 Rupias</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52020" trl="Y">
   <value column="MsgText" original="5 cents">5 céntimos</value>
@@ -3293,135 +3293,135 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52021" trl="Y">
   <value column="MsgText" original="5 dollars">5 dólares</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52022" trl="Y">
   <value column="MsgText" original="5 Rupees">5 Rupias</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52023" trl="Y">
   <value column="MsgText" original="Due 0">Vencido 0</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52024" trl="Y">
   <value column="MsgText" original="Due 0-30">Vencido 0-30</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52025" trl="Y">
   <value column="MsgText" original="Account Type">Tipo de Cuenta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52026" trl="Y">
   <value column="MsgText" original="Accounts Receivable-Trade">Cuentas por cobrar comerciales.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52027" trl="Y">
   <value column="MsgText" original="Activate">Activar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52028" trl="Y">
   <value column="MsgText" original="Activate Vendor">Activar Proveedor</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52029" trl="Y">
   <value column="MsgText" original="Actual Price">Precio Actual</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52030" trl="Y">
   <value column="MsgText" original="Add">Añadir</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52031" trl="Y">
   <value column="MsgText" original="Add Black Listed Cheque">Añadir Cheque sin fondo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52032" trl="Y">
   <value column="MsgText" original="Add Customer for fidelity card">Añadir Cliente para la tarjeta de fidelidad</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52033" trl="Y">
   <value column="MsgText" original="Add Customer for fidelity card">Añadir Cliente para la tarjeta de fidelidad</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52034" trl="Y">
   <value column="MsgText" original="Add Record">Añadir registro</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52035" trl="Y">
   <value column="MsgText" original="Add To Cart">Añadir al carro</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52036" trl="Y">
   <value column="MsgText" original="Address">Dirección</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52037" trl="Y">
   <value column="MsgText" original="Adjust Cash Book">Ajustar el libro de caja</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52038" trl="Y">
   <value column="MsgText" original="Advanced">Avanzado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52039" trl="Y">
   <value column="MsgText" original="Aging">Edades</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52040" trl="Y">
-  <value column="MsgText" original="Some error occured while communicating with the server. Please try again.">Un error ha ocurrido mientras se intentaba comunicación con el servidor. Por favor, inténtelo de nuevo.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgText" original="Some error occurred while communicating with the server. Please try again.">Un error ha ocurrido mientras se intentaba comunicación con el servidor. Por favor, inténtelo de nuevo.</value>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52041" trl="Y">
   <value column="MsgText" original="All">Todo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52042" trl="Y">
   <value column="MsgText" original="All products">Todos los Productos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52043" trl="Y">
   <value column="MsgText" original="Difference">Diferencia</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52044" trl="Y">
   <value column="MsgText" original="Expense">Gasto</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52045" trl="Y">
   <value column="MsgText" original="Receipt">Recibo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52046" trl="Y">
   <value column="MsgText" original="Amount refunded">Cantidad reembolsada</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52047" trl="Y">
   <value column="MsgText" original="Amount Tendered">Cantidad Ofertada</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52048" trl="Y">
   <value column="MsgText" original="Transfer">Transferencia</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52049" trl="Y">
   <value column="MsgText" original="Application Name">Nombre de Aplicación</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52050" trl="Y">
   <value column="MsgText" original="Application Version">Versión de Aplicación.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52051" trl="Y">
   <value column="MsgText" original="Assets">Activos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52052" trl="Y">
   <value column="MsgText" original="At least one">Al menos uno</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52053" trl="Y">
   <value column="MsgText" original="Attach Image">Adjuntar imagen</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52054" trl="Y">
   <value column="MsgText" original="Attribute">Atributo</value>
@@ -3433,11 +3433,11 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52056" trl="Y">
   <value column="MsgText" original="Available Menus">Menus Disponibles</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52057" trl="Y">
   <value column="MsgText" original="Back">Atrás</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52058" trl="Y">
   <value column="MsgText" original="Barcode">Código de Barras</value>
@@ -3445,315 +3445,315 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52059" trl="Y">
   <value column="MsgText" original="Barcode already exists!">Código de Barras ya existe.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52060" trl="Y">
   <value column="MsgText" original="Black Listed Cheques">Listado de cheques sin fondos.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52061" trl="Y">
   <value column="MsgText" original="Business Partner Info">Información de Terceros</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52062" trl="Y">
   <value column="MsgText" original="Business Partner Trx Details">Detalles de Tercero de la Transacción</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52063" trl="Y">
   <value column="MsgText" original="Brand">Marca</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52064" trl="Y">
   <value column="MsgText" original="Calculation Period And Curr.">Cálculo de periodo y Curr.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52065" trl="Y">
   <value column="MsgText" original="Card">Tarjeta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52066" trl="Y">
   <value column="MsgText" original="Card Amount">Monto Tarjeta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52067" trl="Y">
   <value column="MsgText" original="Card Amount Entered">Monto Ingresado Tarjeta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52068" trl="Y">
   <value column="MsgText" original="Card amount tendered">Monto Cargado Tarjeta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52069" trl="Y">
   <value column="MsgText" original="Card Amount Total">Monto Total Tarjeta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52070" trl="Y">
   <value column="MsgText" original="The Cart is Empty !">El carro esta vacío !</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52071" trl="Y">
   <value column="MsgText" original="Card No">Tarjeta No</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52072" trl="Y">
   <value column="MsgText" original="Card Total">Tarjeta Total</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52073" trl="Y">
   <value column="MsgText" original="Add More">Añadir mas</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52074" trl="Y">
   <value column="MsgText" original="Cart is empty!">Carro está vacío!</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52075" trl="Y">
   <value column="MsgText" original="Cart has">Carro tiene</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52076" trl="Y">
   <value column="MsgText" original=" items">Artículo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52077" trl="Y">
   <value column="MsgText" original="Remove">Remover</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52078" trl="Y">
   <value column="MsgText" original="Cash">Efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52079" trl="Y">
   <value column="MsgText" original="Cash Amount">Monto de Efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52080" trl="Y">
   <value column="MsgText" original="Cash Book">Caja PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52081" trl="Y">
   <value column="MsgText" original="The Cash Book has been adjusted.">La Caja PDV ha sido ajustada.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52082" trl="Y">
   <value column="MsgText" original="The Cash Book has been adjusted">La Caja PDV ha sido ajustada.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52083" trl="Y">
   <value column="MsgText" original="Cash Book History">Historia de Caja PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52084" trl="Y">
   <value column="MsgText" original="Cash Line Details">Detalles de línea de efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52085" trl="Y">
   <value column="MsgText" original="Cash Payment">Pago En Efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52086" trl="Y">
   <value column="MsgText" original="Cash Receipt">Recibo de Efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52087" trl="Y">
   <value column="MsgText" original="Cash refunded">Reembolso de efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52088" trl="Y">
   <value column="MsgText" original="Cash tendered">Efectivo Ofertado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52089" trl="Y">
   <value column="MsgText" original="Cash to transfer">Efectivo para transferencia</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52090" trl="Y">
   <value column="MsgText" original="Cash Total">Total efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52091" trl="Y">
   <value column="MsgText" original="Cellphone">Teléfono Celular</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52092" trl="Y">
   <value column="MsgText" original="Checkout">Finalización de la compra</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52093" trl="Y">
   <value column="MsgText" original="Cheque">Cheque</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52094" trl="Y">
   <value column="MsgText" original="Cheque Amount">Monto del Cheque</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52095" trl="Y">
   <value column="MsgText" original="Cheque Amount Entered">Monto del cheque ingresado.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52096" trl="Y">
   <value column="MsgText" original="Cheque amount tendered">Monto del cheque ofertado.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52097" trl="Y">
   <value column="MsgText" original="Cheque Amount Total">Total del Monto del cheque</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52098" trl="Y">
   <value column="MsgText" original="Cheque No">Cheque No</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52099" trl="Y">
   <value column="MsgText" original="Cheque Total">Cheque Total</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52100" trl="Y">
   <value column="MsgText" original="Choose Attribute">Escoger Atributo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52101" trl="Y">
   <value column="MsgText" original="Please choose your till number">Por favor seleccione su número de caja registradora</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52102" trl="Y">
   <value column="MsgText" original="Clear">Limpiar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52103" trl="Y">
   <value column="MsgText" original="Close">Cerrar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52104" trl="Y">
   <value column="MsgText" original="Close Till">Cerrar Caja Registradora.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52105" trl="Y">
   <value column="MsgText" original="Closed">Cerrado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52106" trl="Y">
   <value column="MsgText" original="Closing Balance">Cerrar Balance</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52107" trl="Y">
   <value column="MsgText" original="CoGS">CoGS</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52108" trl="Y">
   <value column="MsgText" original="Colour">Color</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52109" trl="Y">
   <value column="MsgText" original="Commission Details">Detalles de Comisión</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52110" trl="Y">
   <value column="MsgText" original="Completed">Completado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52111" trl="Y">
   <value column="MsgText" original="Continue">Continuar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52112" trl="Y">
   <value column="MsgText" original="Create Business Partner">Crear Tercero</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52113" trl="Y">
   <value column="MsgText" original="Create Garment">Crear Prenda</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52114" trl="Y">
   <value column="MsgText" original="Create Payment">Crear Pago</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52115" trl="Y">
   <value column="MsgText" original="Credit Check">Cheque de crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52116" trl="Y">
   <value column="MsgText" original="Credit Details">Detalle de crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52117" trl="Y">
   <value column="MsgText" original="Credit Hold">Crédito Retenido</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52118" trl="Y">
   <value column="MsgText" original="Credit Memo">Nota Crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52119" trl="Y">
   <value column="MsgText" original="Credit OK">Crédito OK</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52120" trl="Y">
   <value column="MsgText" original="Credit Order">Orden de Crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52121" trl="Y">
   <value column="MsgText" original="Credit Order Discount">Descuento de orden de crédito.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52122" trl="Y">
   <value column="MsgText" original="Credit Stop">Crédito Detenido</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52123" trl="Y">
   <value column="MsgText" original="Credit Watch">Crédito Vigilado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52124" trl="Y">
   <value column="MsgText" original="Current Month">Mes Actual</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52125" trl="Y">
   <value column="MsgText" original="Current Till Amount">Monto actual de caja registradora</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52126" trl="Y">
   <value column="MsgText" original="Current Week">Semana actual</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52127" trl="Y">
   <value column="MsgText" original="Current Year">Año Actual</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52128" trl="Y">
   <value column="MsgText" original="Custom">Personalizado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52129" trl="Y">
   <value column="MsgText" original="Custom Sales Report">Reporte de Ventas Personalizado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52130" trl="Y">
   <value column="MsgText" original="Customer">Cliente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52131" trl="Y">
   <value column="MsgText" original="Customer ID">ID del Cliente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52132" trl="Y">
   <value column="MsgText" original="Customer Info">Información del Cliente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52133" trl="Y">
   <value column="MsgText" original="Customer Returned Order">Orden de cliente devuelta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52134" trl="Y">
   <value column="MsgText" original="Customer/Vendor">Cliente/Proveedor</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52135" trl="Y">
   <value column="MsgText" original="Date Created">Fecha de Creación</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52136" trl="Y">
   <value column="MsgText" original="From">Desde</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52137" trl="Y">
   <value column="MsgText" original="Date Ordered">Fecha Ordenada</value>
@@ -3761,159 +3761,159 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52138" trl="Y">
   <value column="MsgText" original="Date Range">Rango de Fecha</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52139" trl="Y">
   <value column="MsgText" original="to">a</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52140" trl="Y">
   <value column="MsgText" original="De-activate">De-activar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52141" trl="Y">
   <value column="MsgText" original="Deactivate Vendor">Desactivar proveedor</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52142" trl="Y">
   <value column="MsgText" original="Dealer Name">Nombre de Distribuidor</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52143" trl="Y">
   <value column="MsgText" original="Default">Predeterminado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52144" trl="Y">
   <value column="MsgText" original="Delete">Borrar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52145" trl="Y">
   <value column="MsgText" original="Delete Selected">Borrar Seleccionado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52146" trl="Y">
   <value column="MsgText" original="Design">Diseño</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52147" trl="Y">
   <value column="MsgText" original="Discount">Descuento</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52148" trl="Y">
   <value column="MsgText" original="Discounted Price">Precio con Descuento</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52149" trl="Y">
   <value column="MsgText" original="Display">Mostrar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52150" trl="Y">
   <value column="MsgText" original="Do you want to display all records?">¿Desea mostrar todos los registros?</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52151" trl="Y">
   <value column="MsgText" original="Doc Basis Type">Tipo de documento Base</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52152" trl="Y">
   <value column="MsgText" original="Download CSV">Descargar CSV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52153" trl="Y">
   <value column="MsgText" original="Drafted">Hacer borrador</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52154" trl="Y">
   <value column="MsgText" original="Dunning letters have been printed successfully">Cartas de morosidad han sido impresas exitosamente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52155" trl="Y">
   <value column="MsgText" original="Edit">Editar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52156" trl="Y">
   <value column="MsgText" original="Edit Attribute">Editar Atributo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52157" trl="Y">
   <value column="MsgText" original="Edit Black Listed Cheque">Editar Cheque sin fondo.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52158" trl="Y">
   <value column="MsgText" original="Edit Customer">Editar Cliente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52159" trl="Y">
   <value column="MsgText" original="Edit Price">Editar Precio</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52160" trl="Y">
   <value column="MsgText" original="Edit Price List">Editar Lista de Precio</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52161" trl="Y">
   <value column="MsgText" original="Edit Product">Editar Producto</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52162" trl="Y">
   <value column="MsgText" original="Edit related products details">Editar dellates de productos relacionados</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52163" trl="Y">
   <value column="MsgText" original="Edit Role">Editar Rol</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52164" trl="Y">
   <value column="MsgText" original="Edit User">Editar Usuario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52165" trl="Y">
   <value column="MsgText" original="Edit Vendor">Editar Proveedor</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52166" trl="Y">
   <value column="MsgText" original="Enable printing">Habilitar Impresión</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52167" trl="Y">
   <value column="MsgText" original="ENTER">ENTER</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52168" trl="Y">
   <value column="MsgText" original="(excl. VAT)">(excl. VAT)</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52169" trl="Y">
   <value column="MsgText" original="Fast Moving Items Report">Reporte de artículos de rápido movimiento.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52170" trl="Y">
   <value column="MsgText" original="Fast Moving Items Report (Current Month)">Reporte de artículos de rápido movimiento (Mes Actual)</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52171" trl="Y">
   <value column="MsgText" original="Fast Moving Items Report (Today)">Reporte de artículos de rápido movimiento. (Hoy)</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52172" trl="Y">
   <value column="MsgText" original="Filter By">Filtrar por</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52173" trl="Y">
   <value column="MsgText" original="Choose the type of filter">Seleccione el tipo de filtro</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52174" trl="Y">
   <value column="MsgText" original="First">Primero</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52175" trl="Y">
   <value column="MsgText" original="Fixed">Fijo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52176" trl="Y">
   <value column="MsgText" original="This is the float amount for today. Please Enter float amount for the next day if needs to be changed.">Esta es la cantidad flotante para hoy. Por favor ingrese la cantidad flotante para el proximo dia si este necesita ser cambiado.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52177" trl="Y">
   <value column="MsgText" original="All Contents ©">Todo el Contenido Â©</value>
@@ -3921,104 +3921,104 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52178" trl="Y">
   <value column="MsgText" original="Found None">No se encontró</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52179" trl="Y">
   <value column="MsgText" original="From">Desde</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52180" trl="Y">
   <value column="MsgText" original="Garment Template">Plantilla de vestido</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52181" trl="Y">
   <value column="MsgText" original="Generate Commission">Generar Comisión</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52182" trl="Y">
   <value column="MsgText" original="Goods Received Note">Notas de bienes recibidos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52183" trl="Y">
   <value column="MsgText" original="Goods Returned Note">Nota de bienes devueltos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52184" trl="Y">
   <value column="MsgText" original="Hide Details">Esconder Detalles</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52185" trl="Y">
   <value column="MsgText" original="Import Black Listed Cheques">Importar Cheques sin fondos.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52186" trl="Y">
   <value column="MsgText" original="This utility is to import the a list of Black Listed Cheques from a csv file into the system,&lt;br&gt;The csv file should look like the one shown below including the header:">Esta Utilidad es para importar una lista de cheque sin fondos desde una archivo csv dentro del sistema. El archivo csv debería aparecer como el único mostrado incluyendo la cabecera.
 </value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52187" trl="Y">
   <value column="MsgText" original="Import List">Importar Lista</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52188" trl="Y">
-  <value column="MsgText" original="This utility is to import the products and Stock in Hand from a csv file into the system,&lt;br&gt; For importing the garment products, the CSV file name should containg the word 'Garment' &lt;br&gt;The csv file should look like the one shown below including the header" xml:space="preserve"><![CDATA[Esta utilidad sirve para importar productos y existencias desde un archivo CSV dentro del sistema, para importar los productos de ropa, el nombre del archivo CSV debe contener la palabra "Prenda" <br>El archivo csv debería aparecer como el mostrado a continuación, incluyendo la cabecera.]]></value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgText" original="This utility is to import the products and Stock in Hand from a csv file into the system,&lt;br&gt; For importing the garment products, the CSV file name should contain the word 'Garment' &lt;br&gt;The csv file should look like the one shown below including the header" xml:space="preserve"><![CDATA[Esta utilidad sirve para importar productos y existencias desde un archivo CSV dentro del sistema, para importar los productos de ropa, el nombre del archivo CSV debe contener la palabra "Prenda" <br>El archivo csv debería aparecer como el mostrado a continuación, incluyendo la cabecera.]]></value>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52189" trl="Y">
   <value column="MsgText" original="(incl. VAT)">(incl. VAT)</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52190" trl="Y">
   <value column="MsgText" original="InProgress">En Progreso</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52191" trl="Y">
   <value column="MsgText" original="Invalid">No-Válido</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52192" trl="Y">
   <value column="MsgText" original="Invoice No">Factura No</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52193" trl="Y">
   <value column="MsgText" original="Invoke">Invocar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52194" trl="Y">
   <value column="MsgText" original="Invoke">Invocar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52195" trl="Y">
   <value column="MsgText" original="Invoke Partial POS Order">Invocar Órdenes parciales de PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52196" trl="Y">
   <value column="MsgText" original="Items">Artículos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52197" trl="Y">
   <value column="MsgText" original="Last">Ultimo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52198" trl="Y">
   <value column="MsgText" original="Last 2 Months">Ultimos 2 meses</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52199" trl="Y">
   <value column="MsgText" original="Last 2 Weeks">Ultimas 2 semanas</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52200" trl="Y">
   <value column="MsgText" original="Last 3 Months">Ultimos 3 meses</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52201" trl="Y">
   <value column="MsgText" original="Last 3 Weeks">Ultimas 3 semanas</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52202" trl="Y">
   <value column="MsgText" original="Last 6 Months">Ultimos 6 meses</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52203" trl="Y">
   <value column="MsgText" original="License Name">Nombre Licencia</value>
@@ -4030,43 +4030,43 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52205" trl="Y">
   <value column="MsgText" original="Licensed Distribution">Distribución Licenciada</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52206" trl="Y">
   <value column="MsgText" original="Licensed Modules">Módulos Licenciados</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52207" trl="Y">
   <value column="MsgText" original="Licensing Information">Información de Licenciamiento.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52208" trl="Y">
   <value column="MsgText" original="List">Lista</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52209" trl="Y">
   <value column="MsgText" original="All content">Todo el contenido</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52210" trl="Y">
   <value column="MsgText" original="Forgot password?">Olvidó su contraseña?</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52211" trl="Y">
   <value column="MsgText" original="Please enter your username and password">Por favor ingrese su nombre de usuario y contraseña.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52212" trl="Y">
   <value column="MsgText" original="Please enter PIN">Por favor ingrese su PIN</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52213" trl="Y">
   <value column="MsgText" original="Password">Contraseña</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52214" trl="Y">
   <value column="MsgText" original="Username">Nombre de Usuario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52215" trl="Y">
   <value column="MsgText" original=" "> </value>
@@ -4074,115 +4074,115 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52216" trl="Y">
   <value column="MsgText" original="Your password has been sent you should receive it in a few minutes">Su contraseña ha sido enviada, usted debería recibirla en algunos minutos.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52217" trl="Y">
   <value column="MsgText" original="Marked Price">Precio Marcado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52218" trl="Y">
   <value column="MsgText" original="Max Active Users">Máx Usuarios Activos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52219" trl="Y">
   <value column="MsgText" original="Max sold Item">Máx Artículos Vendidos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52220" trl="Y">
   <value column="MsgText" original="Menus">Menúes</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52221" trl="Y">
   <value column="MsgText" original="Min Item Sold">Mín Artículos Vendidos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52222" trl="Y">
   <value column="MsgText" original="Mixed">Mezclado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52223" trl="Y">
-  <value column="MsgText" original="Moblie No">Celular No</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgText" original="Mobile No">Celular No</value>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52224" trl="Y">
   <value column="MsgText" original="Model">Modelo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52225" trl="Y">
   <value column="MsgText" original="Month">Mes</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52226" trl="Y">
   <value column="MsgText" original="Net Amount">Cantidad Neta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52227" trl="Y">
   <value column="MsgText" original="Net Cash Trx">Cantidad neta de efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52228" trl="Y">
   <value column="MsgText" original="Net Transaction">Transacción Neta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52229" trl="Y">
   <value column="MsgText" original="New Attribute Value">Valor de nuevo atributo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52230" trl="Y">
   <value column="MsgText" original="New Credit Order">Nueva Orden de crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52231" trl="Y">
   <value column="MsgText" original="New Customer">Nuevo Cliente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52232" trl="Y">
   <value column="MsgText" original="New Customer Return Order">Nueva Orden devuelta de cliente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52233" trl="Y">
   <value column="MsgText" original="New Goods Receive Note">Nota de recibo de nuevos Bienes</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52234" trl="Y">
   <value column="MsgText" original="New Goods Returned Note">Nota de devolución de nuevos Bienes</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52235" trl="Y">
   <value column="MsgText" original="New Order">Nueva Orden</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52236" trl="Y">
   <value column="MsgText" original="New Price">Nuevo Precio</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52237" trl="Y">
   <value column="MsgText" original="No">No</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52238" trl="Y">
   <value column="MsgText" original="No customer was found for">No se encontro cliente para</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52239" trl="Y">
   <value column="MsgText" original="No Shipment">No entrega</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52240" trl="Y">
   <value column="MsgText" original="No vendor was found for">Ningun proveedor fue encontrado por</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52241" trl="Y">
   <value column="MsgText" original="Normal Template">Plantilla Normal</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52242" trl="Y">
   <value column="MsgText" original="It seems that you are not authorised to give discounts">Parece ser que usted no esta autorizado para otorgar descuentos.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52243" trl="Y">
   <value column="MsgText" original="Not Found">No encontrado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52244" trl="Y">
   <value column="MsgText" original="Notes">Notas</value>
@@ -4190,55 +4190,55 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52245" trl="Y">
   <value column="MsgText" original="No of Active Users">No de Usuarios Activos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52246" trl="Y">
   <value column="MsgText" original="Number of Operations">Número de Operaciones</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52247" trl="Y">
   <value column="MsgText" original="Old Attribute Value">Valor viejo del atributo.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52248" trl="Y">
   <value column="MsgText" original="Open Invoices">Facturas Abiertas</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52249" trl="Y">
   <value column="MsgText" original="Opening Balance">Saldo Inicial</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52250" trl="Y">
   <value column="MsgText" original="Order No">Orden No</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52251" trl="Y">
   <value column="MsgText" original="Order Type">Tipo de Orden</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52252" trl="Y">
   <value column="MsgText" original="Organisations">Organización</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52253" trl="Y">
   <value column="MsgText" original="Partial POS Order">Orden parcial PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52254" trl="Y">
   <value column="MsgText" original="Partial POS Order History">Historia de Orden parcial PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52255" trl="Y">
   <value column="MsgText" original="Payment Allocation">Asignación de Pago</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52256" trl="Y">
   <value column="MsgText" original="Payment By">Pago por</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52257" trl="Y">
   <value column="MsgText" original="Payment Details">Detalles de Pago</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52258" trl="Y">
   <value column="MsgText" original="Payment No">Pago No</value>
@@ -4250,303 +4250,303 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52260" trl="Y">
   <value column="MsgText" original="Payment Terms">Términos de pago</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52261" trl="Y">
   <value column="MsgText" original="Payment Type">Tipo de pago</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52262" trl="Y">
   <value column="MsgText" original="Periodic Cash Book Details">Detalles periódicos del libro de caja</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52263" trl="Y">
   <value column="MsgText" original="Please enter PIN">Por favor ingrese PIN</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52264" trl="Y">
   <value column="MsgText" original="Administration">Administración</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52265" trl="Y">
   <value column="MsgText" original="Cash Sales">Ventas en efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52266" trl="Y">
   <value column="MsgText" original="Credit Sales">Ventas a crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52267" trl="Y">
   <value column="MsgText" original="Performance Analysis">Analisis de Desempeño</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52268" trl="Y">
   <value column="MsgText" original="Purchases">Compras</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52269" trl="Y">
   <value column="MsgText" original="Stock">Inventario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52270" trl="Y">
   <value column="MsgText" original="POS Info">Información PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52271" trl="Y">
   <value column="MsgText" original="POS Info  (Current Month)">Información PDV (Mes Actual)</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52272" trl="Y">
   <value column="MsgText" original="POS Info  (Custom)">Información PDV (Personalizada)</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52273" trl="Y">
   <value column="MsgText" original="POS Info (Today)">Información PDV (Hoy)</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52274" trl="Y">
   <value column="MsgText" original="POS Name">Nombre PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52275" trl="Y">
   <value column="MsgText" original="POS Order">Orden PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52276" trl="Y">
   <value column="MsgText" original="POS Order History">Historia de orden PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52277" trl="Y">
   <value column="MsgText" original="Welcome to Posterita POS">Bienvenido a Posterita PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52278" trl="Y">
   <value column="MsgText" original="Postal Address">Dirección Postal</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52279" trl="Y">
   <value column="MsgText" original="Themes">Temas</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52280" trl="Y">
   <value column="MsgText" original="Preferences">Preferencias</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52281" trl="Y">
   <value column="MsgText" original="Prepared Order">Orden Preparada</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52282" trl="Y">
   <value column="MsgText" original="Prev">Anterior</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52283" trl="Y">
   <value column="MsgText" original="Print Barcode">Imprimir Código de Barras</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52284" trl="Y">
   <value column="MsgText" original="Print Dunning Letters">Imprimir Cartas de Morosidad</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52285" trl="Y">
   <value column="MsgText" original="Print Fidelity Card">Imprimir Carta de Fidelidad</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52286" trl="Y">
   <value column="MsgText" original="Print Order">Imprimir Orden</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52287" trl="Y">
   <value column="MsgText" original="Print PDF">Imprimir PDF</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52288" trl="Y">
   <value column="MsgText" original="Printer enabled">Impresora Habilitada</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52289" trl="Y">
   <value column="MsgText" original="Printer name">Nombre de Impresora</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52290" trl="Y">
   <value column="MsgText" original="Product name already exists!">Este nombre de producto ya existe!</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52291" trl="Y">
   <value column="MsgText" original="Product ID">ID del Producto</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52292" trl="Y">
   <value column="MsgText" original="Product Info">Información de Producto</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52293" trl="Y">
   <value column="MsgText" original="Item">Artículo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52294" trl="Y">
   <value column="MsgText" original="Services">Servicios</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52295" trl="Y">
   <value column="MsgText" original="The Products have been updated">Los productos han sido actualizados</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52296" trl="Y">
   <value column="MsgText" original="Profit Margin">Margen de Ganancia</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52297" trl="Y">
   <value column="MsgText" original="Purchase Price">Precio de compra</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52298" trl="Y">
   <value column="MsgText" original="Qty Received">Cantidad Recibida</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52299" trl="Y">
   <value column="MsgText" original="Qty Returned By Customer">Cantidad devuelta por cliente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52300" trl="Y">
   <value column="MsgText" original="Qty Returned to Supplier">Cantidad devuelta al proveedor</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52301" trl="Y">
   <value column="MsgText" original="Qty Sold">Cantidad Vendida</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52302" trl="Y">
   <value column="MsgText" original="Reason">Razón</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52303" trl="Y">
   <value column="MsgText" original="Records found">Registros Encontrados</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52304" trl="Y">
   <value column="MsgText" original="records per page">registros por página</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52305" trl="Y">
   <value column="MsgText" original="Remote printing">Impresión remota</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52306" trl="Y">
   <value column="MsgText" original="Remove Customer for fidelity card">Remover cliente para carta de fidelidad</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52307" trl="Y">
   <value column="MsgText" original="Report Filter Settings">Configuración de filtros del Informe</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52308" trl="Y">
   <value column="MsgText" original="Reprint">Re Imprimir</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52309" trl="Y">
   <value column="MsgText" original="Returned Order">Orden Devuelta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52310" trl="Y">
   <value column="MsgText" original="Revenue">Ingreso</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52311" trl="Y">
   <value column="MsgText" original="Sales Details">Detalle de Ventas</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52312" trl="Y">
   <value column="MsgText" original="Sales Order">Orden de Venta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52313" trl="Y">
   <value column="MsgText" original="Sales Price">Precio de Venta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52314" trl="Y">
   <value column="MsgText" original="Sales Reports">Reportes de Ventas</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52315" trl="Y">
   <value column="MsgText" original="Save">Guardar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52316" trl="Y">
   <value column="MsgText" original="Save as CSV">Guardar como CSV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52317" trl="Y">
   <value column="MsgText" original="Search">Buscar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52318" trl="Y">
   <value column="MsgText" original="Search Customer">Buscar Cliente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52319" trl="Y">
   <value column="MsgText" original="No customers were found for">No se encontraron clientes para</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52320" trl="Y">
   <value column="MsgText" original="Search Product">Buscar Producto</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52321" trl="Y">
   <value column="MsgText" original="No products were found for:">No se encontraron productos para:</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52322" trl="Y">
   <value column="MsgText" original="Displaying">Mostrar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52323" trl="Y">
   <value column="MsgText" original="of">de</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52324" trl="Y">
   <value column="MsgText" original="to">a</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52325" trl="Y">
   <value column="MsgText" original="Search Results">Buscar Resultados</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52326" trl="Y">
   <value column="MsgText" original="Select">Seleccionar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52327" trl="Y">
   <value column="MsgText" original="Select All">Buscar Todo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52328" trl="Y">
   <value column="MsgText" original="Select partner type">Seleccionar tipo de tercero.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52329" trl="Y">
   <value column="MsgText" original="Select Range">Seleccionar rango</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52330" trl="Y">
   <value column="MsgText" original="Selected Customers">Clientes Seleccionados</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52331" trl="Y">
   <value column="MsgText" original="Settle Payment">Establecer pago</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52332" trl="Y">
   <value column="MsgText" original="NOTE:-The Cash Payments would have effect only when the cash book is closed">NOTA: - Los pagos en efectivo tendrán efecto solo cuando la caja PDV se cierre.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52333" trl="Y">
   <value column="MsgText" original="Shipment No">No.Entrega</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52334" trl="Y">
   <value column="MsgText" original="Shipment Required">Entrega Requerida</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52335" trl="Y">
   <value column="MsgText" original="Shipment Status">Estado de Entrega</value>
@@ -4554,235 +4554,235 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52336" trl="Y">
   <value column="MsgText" original="Show Details">Mostrar Detalles</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52337" trl="Y">
   <value column="MsgText" original="Size">Tamaño</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52338" trl="Y">
   <value column="MsgText" original="Slow Moving Items">Artículos de bajo movimiento</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52339" trl="Y">
   <value column="MsgText" original="Adjust Cash Book">Ajustar Libro de Caja</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52340" trl="Y">
   <value column="MsgText" original="Adjust Inventory">Ajuste Inventario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52341" trl="Y">
   <value column="MsgText" original="Stock Adjustment">Ajuste Existencia</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52342" trl="Y">
   <value column="MsgText" original="Business Partner Sales Details">Detalle de tercero de venta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52343" trl="Y">
   <value column="MsgText" original="Business Partners">Terceros</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52344" trl="Y">
   <value column="MsgText" original="Cash Sales">Venta en Efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52345" trl="Y">
   <value column="MsgText" original="Cash Sales (Customer Compulsory)">Ventas en efectivo (Cliente obligatorio)</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52346" trl="Y">
   <value column="MsgText" original="Cash Sales History">Historia de Ventas en efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52347" trl="Y">
   <value column="MsgText" original="Cash Sales (Discount/Multiple Payments)">Ventas en Efectivo (Descuento/Multiples Pagos)</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52348" trl="Y">
   <value column="MsgText" original="Cash Book History">Historia de Caja PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52349" trl="Y">
   <value column="MsgText" original="Cash Book Report">Reporte de Caja PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52350" trl="Y">
   <value column="MsgText" original="Check/Repair Database Integrity">Chequear/ Reparar Integridad de Base de Datos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52351" trl="Y">
   <value column="MsgText" original="Close Till">Cerrar caja registradora.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52352" trl="Y">
   <value column="MsgText" original="Complete Prepared Order">Completar orden preparada.</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52353" trl="Y">
   <value column="MsgText" original="Create General Payments">Crear Pagos Generales</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52354" trl="Y">
   <value column="MsgText" original="Credit Memo History">Nota de historia de crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52355" trl="Y">
   <value column="MsgText" original="Credit Sales">Ventas a crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52356" trl="Y">
   <value column="MsgText" original="Credit Sales History">Historia de Ventas a crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52357" trl="Y">
   <value column="MsgText" original="Invoke Credit Memo">Invocar Nota Crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52358" trl="Y">
   <value column="MsgText" original="Current Money in Terminal">Cantidad Actual de dinero en la terminal</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52359" trl="Y">
   <value column="MsgText" original="Customer Return History">Historia de retorno de cliente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52360" trl="Y">
   <value column="MsgText" original="Customer Returned Order">Orden de cliente devuelta</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52361" trl="Y">
   <value column="MsgText" original="Customers">Clientes</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52362" trl="Y">
   <value column="MsgText" original="Document History">Historia de documento</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52363" trl="Y">
   <value column="MsgText" original="Dunning Letters">Cartas de morosidad</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52364" trl="Y">
   <value column="MsgText" original="Edit Product Attribute Value">Editar Valor de atributo de producto</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52365" trl="Y">
   <value column="MsgText" original="Fast Moving Items">Artículos de rapido movimiento</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52366" trl="Y">
   <value column="MsgText" original="Generate Commission">Generar Comisión</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52367" trl="Y">
   <value column="MsgText" original="Goods Received Note">Nota de Bienes recibidos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52368" trl="Y">
   <value column="MsgText" original="Goods Received Note History">Historia de Nota de Bienes recibidos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52369" trl="Y">
   <value column="MsgText" original="Goods Returned Note">Nota de bienes devueltos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52370" trl="Y">
   <value column="MsgText" original="Goods Returned Note History">Historia Nota de bienes devueltos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52371" trl="Y">
   <value column="MsgText" original="Inventory History">Hisotria de inventario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52372" trl="Y">
   <value column="MsgText" original="Invoke Customer Returned Order">Invocar orden devuelta de cliente</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52373" trl="Y">
   <value column="MsgText" original="Logout">Salida del Aplicativo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52374" trl="Y">
   <value column="MsgText" original="Open Cash Drawer">Abrir cajón de efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52375" trl="Y">
   <value column="MsgText" original="Order History">Historia de orden</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52376" trl="Y">
   <value column="MsgText" original="Payment Allocations History">Historia de asignaciones de pagos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52377" trl="Y">
   <value column="MsgText" original="Payment Term">Término de Pago</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52378" trl="Y">
   <value column="MsgText" original="Performance Analysis Report">Reporte de analisis de desempeño</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52379" trl="Y">
   <value column="MsgText" original="Preferences">Preferencia</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52380" trl="Y">
   <value column="MsgText" original="Prepare Order">Preparar Orden</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52381" trl="Y">
   <value column="MsgText" original="Prepared Order History">Preparar Historia de Orden</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52382" trl="Y">
   <value column="MsgText" original="Products">Productos</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52383" trl="Y">
   <value column="MsgText" original="Quick Cash Sales">Ventas rapidas en efectivo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52384" trl="Y">
   <value column="MsgText" original="Role">Rol</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52385" trl="Y">
   <value column="MsgText" original="Sales Report per Terminal">Reporte de ventas por terminal</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52386" trl="Y">
   <value column="MsgText" original="Settle Payment on a Credit Sales">Establecer pagos en una venta a crédito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52388" trl="Y">
   <value column="MsgText" original="Stock">Inventario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52389" trl="Y">
   <value column="MsgText" original="Stock Movement">Movimiento de Inventario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52390" trl="Y">
   <value column="MsgText" original="Tax">Impuesto</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52391" trl="Y">
   <value column="MsgText" original="Users">Usuarios</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52392" trl="Y">
   <value column="MsgText" original="Vendors">Proveedores</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52393" trl="Y">
   <value column="MsgText" original="Last Generated Commission">Ultima Comisión Generada</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52394" trl="Y">
   <value column="MsgText" original="Licensing">Autorizando</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52395" trl="Y">
   <value column="MsgText" original="Status">Estado</value>
@@ -4790,131 +4790,131 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52396" trl="Y">
   <value column="MsgText" original="Stock in Hand">Inventario Disponible</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52397" trl="Y">
   <value column="MsgText" original="Stock Inquiry">Consulta de Inventario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52398" trl="Y">
   <value column="MsgText" original="Stock Movement">Movimiento de Inventario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52399" trl="Y">
   <value column="MsgText" original="Stock Movement Report">Reporte de Moviemiento de inventario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52400" trl="Y">
   <value column="MsgText" original="Submit">Enviar</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52401" trl="Y">
   <value column="MsgText" original="Summary By Period">Resumen por Periodo</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52402" trl="Y">
   <value column="MsgText" original="Switch to Paging">Cambiar a paginado</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52403" trl="Y">
   <value column="MsgText" original="Posterita POS">Posterita PDV</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52404" trl="Y">
   <value column="MsgText" original="Tax Credit">Crédito de Impuesto</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52405" trl="Y">
   <value column="MsgText" original="Tax Due">Impuesto Debido</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52406" trl="Y">
   <value column="MsgText" original="Textile Products Only">Solo Productos Textiles</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52407" trl="Y">
   <value column="MsgText" original="The Cart has">El Carrito tiene</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52408" trl="Y">
   <value column="MsgText" original="Till Balance Entered">Balance ingresado de caja resgistradora</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52409" trl="Y">
   <value column="MsgText" original="Till Mgt">Administración de Caja Registradora</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52410" trl="Y">
   <value column="MsgText" original="Till No">Número de Caja Registradora</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52411" trl="Y">
   <value column="MsgText" original="h">h</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52412" trl="Y">
   <value column="MsgText" original="m">m</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52413" trl="Y">
   <value column="MsgText" original="To">A</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52414" trl="Y">
   <value column="MsgText" original="Today">Hoy</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52415" trl="Y">
   <value column="MsgText" original="Total">Total</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52416" trl="Y">
   <value column="MsgText" original="Total Price">Precio total</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52417" trl="Y">
   <value column="MsgText" original="Trade Revenue">Ingreso de comercio</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52418" trl="Y">
   <value column="MsgText" original="Unallocated Payments">Pagos no asignados</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52419" trl="Y">
   <value column="MsgText" original="Update Details">Actualizar Detalles</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52420" trl="Y">
   <value column="MsgText" original="User">Usuario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52421" trl="Y">
   <value column="MsgText" original="User's Details">Detalles de Usuario</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52422" trl="Y">
   <value column="MsgText" original="Information">Información</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52423" trl="Y">
   <value column="MsgText" original="VAT">VAT</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52424" trl="Y">
   <value column="MsgText" original="Vendor Details">Detalles de proveedor</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52425" trl="Y">
   <value column="MsgText" original="Vendor Ref">Referencia de proveedor</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52426" trl="Y">
   <value column="MsgText" original="Vendors">Proveedor</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52427" trl="Y">
   <value column="MsgText" original="View">Vista</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52428" trl="Y">
   <value column="MsgText" original="View Attributes">Vista de atributos</value>
@@ -4922,35 +4922,35 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52429" trl="Y">
   <value column="MsgText" original="View By">Vista por</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52430" trl="Y">
   <value column="MsgText" original="View Info">Información de vista</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52431" trl="Y">
   <value column="MsgText" original="View Product Cart">Ver productos en carrito</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52432" trl="Y">
   <value column="MsgText" original="View Report">Vista de Reporte</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52433" trl="Y">
   <value column="MsgText" original="View Role">Ver rol</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52434" trl="Y">
   <value column="MsgText" original="View Vendor">Ver proveedor</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52435" trl="Y">
   <value column="MsgText" original="Year">Año</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52436" trl="Y">
   <value column="MsgText" original="Yes">Si</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="52437" trl="Y">
   <value column="MsgText" original="Price(excl. VAT)">Price(excluido impuesto al valor agregado )</value>
@@ -4970,47 +4970,47 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52441" trl="Y">
   <value column="MsgText" original="Price List">Lista de Precios</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52442" trl="Y">
   <value column="MsgText" original="Help">Ayuda</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52443" trl="Y">
   <value column="MsgText" original="List Price">Precio de Lista</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52444" trl="Y">
   <value column="MsgText" original="Standard Price">Precio Estándar</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52445" trl="Y">
   <value column="MsgText" original="Limit Price">Precio Límite</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52446" trl="Y">
   <value column="MsgText" original="Tax Incl">Impuesto Incluido</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52447" trl="Y">
   <value column="MsgText" original="Tax Excl">Impuesto Excluido</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52448" trl="Y">
   <value column="MsgText" original="Type of Price List">Tipo de Lista de Precios</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52449" trl="Y">
   <value column="MsgText" original="Purchase">Compra</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52450" trl="Y">
   <value column="MsgText" original="Sales">Ventas</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52451" trl="Y">
   <value column="MsgText" original="Present for Product">Presente para el Producto</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52452" trl="Y">
   <value column="MsgText" original="Organisation">Organización</value>
@@ -5070,90 +5070,90 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="52467" trl="Y">
   <value column="MsgText" original="Currency">Moneda</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52468" trl="Y">
   <value column="MsgText" original="Delete Price On Price List">Borrar precio en la lista de precios</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52470" trl="Y">
   <value column="MsgText" original="HTML">HTML</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52471" trl="Y">
   <value column="MsgText" original="PDF">PDF</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52472" trl="Y">
   <value column="MsgText" original="CSV">CSV</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52473" trl="Y">
   <value column="MsgText" original="Sales Report">Reporte de Ventas</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52474" trl="Y">
   <value column="MsgText" original="Best Selling Items">Artículos Más Vendidos Items</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52475" trl="Y">
   <value column="MsgText" original="Stock Sales Report">Reporte de Existencias de Ventas</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52476" trl="Y">
   <value column="MsgText" original="Stock Transfer">Transferencia de Existencias</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52477" trl="Y">
   <value column="MsgText" original="Inventory Move">Movimiento de Inventario</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52478" trl="Y">
   <value column="MsgText" original="Move Confirmation">Confirmación de Movimiento</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52479" trl="Y">
   <value column="MsgText" original="Barcode Printing">Impresión Código Barras</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52480" trl="Y">
   <value column="MsgText" original="Base Price List">Lista de Precios Base</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52481" trl="Y">
   <value column="MsgText" original="Delete Old Records">Borrar Registros Antiguos</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52482" trl="Y">
   <value column="MsgText" original="Sales Price List">Lista de Precios de Venta</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52483" trl="Y">
   <value column="MsgText" original="Purchase Price List">Lista de Precios de Compra</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52484" trl="Y">
   <value column="MsgText" original="Terminal">Terminal</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52485" trl="Y">
   <value column="MsgText" original="Version">Versión</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52486" trl="Y">
   <value column="MsgText" original="Reports">Reportes</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52487" trl="Y">
   <value column="MsgText" original="Create Price List">Crear Lista de Precios</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="52488" trl="Y">
-  <value column="MsgText" original="Enforce Discount Upto Limit Price">Forzar Descuento hasta el Precio Límite</value>
+  <value column="MsgText" original="Enforce Discount up to Limit Price">Forzar Descuento hasta el Precio Límite</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="52489" trl="Y">
-  <value column="MsgText" original="Enforce Overide Limit Price">Forzar Sobreescribe Precio Límite</value>
+  <value column="MsgText" original="Enforce Override Limit Price">Forzar Sobreescribe Precio Límite</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="52490" trl="Y">
@@ -5217,11 +5217,11 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
   <value column="MsgTip" original=""/>
  </row>
  <row id="53009" trl="Y">
-  <value column="MsgText" original="This is a system or client parameter, you can't save it as organization parameter">Este es un parámetro de grupo empresarial o sistema, no se puede guardar como un parámetro de organización.</value>
+  <value column="MsgText" original="This is a system or tenant parameter, you can't save it as organization parameter">Este es un parámetro de grupo empresarial o sistema, no se puede guardar como un parámetro de organización.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="53010" trl="Y">
-  <value column="MsgText" original="This is a system parameter, you can't save it as client parameter">Este es un parámetro del sistema, no se puede guardar como parámetro de grupo empresarial</value>
+  <value column="MsgText" original="This is a system parameter, you can't save it as tenant parameter">Este es un parámetro del sistema, no se puede guardar como parámetro de grupo empresarial</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="53011" trl="Y">
@@ -5242,7 +5242,7 @@ Compruebe el registro de errores y el formato del archivo Accounting*.cvs - Ning
  </row>
  <row id="53015" trl="Y">
   <value column="MsgText" original="Release Due For">Liberar Por-Vencer</value>
-  <value column="MsgTip" original="Indicate tha a supply order should be released. if it is a draft order , it must also be approved.">Indica que una orden de suministro debe ser liberada si está en estado brorador, debe ser aprobada.</value>
+  <value column="MsgTip" original="Indicates that a supply order should be released. if it is a draft order , it must also be approved.">Indica que una orden de suministro debe ser liberada si está en estado brorador, debe ser aprobada.</value>
  </row>
  <row id="53016" trl="Y">
   <value column="MsgText" original="Release Past Due For">Liberar Vencida</value>
@@ -5311,8 +5311,8 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original="Do not exist Transit Warehouse to this Organization">No existe almacén tránsito para esta organización</value>
  </row>
  <row id="53036" trl="Y">
-  <value column="MsgText" original="Org targer do not linked to BPartner">Org destino no enlazada a un Tercero</value>
-  <value column="MsgTip" original="Org targer do not linked to BPartner">Org destino no enlazada a un Tercero</value>
+  <value column="MsgText" original="Org target is not  linked to BPartner">Org destino no enlazada a un Tercero</value>
+  <value column="MsgTip" original="Org target is not linked to BPartner">Org destino no enlazada a un Tercero</value>
  </row>
  <row id="53038" trl="Y">
   <value column="MsgText" original="Check Missing Translation Records">Chequear Traducciones Faltantes</value>
@@ -5428,11 +5428,11 @@ Por favor contacte al ADMINISTRADOR.</value>
  </row>
  <row id="53079" trl="Y">
   <value column="MsgText" original="Unknown MRP Error">Error MRP Desconocido</value>
-  <value column="MsgTip" original="Indicates that there was an unclassified error durring MRP process">Indica que hubo un error sin clasificar durante el proceso de MRP</value>
+  <value column="MsgTip" original="Indicates that there was an unclassified error during MRP process">Indica que hubo un error sin clasificar durante el proceso de MRP</value>
  </row>
  <row id="53080" trl="Y">
   <value column="MsgText" original="Cannot Create Document">No puedo crear documento</value>
-  <value column="MsgTip" original="Indicates that there was an error durring document creation">Indica que hubo un error durante la creación del documento</value>
+  <value column="MsgTip" original="Indicates that there was an error during document creation">Indica que hubo un error durante la creación del documento</value>
  </row>
  <row id="53081" trl="Y">
   <value column="MsgText" original="No UOM conversion found">No se encontró conversión de Unidad de Medida</value>
@@ -5443,8 +5443,8 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="53083" trl="Y">
-  <value column="MsgText" original="Client Accounting is not enabled">Contabilidad en cliente no habilitada</value>
-  <value column="MsgTip" original="In order to run this process you need to enable client accounting, this can be done in window System Configurator, setting the parameter CLIENT_ACCOUNTING to [I]mmediate or [Q]ueue">Para ejecutar este proceso debe habilitar la contabilidad en cliente, esto se hace en la ventana Configurador del Sistema, fijando el parámetro CLIENT_ACCOUNTING en [I] Inmediato, o [Q] En cola</value>
+  <value column="MsgText" original="Tenant Accounting is not enabled">Contabilidad en cliente no habilitada</value>
+  <value column="MsgTip" original="In order to run this process you need to enable tenant accounting, this can be done in window System Configurator, setting the parameter CLIENT_ACCOUNTING to [I]mmediate or [Q]ueue">Para ejecutar este proceso debe habilitar la contabilidad en cliente, esto se hace en la ventana Configurador del Sistema, fijando el parámetro CLIENT_ACCOUNTING en [I] Inmediato, o [Q] En cola</value>
  </row>
  <row id="53084" trl="Y">
   <value column="MsgText" original="Not exists a Business Partner linked for Organization">No existe un tercero asociado para la organización</value>
@@ -5472,7 +5472,7 @@ Por favor contacte al ADMINISTRADOR.</value>
  </row>
  <row id="53090" trl="Y">
   <value column="MsgText" original="Must be a positive number!">Debe ser un número positivo</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="53091" trl="Y">
   <value column="MsgText" original="Remember Me">Recordar mis datos</value>
@@ -5579,7 +5579,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="53134" trl="Y">
-  <value column="MsgText" original="zip - 2Pack zip file">zip - Archivo zip 2Pack</value>
+  <value column="MsgText" original="zip - 2Pack zip file (not Official Dictionary)">zip - Archivo zip 2Pack</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="53135" trl="Y">
@@ -5868,11 +5868,11 @@ Por favor contacte al ADMINISTRADOR.</value>
  </row>
  <row id="200075" trl="Y">
   <value column="MsgText" original="Passwords for all tenants using ({0}) as email have been reset">La contraseña para todos los usuarios usando ({0}) como correo se ha reiniciado</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="200076" trl="Y">
   <value column="MsgText" original="The new password is now valid in: {0}">La nueva contraseña es válida ahora en: {0}</value>
-  <value column="MsgTip" original=" "> </value>
+  <value column="MsgTip" original=""> </value>
  </row>
  <row id="200077" trl="Y">
   <value column="MsgText" original="Failed to create payment">Falló la creación del pago</value>
@@ -6159,7 +6159,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200157" trl="Y">
-  <value column="MsgText" original="If you change the client language is recommended that you run the Synchronize Doc Translation after that">Si cambia el lenguaje de cliente se recomienda que ejecute el proceso Sincronizar Traducción Documentos</value>
+  <value column="MsgText" original="If you change the tenant language is recommended that you run the Synchronize Doc Translation after that">Si cambia el lenguaje de cliente se recomienda que ejecute el proceso Sincronizar Traducción Documentos</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200158" trl="Y">
@@ -6295,7 +6295,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200196" trl="Y">
-  <value column="MsgText" original="Created index succesfully">Índice creado exitosamente</value>
+  <value column="MsgText" original="Created index successfully">Índice creado exitosamente</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200197" trl="Y">
@@ -6507,7 +6507,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200264" trl="Y">
-  <value column="MsgText" original="Exceed maximum number of running jobs allowed per client">Se excedió el máximo número de tareas en segundo plano permitidas por grupo empresarial</value>
+  <value column="MsgText" original="Exceed maximum number of running jobs allowed per tenant">Se excedió el máximo número de tareas en segundo plano permitidas por grupo empresarial</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200265" trl="Y">
@@ -6627,7 +6627,95 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200370" trl="Y">
-  <value column="MsgText" original="Right click and copy link for a permanent link to this record.">Click derecho y copiar enlace para obtener un enlace permanente a este registro.</value>
+  <value column="MsgText" original="Click to copy a permanent link to this record">Click derecho y copiar enlace para obtener un enlace permanente a este registro.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200371" trl="Y">
+  <value column="MsgText" original="Password matches one of %1$s previous passwords.">La contraseña coincide con una de las %1$s contraseñas anteriores.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200372" trl="Y">
+  <value column="MsgText" original="Password contains the dictionary word '%1$s'.">La contraseña contiene la palabra del diccionario '%1$s'.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200373" trl="Y">
+  <value column="MsgText" original="Password contains the reversed dictionary word '%1$s'.">La contraseña contiene la palabra del diccionario '%1$s' invertida.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200374" trl="Y">
+  <value column="MsgText" original="Password matches the illegal pattern '%1$s'.">La contraseña coincide con el patrón no permitido '%1$s'.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200375" trl="Y">
+  <value column="MsgText" original="Password must match pattern '%1$s'.">La contraseña debe coincidir con el patrón '%1$s'.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200376" trl="Y">
+  <value column="MsgText" original="Password contains the illegal character '%1$s'.">La contraseña contiene el carácter no permitido '%1$s'.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200377" trl="Y">
+  <value column="MsgText" original="Password contains the illegal character '%1$s'.">La contraseña contiene el carácter no permitido '%1$s'.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200378" trl="Y">
+  <value column="MsgText" original="Password contains the illegal QWERTY sequence '%1$s'.">La contraseña contiene la secuencia QWERTY no permitida '%1$s'.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200379" trl="Y">
+  <value column="MsgText" original="Password contains the illegal alphabetical sequence '%1$s'.">La contraseña contiene la secuencia alfabética no permitida '%1$s'.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200380" trl="Y">
+  <value column="MsgText" original="Password contains the illegal numerical sequence '%1$s'.">La contraseña contiene la secuencia numérica no permitida '%1$s'.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200381" trl="Y">
+  <value column="MsgText" original="Password contains the user id '%1$s'.">La contraseña contiene el ID de usuario '%1$s'.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200382" trl="Y">
+  <value column="MsgText" original="Password contains the user id '%1$s' in reverse.">La contraseña contiene el ID de usuario '%1$s' invertido.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200383" trl="Y">
+  <value column="MsgText" original="Password cannot contain whitespace characters.">La contraseña no puede contener espacios en blanco.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200384" trl="Y">
+  <value column="MsgText" original="Password must contain at least %1$s uppercase characters.">La contraseña debe contener al menos %1$s caracteres en mayúscula.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200385" trl="Y">
+  <value column="MsgText" original="Password must contain at least %1$s lowercase characters.">La contraseña debe contener al menos %1$s caracteres en minúscula.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200386" trl="Y">
+  <value column="MsgText" original="Password must contain at least %1$s alphabetical characters.">La contraseña debe contener al menos %1$s caracteres alfabéticos.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200387" trl="Y">
+  <value column="MsgText" original="Password must contain at least %1$s digit characters.">La contraseña debe contener al menos %1$s dígitos.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200388" trl="Y">
+  <value column="MsgText" original="Password must contain at least %1$s special characters.">La contraseña debe contener al menos %1$s caracteres especiales.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200389" trl="Y">
+  <value column="MsgText" original="Password matches %1$s of %3$s character rules, but %2$s are required.">La contraseña cumple %1$s de %3$s reglas de caracteres, pero se requieren %2$s.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200390" trl="Y">
+  <value column="MsgText" original="Password cannot be the same as your %1$s password.">La contraseña no puede ser igual a su contraseña %1$s anterior.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200391" trl="Y">
+  <value column="MsgText" original="Password must be no more than %2$s characters in length.">La contraseña no debe tener más de %2$s caracteres.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200392" trl="Y">
+  <value column="MsgText" original="Password must be at least %1$s characters in length.">La contraseña debe tener al menos %1$s caracteres.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200393" trl="Y">
@@ -6680,6 +6768,10 @@ Por favor contacte al ADMINISTRADOR.</value>
  </row>
  <row id="200414" trl="Y">
   <value column="MsgText" original="@#System_Name@ Trace Information">Información Auditoría @#System_Name@</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200415" trl="Y">
+  <value column="MsgText" original="You can't reverse a payment that have been reconciled">No puede revertir un pago que ha sido conciliado.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200417" trl="Y">
@@ -6806,6 +6898,10 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgText" original="Credit Memo already exists">La nota crédito ya existe</value>
   <value column="MsgTip" original=""/>
  </row>
+ <row id="200478" trl="Y">
+  <value column="MsgText" original="Costing level can't be changed if there are product cost details created with current costing level">El nivel de costeo no puede cambiarse si hay detalles de costo de producto creados con el nivel de costeo actual.</value>
+  <value column="MsgTip" original=""/>
+ </row>
  <row id="200480" trl="Y">
   <value column="MsgText" original="IBAN is invalid">IBAN no es válido</value>
   <value column="MsgTip" original=""/>
@@ -6843,11 +6939,11 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200493" trl="Y">
-  <value column="MsgText" original="this Client and Organization">este Grupo Empresarial y Organización</value>
+  <value column="MsgText" original="this Tenant and Organization">este Grupo Empresarial y Organización</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200494" trl="Y">
-  <value column="MsgText" original="all Organizations of this Client">todas las Organizaciones de este Grupo Empresarial</value>
+  <value column="MsgText" original="all Organizations of this Tenant">todas las Organizaciones de este Grupo Empresarial</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200495" trl="Y">
@@ -6919,11 +7015,11 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200522" trl="Y">
-  <value column="MsgText" original="AdminUserEmail is required">Correo Electrónico Usuario Administrador es requerido</value>
+  <value column="MsgText" original="Admin User Email is required">Correo Electrónico Usuario Administrador es requerido</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200523" trl="Y">
-  <value column="MsgText" original="AdminUserEmail">Correo Electrónico Usuario Administrador</value>
+  <value column="MsgText" original="Admin User Email">Correo Electrónico Usuario Administrador</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200524" trl="Y">
@@ -6931,15 +7027,15 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200525" trl="Y">
-  <value column="MsgText" original="NormalUserEmail is required">Correo Electrónico Usuario Normal es requerido</value>
+  <value column="MsgText" original="Normal User Email is required">Correo Electrónico Usuario Normal es requerido</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200526" trl="Y">
-  <value column="MsgText" original="NormalUserEmail">Correo Electrónico Usuario Normal</value>
+  <value column="MsgText" original="Normal User Email">Correo Electrónico Usuario Normal</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200527" trl="Y">
-  <value column="MsgText" original="CoaFile">Archivo de Plan de Cuentas</value>
+  <value column="MsgText" original="CoA File">Archivo de Plan de Cuentas</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200528" trl="Y">
@@ -6947,7 +7043,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200529" trl="Y">
-  <value column="MsgText" original="Cannot read CoaFile">No puedo leer el archivo de plan de cuentas</value>
+  <value column="MsgText" original="Cannot read CoA File">No puedo leer el archivo de plan de cuentas</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200530" trl="Y">
@@ -6959,7 +7055,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200532" trl="Y">
-  <value column="MsgText" original="Create client failed">Falló la creación del grupo empresarial</value>
+  <value column="MsgText" original="Create tenant failed">Falló la creación del grupo empresarial</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200535" trl="Y">
@@ -6975,7 +7071,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200539" trl="Y">
-  <value column="MsgText" original="No OrderLine">No Línea de Orden</value>
+  <value column="MsgText" original="No Order Line">No Línea de Orden</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200543" trl="Y">
@@ -6999,7 +7095,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200548" trl="Y">
-  <value column="MsgText" original="FactLine DR not created">Línea Contable Débito no creada</value>
+  <value column="MsgText" original="Fact Line DR not created">Línea Contable Débito no creada</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200549" trl="Y">
@@ -7007,7 +7103,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200550" trl="Y">
-  <value column="MsgText" original="FactLine CR not created">Línea Contable Crédito no creada</value>
+  <value column="MsgText" original="Fact Line CR not created">Línea Contable Crédito no creada</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200553" trl="Y">
@@ -7035,7 +7131,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200560" trl="Y">
-  <value column="MsgText" original="DocumentType unknown">Tipo de Documento desconocido</value>
+  <value column="MsgText" original="Document Type unknown">Tipo de Documento desconocido</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200563" trl="Y">
@@ -7107,7 +7203,7 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200581" trl="Y">
-  <value column="MsgText" original="Share search filter with all users">Compartir filtro de búsqueda con todos los usuarios</value>
+  <value column="MsgText" original="Share with all users">Compartir filtro de búsqueda con todos los usuarios</value>
   <value column="MsgTip" original=""/>
  </row>
  <row id="200592" trl="Y">
@@ -7551,13 +7647,973 @@ Por favor contacte al ADMINISTRADOR.</value>
   <value column="MsgText" original="This product is being used as a component in an active BOM. Please remove from BOM or inactivate BOM before marking this product as inactive.">Este producto está siendo usado como un componente en una LDM activa.  Por favor remuévalo de la LDM o inactive la LDM antes de marcar el producto como inactivo.</value>
   <value column="MsgTip" original=""/>
  </row>
+ <row id="200725" trl="Y">
+  <value column="MsgText" original="The date on line {0} is not in the same period as header''s date">La fecha en la línea {0} no está en el mismo período que la fecha del encabezado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200726" trl="Y">
+  <value column="MsgText" original="Select a color">Seleccionar color</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200727" trl="Y">
+  <value column="MsgText" original="Erase">Borrar</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200728" trl="Y">
+  <value column="MsgText" original="Color Picker">Selector de Color</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200731" trl="Y">
+  <value column="MsgText" original="Only one completed RfQ Response found">Solo se encontró una Respuesta de RfQ completada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200732" trl="Y">
+  <value column="MsgText" original="Production has already been created: {0}">La producción ya ha sido creada: {0}</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200733" trl="Y">
+  <value column="MsgText" original="Copy SELECT">Copiar SELECT</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200734" trl="Y">
+  <value column="MsgText" original="Click to copy a SELECT SQL query pointing to this record">Haga clic para copiar una consulta SQL SELECT apuntando a este registro.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200735" trl="Y">
+  <value column="MsgText" original="No posting if not matched to Shipment">No contabilizar si no coincide con el Despacho.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200736" trl="Y">
+  <value column="MsgText" original="Purchase Order not convertible - {0}">Orden de Compra no convertible - {0}</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200737" trl="Y">
+  <value column="MsgText" original="Failed to create reversal entry for ACCTTYPE_PPVOffset">Falló la creación del asiento de reversión para ACCTTYPE_PPVOffset.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200738" trl="Y">
+  <value column="MsgText" original="Document Attached">Documento Adjunto</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200739" trl="Y">
+  <value column="MsgText" original="Attach Error">Error al Adjuntar</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200740" trl="Y">
+  <value column="MsgText" original="Assistant">Asistente</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200741" trl="Y">
+  <value column="MsgText" original="Selected Items">Elementos Seleccionados</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200744" trl="Y">
+  <value column="MsgText" original="Drill Assistant">Asistente de Análisis</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200745" trl="Y">
+  <value column="MsgText" original="Drill Column">Columna de Análisis</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200749" trl="Y">
+  <value column="MsgText" original="&lt;html&gt;There was an error previewing this file.&lt;/html&gt;" xml:space="preserve"><![CDATA[<html>There was an error previewing this file.</html>]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200750" trl="Y">
+  <value column="MsgText" original="Run it again with new parameters">Ejecutarlo nuevamente con nuevos parámetros</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200752" trl="Y">
+  <value column="MsgText" original="Copy Report">Copiar Reporte</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200753" trl="Y">
+  <value column="MsgText" original="You selected the Copy Report function. It creates a brand new Print Format which you can modify, update, change. This is usually used for improving reporting to get additional information views&lt;br /&gt;&#10;Print Format Name:" xml:space="preserve"><![CDATA[Ha seleccionado la función Copiar Reporte. Esta crea un nuevo formato de impresión que puede modificar, actualizar y cambiar. Se suele utilizar para mejorar los informes y obtener vistas de información adicionales.<br />
+Nombre del formato de impresión:]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200754" trl="Y">
+  <value column="MsgText" original="You selected the New Report function. It creates a brand new Print Format which you can modify, update, change. This is usually used for improving reporting to get additional information views&lt;br /&gt;&#10;Print Format Name:">Ha seleccionado la función Nuevo Reporte. Esta crea un nuevo formato de impresión que puede modificar, actualizar y cambiar. Se suele utilizar para mejorar los informes y obtener vistas de información adicionales.
+Nombre del formato de impresión:</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200755" trl="Y">
+  <value column="MsgText" original="Create Print Format Copy">Crear Copia del Formato de Impresión</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200756" trl="Y">
+  <value column="MsgText" original="Create New Print Format">Crear Nuevo Formato de Impresión</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200757" trl="Y">
+  <value column="MsgText" original="Business Partner is different from Invoice - Business Partner">El Tercero es diferente al Tercero de la Factura.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200758" trl="Y">
+  <value column="MsgText" original="Business Partner is different from Order - Business Partner">El Tercero es diferente al Tercero de la Orden.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200759" trl="Y">
+  <value column="MsgText" original="Type to Search or Create">Escribir para Buscar o Crear</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200761" trl="Y">
+  <value column="MsgText" original="Cannot find Drill Across for Column in Tables.">No se puede encontrar Análisis Cruzado para la Columna en las Tablas.</value>
+  <value column="MsgTip" original="You can enable Drill Across in Application Dictionary as System User in the Table window.">Puede habilitar Análisis Cruzado en el Diccionario de Aplicación como usuario System en la ventana Tabla y Columna.</value>
+ </row>
+ <row id="200762" trl="Y">
+  <value column="MsgText" original="Cannot find any valid Drill Rules for the selected Column.">No se encontraron Reglas de Análisis válidas para la Columna seleccionada.</value>
+  <value column="MsgTip" original="You can define new definitions in Drill Rule window, then run the 'Validate' process.">Puede definir nuevas reglas en la ventana Análisis Cruzado.</value>
+ </row>
+ <row id="200763" trl="Y">
+  <value column="MsgText" original="Do you want to delete the record?&lt;br /&gt;&#10;Please confirm by typing: &lt;b&gt;{0}&lt;b/&gt;" xml:space="preserve"><![CDATA[¿Realmente quiere borrar el registro?<br />
+Por favor confirme escribiendo: <b>{0}<b/>]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200764" trl="Y">
+  <value column="MsgText" original="Do you want to delete {0} (selected) items?&lt;br /&gt;&#10;Please confirm by typing: &lt;b&gt;{1}&lt;b/&gt;" xml:space="preserve"><![CDATA[¿Realmente quiere borrar {0} registros seleccionados?<br />
+Please confirm by typing: <b>{1}<b/>]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200765" trl="Y">
+  <value column="MsgText" original="Entered Value Is Not Correct">El valor ingresado no es correcto.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200766" trl="Y">
+  <value column="MsgText" original="Drill Key Parameter is Not Set">El parámetro clave de análisis no está configurado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200767" trl="Y">
+  <value column="MsgText" original="Fill Mandatory Drill Rule Parameters">Complete los parámetros obligatorios de la Regla de Análisis.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200769" trl="Y">
+  <value column="MsgText" original="Payment and Deposit Batch both should not be entered">No se deben ingresar ambos: Pago y Lote de Depósito.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200770" trl="Y">
+  <value column="MsgText" original="Deposit Batch is not Processed">El Lote de Depósito no está Procesado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200772" trl="Y">
+  <value column="MsgText" original="Fail to get Payments Into Batch amount">Falló al obtener el monto de Pagos en el Lote.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200773" trl="Y">
+  <value column="MsgText" original="Payment is already Reconciled ">El pago ya está Conciliado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200781" trl="Y">
+  <value column="MsgText" original="No Data Available">No hay Datos Disponibles.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200784" trl="Y">
+  <value column="MsgText" original="The user has no access">El usuario no tiene acceso.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200785" trl="Y">
+  <value column="MsgText" original="User not found">Usuario no encontrado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200786" trl="Y">
+  <value column="MsgText" original="Tenant not specified at login">Empresa no especificada al ingresar.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200787" trl="Y">
+  <value column="MsgText" original="User not specified at login">Usuario no especificado al ingresar.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200788" trl="Y">
+  <value column="MsgText" original="Tenant {0} not found">Empresa {0} no encontrada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200789" trl="Y">
+  <value column="MsgText" original="Label / Tag">Etiqueta / Marca</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200790" trl="Y">
+  <value column="MsgText" original="After {0}">Después de {0}</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200791" trl="Y">
+  <value column="MsgText" original="Before {0}">Antes de {0}</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200792" trl="Y">
+  <value column="MsgText" original="On {0}">El {0}</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200793" trl="Y">
+  <value column="MsgText" original="Apply">Aplicar</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200794" trl="Y">
+  <value column="MsgText" original="Current Year Months">Meses del Año Actual</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200795" trl="Y">
+  <value column="MsgText" original="Current Year Quarters">Trimestres del Año Actual</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200796" trl="Y">
+  <value column="MsgText" original="Range">Rango</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200797" trl="Y">
+  <value column="MsgText" original="End Date must be after Start Date">La Fecha Final debe ser posterior a la Fecha Inicial.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200798" trl="Y">
+  <value column="MsgText" original="{0} {1,choice,1#|1&lt;{1}}{1,choice,1#Year|1&lt; Years}" xml:space="preserve"><![CDATA[{0} {1,choice,1#|1<{1}}{1,choice,1#Año|1< Años}]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200799" trl="Y">
+  <value column="MsgText" original="{0} {1,choice,1#|1&lt;{1}}{1,choice,1#Quarter|1&lt; Quarters}" xml:space="preserve"><![CDATA[{0} {1,choice,1#|1<{1}}{1,choice,1#Trimestre|1< Trimestres}]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200800" trl="Y">
+  <value column="MsgText" original="{0} {1,choice,1#|1&lt;{1}}{1,choice,1#Month|1&lt; Months}" xml:space="preserve"><![CDATA[{0} {1,choice,1#|1<{1}}{1,choice,1#Mes|1< Meses}]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200801" trl="Y">
+  <value column="MsgText" original="{0} {1,choice,1#|1&lt;{1}}{1,choice,1#Week|1&lt; Weeks}" xml:space="preserve"><![CDATA[{0} {1,choice,1#|1<{1}}{1,choice,1#Semana|1< Semanas}]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200802" trl="Y">
+  <value column="MsgText" original="{0} {1,choice,1#|1&lt;{1}}{1,choice,1#Day|1&lt; Days}" xml:space="preserve"><![CDATA[{0} {1,choice,1#|1<{1}}{1,choice,1#Día|1< Días}]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200804" trl="Y">
+  <value column="MsgText" original="Exclude selected values">Excluir valores seleccionados</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200805" trl="Y">
+  <value column="MsgText" original="Include selected values">Incluir valores seleccionados</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200806" trl="Y">
+  <value column="MsgText" original="Your text is too long and exceed maximum size ({0} / {1}) ; please reduce it before proceeding">Su texto es demasiado largo y supera el tamaño máximo ({0} / {1}); por favor redúzcalo antes de continuar.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200807" trl="Y">
+  <value column="MsgText" original="You'll lose all your unsaved changes ; proceed?">Perderá todos sus cambios sin guardar. ¿Desea continuar?</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200808" trl="Y">
+  <value column="MsgText" original="Text">Texto</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200809" trl="Y">
+  <value column="MsgText" original="Table">Tabla</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200810" trl="Y">
+  <value column="MsgText" original="Choose Related Record">Elegir Registro Relacionado</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200811" trl="Y">
+  <value column="MsgText" original="{0} recursively contains {1}">{0} contiene recursivamente a {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200812" trl="Y">
+  <value column="MsgText" original="No default BOM for product {0}">No hay LDM predeterminada para el producto {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200813" trl="Y">
+  <value column="MsgText" original="BOM missing for product {0}">Falta la LDM para el producto {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200814" trl="Y">
+  <value column="MsgText" original="BOM {0} for product {1} does not have lines">La LDM {0} para el producto {1} no tiene líneas.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200815" trl="Y">
+  <value column="MsgText" original="Can not reactivate reconciled Payment.">No se puede reactivar un Pago conciliado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200816" trl="Y">
+  <value column="MsgText" original="Expected Value differs from Current Value.&#10;The column {0} in record {1} was customized on {2,date,long} by {3}">El valor esperado difiere del valor actual.
+La columna {0} en el registro {1} fue personalizada el {2,date,long} por {3}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200817" trl="Y">
+  <value column="MsgText" original="The verify migration process cannot be discarded because it has ignored records.">El proceso de verificación de migración no puede descartarse porque tiene registros ignorados.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200818" trl="Y">
+  <value column="MsgText" original="Column View does not exist in database.&#10;The view column {0} was created on {1,date,long} by {2}">La Vista de Columna no existe en la base de datos.
+La columna de vista {0} fue creada el {1,date,long} por {2}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200819" trl="Y">
+  <value column="MsgText" original="A customized record does not exist in the database.&#10;The column {0} was customized on {1,date,long} by {2} in record {3} that no longer exists">Un registro personalizado no existe en la base de datos.
+La columna {0} fue personalizada el {1,date,long} por {2} en el registro {3} que ya no existe.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200820" trl="Y">
+  <value column="MsgText" original="Field {0} not found in tab {1}">Campo {0} no encontrado en la pestaña {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200821" trl="Y">
+  <value column="MsgText" original="Post all Unposted Documents before closing the Period.">Contabilice todos los Documentos sin Contabilizar antes de cerrar el Período.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200822" trl="Y">
+  <value column="MsgText" original="Could not close Period Control because of un-processed Documents:">No se pudo cerrar el Control de Período por Documentos sin procesar:</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200823" trl="Y">
+  <value column="MsgText" original="All Drill Rules in System which have at least one Drill Rule Parameter with a mandatory Process Parameter must have the Show Help field set to value 'Show Help'">Todas las Reglas de Análisis en el Sistema que tengan al menos un Parámetro de Regla de Análisis con un Parámetro de Proceso obligatorio deben tener el campo Mostrar Ayuda configurado con el valor 'Mostrar Ayuda'.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200824" trl="Y">
+  <value column="MsgText" original="Fill mandatory parameters: {0}; Mandatory parameters should be filled in the Process Parameter field of the Dashboard Content.">Complete los parámetros obligatorios: {0}; Los parámetros obligatorios deben estar en el campo Parámetro de Proceso del Contenido del Tablero.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200825" trl="Y">
+  <value column="MsgText" original="zip - SQL Insert scripts zip archive">zip - Archivo zip de scripts de inserción SQL</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200826" trl="Y">
+  <value column="MsgText" original="This Table has no Key Column">Esta Tabla no tiene Columna Clave.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200827" trl="Y">
+  <value column="MsgText" original="UUID Columns must end with suffix _UU">Las Columnas UUID deben terminar con el sufijo _UU.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200828" trl="Y">
+  <value column="MsgText" original="Document Base Type must be unique for the Document Base Type Group.">El Tipo de Documento Base debe ser único para el Grupo de Tipo de Documento Base.</value>
+  <value column="MsgTip" original="A Document Base Type Group Line with this Document Base Type already exists.">A Document Base Type Group Line with this Document Base Type already exists.</value>
+ </row>
+ <row id="200829" trl="Y">
+  <value column="MsgText" original="Please review the definition of Process Parameters">Por favor revise la definición de los Parámetros de Proceso.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200830" trl="Y">
+  <value column="MsgText" original="UUID based table is not compatible with Record_ID">Una tabla basada en UUID no es compatible con Record_ID.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200831" trl="Y">
+  <value column="MsgText" original="Roles must be different">Los roles deben ser diferentes.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200832" trl="Y">
+  <value column="MsgText" original="Role Copied">Rol Copiado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200833" trl="Y">
+  <value column="MsgText" original="Row count: {0}">Número de filas: {0}</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200834" trl="Y">
+  <value column="MsgText" original="{0} {1}{0,choice,1#|1&lt;s} Ago" xml:space="preserve"><![CDATA[{0} {1}Hace {0,choice,1#|1<s}]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200836" trl="Y">
+  <value column="MsgText" original="View does not exist in database.&#10;The view {0} was created on {1,date,long} by {2}">La Vista no existe en la base de datos.
+La vista {0} fue creada el {1,date,long} por {2}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200837" trl="Y">
+  <value column="MsgText" original="Column View does not exist in dictionary.&#10;The view column {0} exists in database but is not defined in dictionary">La Vista de Columna no existe en el diccionario.
+La columna de vista {0} existe en la base de datos pero no está definida en el diccionario.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200838" trl="Y">
+  <value column="MsgText" original="Record not deleted - there are dependent records in the table {0} for the column {1}">Registro no borrado - hay registros dependientes en la tabla {0} para la columna {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200845" trl="Y">
+  <value column="MsgText" original="Failed to rename the original table">Falló al renombrar la tabla original.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200846" trl="Y">
+  <value column="MsgText" original="Partitioning Method not supported: {0}">Método de Particionamiento no soportado: {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200847" trl="Y">
+  <value column="MsgText" original="Failed to migrate database constraints">Falló al migrar las restricciones de la base de datos.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200848" trl="Y">
+  <value column="MsgText" original="Failed to attach default partition">Falló al adjuntar la partición predeterminada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200849" trl="Y">
+  <value column="MsgText" original="Failed to create the partitioned table">Falló al crear la tabla particionada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200850" trl="Y">
+  <value column="MsgText" original="Failed to migrate data">Falló al migrar los datos.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200851" trl="Y">
+  <value column="MsgText" original="Failed to run post migration data">Falló al ejecutar datos post-migración.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200852" trl="Y">
+  <value column="MsgText" original="At least one partition key column is required">Se requiere al menos una columna clave de partición.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200853" trl="Y">
+  <value column="MsgText" original="Your changes to the current table partition configuration are not supported">Sus cambios a la configuración de partición de tabla actual no son soportados.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200854" trl="Y">
+  <value column="MsgText" original="Table partition is not empty">La partición de tabla no está vacía.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200855" trl="Y">
+  <value column="MsgText" original="Invalid Range Partition Interval">Intervalo de Partición de Rango no válido.</value>
+  <value column="MsgTip" original="The Range Partition Interval has to match the date/number patterns: ^([1-9]{1}[0-9]?)\s+year(?:s)?\s+([1-9]{1}[0-9]?)\s+month(?:s)?$; ^([1-9]{1}[0-9]?)\s+(year)(?:s)?$; ^([1-9]{1}[0-9]?)\s+(month)(?:s)?$; ^[1-9]\d*$">El Intervalo de Partición de Rango no coincide con los patrones de fecha/número: ^([1-9]{1}[0-9]?)\s+year(?:s)?\s+([1-9]{1}[0-9]?)\s+month(?:s)?$; ^([1-9]{1}[0-9]?)\s+(year)(?:s)?$; ^([1-9]{1}[0-9]?)\s+(month)(?:s)?$; ^[1-9]\d*$</value>
+ </row>
+ <row id="200856" trl="Y">
+  <value column="MsgText" original="Range partition key type not supported">Tipo de clave de partición de rango no soportado.</value>
+  <value column="MsgTip" original="Support date and numeric types only">Solamente se soportan tipos fecha y numéricos</value>
+ </row>
+ <row id="200857" trl="Y">
+  <value column="MsgText" original="Database adapter doesn't have table partition support">El adaptador de base de datos no tiene soporte para partición de tablas.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200858" trl="Y">
+  <value column="MsgText" original="Only one partition key column is allowed">Solo se permite una columna clave de partición.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200859" trl="Y">
+  <value column="MsgText" original="Can't detach or re-attach default partition">No se puede desconectar o reconectar la partición predeterminada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200860" trl="Y">
+  <value column="MsgText" original="The partition {0} has been successfully detached from table {1}">La partición {0} fue desconectada exitosamente de la tabla {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200861" trl="Y">
+  <value column="MsgText" original="The partition {0} has been successfully re-attached to table {1}">La partición {0} fue reconectada exitosamente a la tabla {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200862" trl="Y">
+  <value column="MsgText" original="A maximum of two columns can be specified as partition keys. The first column defines the primary partition, and the second (optional) column defines the subpartition">Se pueden especificar máximo dos columnas como claves de partición. La primera columna define la partición primaria y la segunda (opcional) la subpartición.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200863" trl="Y">
+  <value column="MsgText" original="Business Partner has no Location">El Tercero no tiene Dirección.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200864" trl="Y">
+  <value column="MsgText" original="Business Partner Location has no Address">La Dirección del Tercero no tiene una Dirección postal.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200865" trl="Y">
+  <value column="MsgText" original="Organization not saved">Organización no guardada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200866" trl="Y">
+  <value column="MsgText" original="Warehouse not saved">Almacén no guardado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200867" trl="Y">
+  <value column="MsgText" original="Organization Info not saved">Información de Organización no guardada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200868" trl="Y">
+  <value column="MsgText" original="Business Partner not updated">Tercero no actualizado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200869" trl="Y">
+  <value column="MsgText" original="Business Partner - Organization Link created">Enlace Tercero - Organización creado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200870" trl="Y">
+  <value column="MsgText" original="Organization {0} already linked Business Partner {1}">La Organización {0} ya está vinculada al Tercero {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200871" trl="Y">
+  <value column="MsgText" original="Could not reactivate payment: payment is allocated">No se pudo reactivar el pago: el pago está asignado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200872" trl="Y">
+  <value column="MsgText" original="Could not reactivate payment: payment is used on a bank statement line">No se pudo reactivar el pago: el pago está usado en una línea de extracto bancario.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200873" trl="Y">
+  <value column="MsgText" original="Could not reactivate payment: payment is used in a bank transfer">No se pudo reactivar el pago: el pago está usado en una transferencia bancaria.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200874" trl="Y">
+  <value column="MsgText" original="Could not reactivate payment: payment is used on a dunning run line">No se pudo reactivar el pago: el pago está usado en una línea de mora.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200875" trl="Y">
+  <value column="MsgText" original="Could not reactivate payment: payment is used on a request">No se pudo reactivar el pago: el pago está usado en una solicitud.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200876" trl="Y">
+  <value column="MsgText" original="Invalid JSON">JSON no válido.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200878" trl="Y">
+  <value column="MsgText" original="There was an error converting the Excel file to CSV">Hubo un error al convertir el archivo Excel a CSV.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200879" trl="Y">
+  <value column="MsgText" original="CSV Header Column not found -&gt; {0}" xml:space="preserve"><![CDATA[Columna de Encabezado CSV no encontrada -> {0}]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200880" trl="Y">
+  <value column="MsgText" original="The query returns more than one record">La consulta devuelve más de un registro.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200883" trl="Y">
+  <value column="MsgText" original="Could not modify the currency once batch line has been added">No se pudo modificar la moneda una vez que se ha añadido una línea al lote.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200884" trl="Y">
+  <value column="MsgText" original="Multiple currency payments are not allowed in a single batch. All batch line payments must be in the {0} currency">No se permiten pagos en múltiples monedas en un solo lote. Todos los pagos del lote deben estar en la moneda {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200885" trl="Y">
+  <value column="MsgText" original="CSV Alias Header is not valid, it must have the same number of columns as the CSV Header">El encabezado de alias CSV no es válido; debe tener el mismo número de columnas que el encabezado CSV.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200886" trl="Y">
+  <value column="MsgText" original="The entered value does not match the required regular expression: {0}">El valor ingresado no coincide con la expresión regular requerida: {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200887" trl="Y">
+  <value column="MsgText" original="The initial count query timed out, loading records ...">La consulta de conteo inicial expiró, cargando registros...</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200893" trl="Y">
+  <value column="MsgText" original="The data query for the report took too much time to execute (over {0} seconds) exceeding the allowed limit">La consulta de datos del reporte tardó demasiado (más de {0} segundos), superando el límite permitido.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200894" trl="Y">
+  <value column="MsgText" original="The report data exceeds the maximum limit of {0} rows">Los datos del reporte superan el límite máximo de {0} filas.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200895" trl="Y">
+  <value column="MsgText" original="Freeze Column">Fijar Columna</value>
+  <value column="MsgTip" original="Freeze this column to keep it visible when scrolling horizontally">Freeze this column to keep it visible when scrolling horizontally</value>
+ </row>
+ <row id="200896" trl="Y">
+  <value column="MsgText" original="Reset Freeze Column">Restablecer Columna Fija</value>
+  <value column="MsgTip" original="Reset freeze to indicator column (default)">Reset freeze to indicator column (default)</value>
+ </row>
+ <row id="200897" trl="Y">
+  <value column="MsgText" original="Products or charges configured as 'Freight Product' or 'Freight Charge' cannot be added to this order due to the combination of delivery via rule and freight cost rule">Los productos o cargos configurados como 'Producto de Flete' o 'Cargo de Flete' no pueden añadirse a esta orden por la combinación de regla de entrega y regla de costo de flete.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200899" trl="Y">
+  <value column="MsgText" original="Payment Not Allocated">Pago No Asignado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200900" trl="Y">
+  <value column="MsgText" original="Read-only session">Sesión de solo lectura.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200901" trl="Y">
+  <value column="MsgText" original="&lt;h2 style=&quot;text-align: center;&quot;&gt;&#10;   &lt;div style=&quot;{2,choice,-1#color:red;|0#color:gray;|0&lt;color:green;}&quot;&gt;{2,number,#.#}&lt;/div&gt;&#10;&lt;/h2&gt;&#10;&lt;div style=&quot;font-size: small; text-align: center;&quot;&gt;Order Count&lt;/div&gt;&#10;&lt;div style=&quot;font-size: small; color: gray; margin-top: 5px;&quot;&gt;&#10;   Top Year (2002): {1}&#10;&lt;/div&gt;&#10;&lt;div style=&quot;font-size: small; color: gray; margin-top: 5px;&quot;&gt;&#10;   Current Year: {0}&#10;&lt;/div&gt;" xml:space="preserve"><![CDATA[<h2 style="text-align: center;">
+   <div style="{2,choice,-1#color:red;|0#color:gray;|0<color:green;}">{2,number,#.#}</div>
+</h2>
+<div style="font-size: small; text-align: center;">Order Count</div>
+<div style="font-size: small; color: gray; margin-top: 5px;">
+   Top Year (2002): {1}
+</div>
+<div style="font-size: small; color: gray; margin-top: 5px;">
+   Año Actual: {0}
+</div>]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200902" trl="Y">
+  <value column="MsgText" original="Total Sales: {0,number,currency}">Total de Ventas: {0,number,currency}</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200903" trl="Y">
+  <value column="MsgText" original="Back-Date transaction not allowed">No se permiten transacciones con fecha retroactiva.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200904" trl="Y">
+  <value column="MsgText" original="Insufficient Stock Coverage. A shipment should not be allowed if there is insufficient stock before the shipment’s movement date.">Cobertura de Stock Insuficiente. No se debe permitir un despacho si no hay stock suficiente antes de la fecha del movimiento.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200905" trl="Y">
+  <value column="MsgText" original="Account Date cannot be changed">La Fecha Contable no puede cambiarse.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200906" trl="Y">
+  <value column="MsgText" original="Table Attributes">Atributos de Tabla</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200908" trl="Y">
+  <value column="MsgText" original="Login">Ingresar al Sistema</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200909" trl="Y">
+  <value column="MsgText" original="Insufficient Stock Coverage. A reversal of shipment/project issue is required to replenish stock before reversal.">Cobertura de Stock Insuficiente. Se requiere una reversión del despacho/emisión de proyecto para reponer el stock antes de la reversión.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200911" trl="Y">
+  <value column="MsgText" original="Drag and Drop here to delete recent item">Arrastre y suelte aquí para eliminar el elemento reciente.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200912" trl="Y">
+  <value column="MsgText" original="The workflow configuration is incomplete, the responsible &quot;{0}&quot; must be overridden in tenant">La configuración del flujo de trabajo está incompleta; el responsable "{0}" debe ser reemplazado en la configuración del grupo empresarial.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200913" trl="Y">
+  <value column="MsgText" original="Deposit Batch is Processed: ">El Lote de Depósito está Procesado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200914" trl="Y">
+  <value column="MsgText" original="This is a system or tenant parameter, you can't save it as organization parameter">Este es un parámetro de sistema o empresa; no se puede guardar como parámetro de organización.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200915" trl="Y">
+  <value column="MsgText" original="This is a system parameter, you can't save it as tenant parameter">Este es un parámetro del sistema; no se puede guardar como parámetro de empresa.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200917" trl="Y">
+  <value column="MsgText" original="&lt;div style=&quot;background-color:yellow;&quot;&gt;{0,choice,0#Do not forget to set SysConfig MESSAGES_AT_TENANT_LEVEL=Y to enable this feature|1#}&lt;/div&gt;" xml:space="preserve"><![CDATA[<div style="background-color:yellow;">{0,choice,0#No olvide fijar el Configurador del Sistema MESSAGES_AT_TENANT_LEVEL=Y para habilitar esta funcionalidad|1#}</div>]]></value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200919" trl="Y">
+  <value column="MsgText" original="Create Line Per Payment">Crear Línea Por Pago</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200920" trl="Y">
+  <value column="MsgText" original="Could not reactivate deposit batch: deposit batch is used on a bank statement line">No se pudo reactivar el lote de depósito: está usado en una línea de extracto bancario.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200921" trl="Y">
+  <value column="MsgText" original="Could not void deposit batch: deposit batch is used on a bank statement line">No se pudo anular el lote de depósito: está usado en una línea de extracto bancario.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200926" trl="Y">
+  <value column="MsgText" original="Total of Base values is 0 - {0}">El total de valores Base es 0 - {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200927" trl="Y">
+  <value column="MsgText" original="The background loading of the records has finished.">La carga de registros en segundo plano ha finalizado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200928" trl="Y">
+  <value column="MsgText" original="From Bank Account and To Bank Account must be different {0}">La Cuenta Bancaria Origen y la Cuenta Bancaria Destino deben ser diferentes {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200929" trl="Y">
+  <value column="MsgText" original="From Organization does not match the organization of the From Bank Account {0}">La Organización Origen no coincide con la organización de la Cuenta Bancaria Origen {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200930" trl="Y">
+  <value column="MsgText" original="Template/Mode not allowed for this role">Plantilla/Modo no permitido para este rol.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200931" trl="Y">
+  <value column="MsgText" original="No Active Tab">No hay Pestaña Activa.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200932" trl="Y">
+  <value column="MsgText" original="No CSV importer">No hay importador CSV.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200933" trl="Y">
+  <value column="MsgText" original="Table doesn't match with updated tab">La tabla no coincide con la pestaña actualizada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200934" trl="Y">
+  <value column="MsgText" original="There are payments with no value for Amount Due or Payment Amount, this is usually caused by missing currency exchange rates.">Hay pagos sin valor en Monto Adeudado o Monto de Pago; esto suele deberse a tasas de cambio faltantes.
+Por favor deseleccione los pagos sin montos o configure la tasa de cambio correctamente.</value>
+  <value column="MsgTip" original="Please deselect the payments without amounts or configure the currency rate correctly.">Por favor deseleccione los pagos sin montos o configure la tasa de cambio correctamente.</value>
+ </row>
+ <row id="200935" trl="Y">
+  <value column="MsgText" original="Could not reactivate invoice: invoice is allocated">No se pudo reactivar la factura: la factura está asignada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200936" trl="Y">
+  <value column="MsgText" original="Could not reactivate invoice: invoice is used on a Match Invoice record">No se pudo reactivar la factura: la factura está usada en un registro de Conciliación de Factura.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200937" trl="Y">
+  <value column="MsgText" original="Could not reactivate invoice: invoice is used on a Match PO record">No se pudo reactivar la factura: la factura está usada en un registro de Conciliación de OC.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200938" trl="Y">
+  <value column="MsgText" original="Like (Ignore Case)">Como (Ignorar Mayúsculas/Minúsculas)</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200940" trl="Y">
+  <value column="MsgText" original="Extra Attributes">Atributos Adicionales</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200941" trl="Y">
+  <value column="MsgText" original="{0} cannot be reactivated">{0} no puede ser reactivado.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200942" trl="Y">
+  <value column="MsgText" original="This plugin does not exist in this server, saving this record is dangerous as potentially the server cannot be started next time">Este plugin no existe en este servidor; guardar este registro es peligroso ya que potencialmente el servidor no podrá iniciarse la próxima vez.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200943" trl="Y">
+  <value column="MsgText" original="The plugin exists, but is in a different state, saving this record is dangerous as potentially the server cannot be started next time">El plugin existe pero está en un estado diferente; guardar este registro es peligroso ya que potencialmente el servidor no podrá iniciarse la próxima vez.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200945" trl="Y">
+  <value column="MsgText" original="SSO Principal Service could not be retrieved for the specified provider. Please verify the SSO provider configuration.">No se pudo obtener el Servicio Principal SSO para el proveedor especificado. Por favor verifique la configuración del proveedor SSO.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200949" trl="Y">
+  <value column="MsgText" original="Duplicate entries found in the Attribute Set. Each attribute must have a unique value for the associated table.">Se encontraron entradas duplicadas en el Conjunto de Atributos. Cada atributo debe tener un valor único para la tabla asociada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200950" trl="Y">
+  <value column="MsgText" original="Each Table Attribute Set Type must have a unique attribute assigned. Attribute &quot;{0}&quot; is already used in Attribute Set &quot;{1}&quot;.">Cada Tipo de Conjunto de Atributos de Tabla debe tener un atributo único asignado. El atributo "{0}" ya está usado en el Conjunto de Atributos "{1}".</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200951" trl="Y">
+  <value column="MsgText" original="Advanced options">Opciones avanzadas</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200952" trl="Y">
+  <value column="MsgText" original="Set as Default">Establecer como Predeterminado</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200953" trl="Y">
+  <value column="MsgText" original="This query is now set as your default.">Esta consulta ahora está establecida como su predeterminada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200954" trl="Y">
+  <value column="MsgText" original="Query removed as default.">Consulta eliminada como predeterminada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200955" trl="Y">
+  <value column="MsgText" original="Query is now shared with all users.">La consulta ahora está compartida con todos los usuarios.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200956" trl="Y">
+  <value column="MsgText" original="Query is no longer shared with other users.">La consulta ya no está compartida con otros usuarios.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200957" trl="Y">
+  <value column="MsgText" original="The selected query has been removed.">La consulta seleccionada ha sido eliminada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200958" trl="Y">
+  <value column="MsgText" original="No saved query selected">No hay consulta guardada seleccionada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200959" trl="Y">
+  <value column="MsgText" original="A default query already exists: {0}. Do you want to replace it with the selected one?">Ya existe una consulta predeterminada: {0}. ¿Desea reemplazarla con la seleccionada?</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200960" trl="Y">
+  <value column="MsgText" original="Are you sure you want to delete this query? This action cannot be undone.">¿Está seguro de que desea eliminar esta consulta? Esta acción no se puede deshacer.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200961" trl="Y">
+  <value column="MsgText" original="Could not reactivate payment: payment is used on a counter document">No se pudo reactivar el pago: el pago está usado en un contra-documento.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200962" trl="Y">
+  <value column="MsgText" original="Could not reactivate payment: payment is used on a cash line">No se pudo reactivar el pago: el pago está usado en una línea de caja.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200984" trl="Y">
+  <value column="MsgText" original="A field marked as Always Updatable cannot have Read Only Logic">Un campo marcado como Siempre Actualizable no puede tener Lógica de Solo Lectura.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200987" trl="Y">
+  <value column="MsgText" original="Template roles cannot be assigned directly to users.">Las plantillas de roles no pueden asignarse directamente a usuarios.</value>
+  <value column="MsgTip" original="This is a template role. To assign these permissions, please create a standard role from this template.">Este es una plantilla de rol.  Para asignar estos permisos por favor cree un rol estándar desde esta plantilla.</value>
+ </row>
+ <row id="200989" trl="Y">
+  <value column="MsgText" original="Some lines are reconciled, unreconcile them to reactivate this document. Account(s): {0}.">Algunas líneas están conciliadas; desconcílielas para reactivar este documento. Cuenta(s): {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200990" trl="Y">
+  <value column="MsgText" original="The General Ledger entries from this Payment Allocation ({0}) have been reconciled in the General Ledger.&#10;Please use the Accounting Fact Reconciliation (Manual) form if you want to delete the reconciliation entry then try to reset the Payment Allocation">Los asientos contables de esta Asignación de Pago ({0}) han sido conciliados.
+Por favor use el formulario de Conciliación de Hechos Contables (Manual) si desea eliminar el asiento de conciliación e intentar restablecer la Asignación de Pago.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200993" trl="Y">
+  <value column="MsgText" original="Price List Including Tax with Summary Tax not Allowed">Lista de Precios con Impuesto Incluido con Impuesto Resumido no está permitido.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200994" trl="Y">
+  <value column="MsgText" original="Application Discovery URI must end with /.well-known/openid-configuration">El URI de Descubrimiento de Aplicación debe terminar con /.well-known/openid-configuration.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200997" trl="Y">
+  <value column="MsgText" original="Disable">Deshabilitar</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200998" trl="Y">
+  <value column="MsgText" original="Enable">Habilitar</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="200999" trl="Y">
+  <value column="MsgText" original="Download (.idext)">Descargar (.idext)</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201000" trl="Y">
+  <value column="MsgText" original="Registry">Registro</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201001" trl="Y">
+  <value column="MsgText" original="Extension Repository">Repositorio de Extensiones</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201002" trl="Y">
+  <value column="MsgText" original="Installed Extensions">Extensiones Instaladas</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201003" trl="Y">
+  <value column="MsgText" original="Error loading extensions: {0}">Error al cargar extensiones: {0}</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201004" trl="Y">
+  <value column="MsgText" original="No extensions installed">No hay extensiones instaladas.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201005" trl="Y">
+  <value column="MsgText" original="Changelog">Registro de Cambios</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201006" trl="Y">
+  <value column="MsgText" original="Details">Detalles</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201007" trl="Y">
+  <value column="MsgText" original="Categories">Categorías</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201008" trl="Y">
+  <value column="MsgText" original="Tags">Etiquetas</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201009" trl="Y">
+  <value column="MsgText" original="Bundled extensions cannot be uninstalled">Las extensiones incluidas no pueden desinstalarse.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201010" trl="Y">
+  <value column="MsgText" original="iDempiere extension repository URL is not set">La URL del repositorio de extensiones de iDempiere no está configurada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201011" trl="Y">
+  <value column="MsgText" original="Http error ({0}) fetching {1}">Error Http ({0}) al obtener {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201012" trl="Y">
+  <value column="MsgText" original="Extension is already being installed">La extensión ya está siendo instalada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201013" trl="Y">
+  <value column="MsgText" original="A newer version of bundle {0} ({1}) is already installed">Ya está instalada una versión más reciente del bundle {0} ({1}).</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201014" trl="Y">
+  <value column="MsgText" original="Database {0} not supported">Base de datos {0} no soportada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201015" trl="Y">
+  <value column="MsgText" original="{0} version {1} is too old, {2} and above is required">La versión {1} de {0} es muy antigua; se requiere {2} o superior.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201016" trl="Y">
+  <value column="MsgText" original="The required extension {0} is not found on this {1} server">La extensión requerida {0} no se encontró en este servidor {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201017" trl="Y">
+  <value column="MsgText" original="No bundles found in metadata.json">No se encontraron bundles en metadata.json.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201018" trl="Y">
+  <value column="MsgText" original="Incompatible iDempiere version. Extension requires {0} and above but current version is {1}">Versión de iDempiere incompatible. La extensión requiere {0} o superior pero la versión actual es {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201019" trl="Y">
+  <value column="MsgText" original="Missing dependency: {0}. Please install it first">Dependencia faltante: {0}. Por favor instálela primero.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201020" trl="Y">
+  <value column="MsgText" original="Incompatible dependency version: {0}. Required {1} and above but installed {2}">Versión de dependencia incompatible: {0}. Se requiere {1} o superior pero está instalada la versión {2}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201021" trl="Y">
+  <value column="MsgText" original="Bundle {0} is missing downloadUrl">Al bundle {0} le falta la URL de descarga.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201022" trl="Y">
+  <value column="MsgText" original="Downloading bundle {0} from {1}">Descargando bundle {0} desde {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201023" trl="Y">
+  <value column="MsgText" original="SHA256 hash mismatch for bundle {0}. Expected {1} but got {2}">El hash SHA256 del bundle {0} no coincide. Se esperaba {1} pero se obtuvo {2}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201024" trl="Y">
+  <value column="MsgText" original="Extension Installed">Extensión Instalada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201025" trl="Y">
+  <value column="MsgText" original="OSGi BundleContext is not available">El BundleContext de OSGi no está disponible.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201026" trl="Y">
+  <value column="MsgText" original="Filter by name, description, tag: or category:">Filtrar por nombre, descripción, etiqueta: o categoría:</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201027" trl="Y">
+  <value column="MsgText" original="Extension disabled">Extensión deshabilitada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201028" trl="Y">
+  <value column="MsgText" original="Extension enabled">Extensión habilitada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201029" trl="Y">
+  <value column="MsgText" original="Extension Uninstalled">Extensión Desinstalada.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201030" trl="Y">
+  <value column="MsgText" original="Incremental Pack In for bundle {0} is running in background for:{1}">La instalación incremental del bundle {0} se está ejecutando en segundo plano para: {1}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201031" trl="Y">
+  <value column="MsgText" original="Incremental Pack In for bundle {0} completed successfully">La instalación incremental del bundle {0} se completó exitosamente.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201032" trl="Y">
+  <value column="MsgText" original="Incremental Pack In for bundle {0} completed with errors">La instalación incremental del bundle {0} se completó con errores.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201033" trl="Y">
+  <value column="MsgText" original="Extension metadata (metadata.json) is missing required fields (name, version, idempiereVersion, bundles)">Los metadatos de la extensión (metadata.json) carecen de campos obligatorios (name, version, idempiereVersion, bundles).</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201034" trl="Y">
+  <value column="MsgText" original="Installing extension bundle from {0}">Instalando bundle de extensión desde {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201035" trl="Y">
+  <value column="MsgText" original="Starting extension bundle {0}">Iniciando bundle de extensión {0}.</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201036" trl="Y">
+  <value column="MsgText" original="Importing extension data in the background…">Importando datos de la extensión en segundo plano…</value>
+  <value column="MsgTip" original=""/>
+ </row>
+ <row id="201037" trl="Y">
+  <value column="MsgText" original="Cannot uninstall/disable {0} because other extensions depend on it. Please remove/disable the following dependents first: [{1}]">No se puede desinstalar/deshabilitar {0} porque otras extensiones dependen de él. Por favor elimine o deshabilite primero las siguientes dependencias: [{1}].</value>
+  <value column="MsgTip" original=""/>
+ </row>
  <row id="520010" trl="Y">
   <value column="MsgText" original="1 Rupee">1 Rupia</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="523847" trl="Y">
   <value column="MsgText" original="Slow Moving Items">Artículos de bajo movimiento</value>
-  <value column="MsgTip" original=" "/>
+  <value column="MsgTip" original=""/>
  </row>
  <row id="523848" trl="Y">
   <value column="MsgText" original="The parent record (document) is already processed">El registro padre (documento) ya está procesado</value>
@@ -7581,106 +8637,6 @@ Por favor contacte al ADMINISTRADOR.</value>
  </row>
  <row id="523853" trl="Y">
   <value column="MsgText" original="Shipment/Receipt has different Sales/Purchase transaction than RMA">Recibo/Entrega tiene diferente transacción de ventas/compras que la autorización de devolución</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="2232728c-a9df-43a8-a0bb-0181a12cad07">
-  <value column="MsgText" original="No Tax ID">No hay documento de identidad</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="39df78b3-42f6-4ec1-b229-dd4362e9fc7c">
-  <value column="MsgText" original="Invalid characters in Tax ID">Caracteres no válidos en documento</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="92d1b54d-cc8b-4693-9672-4486065f6107">
-  <value column="MsgText" original="No Check Digit">No hay dígito de chequeo</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="79ebf2d8-dd9f-49d2-8146-f62ae1a145fd">
-  <value column="MsgText" original="Invalid Number">Número no válido</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="8378d307-894f-4e0c-b3fc-71149f0207bc">
-  <value column="MsgText" original="First Name 1 required">Primer nombre requerido</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="78068c86-6300-4306-ab60-a5518cd3f9e7">
-  <value column="MsgText" original="Last Name 1 required">Primer apellido requerido</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="534ad4e7-99cf-4e7b-8efe-7b696d083770">
-  <value column="MsgText" original="Verify check digit">Verifique el dígito de chequeo</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="a545ff6d-a3b2-42ab-91d3-d1195fdb2288">
-  <value column="MsgText" original="Country required to use check digit">Se requiere país para usar dígito de chequeo</value>
-  <value column="MsgTip" original="Define a country for the taxID type">Defina un país para el tipo de identificación</value>
- </row>
- <row trl="Y" uuid="7ea4917b-8098-4043-be8d-09174233f26d">
-  <value column="MsgText" original="Validation class required to use check digit">Clase validación requerida para usar dígito de chequeo</value>
-  <value column="MsgTip" original="Define a validation class for the country of taxID type">Defina una clase de validación para el país del tipo de identificación</value>
- </row>
- <row trl="Y" uuid="9901fc05-b993-4c48-b291-4406d8a8ac42">
-  <value column="MsgText" original="Wrong Length on Tax ID">Longitud incorrecta del NIT</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="b3a9638b-3c54-4c8f-bfbd-79875f967ce9">
-  <value column="MsgText" original="Wrong length on Tax ID">Longitud incorrecta en el documento</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="3105a8bc-ad6e-48d4-a219-c4ee0b0314cc">
-  <value column="MsgText" original="Wrong branch on tax ID">Sucursal incorrecta en RUC</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="f5398316-8038-42c3-94ee-63faa73bba43">
-  <value column="MsgText" original="Wrong tax code on tax ID">Código (tercer dígito) incorrecto en RUC</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="a9e96870-df02-48fb-ba3f-bb585c70d6f0">
-  <value column="MsgText" original="Wrong digit on tax ID">Dígito incorrecto en el RUC</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="1573c83e-2b12-4444-98b7-29b4e78f2671">
-  <value column="MsgText" original="Wrong province on tax ID">Provincia incorrecta en el RUC</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="5ecb24cb-8ec8-4c38-acb0-8b0e0a15ce62">
-  <value column="MsgText" original="Wrong tax code on tax ID">Código de tipo de persona incorrecto</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="53e4eb38-18de-4820-aa53-7ecbace1d44b">
-  <value column="MsgText" original="Withholding Not Generated">No se han generado retenciones</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="2ce82e64-4425-4be1-9637-b798eedb46ca">
-  <value column="MsgText" original="Write-Off Amount must be equal or greater than Withholdings">El valor del ajuste debe ser mayor o igual que las retenciones</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="7f59a409-d601-431b-b186-8aca1a959a14">
-  <value column="MsgText" original="Choose Document Type or Withholding.">Escoja tipo de documento o retención.</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="ffd332e7-f70e-4321-a959-f20597f1b2b7">
-  <value column="MsgText" original="Prefix length is inadequate.">La longitud del prefijo es inadecuada.</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="e4ddaed8-1c22-4c28-930f-43c57c89d032">
-  <value column="MsgText" original="Final sequence hast to be greater than Initial Sequence">Secuencia final debe ser mayor a  secuencia inicial</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="37fcb52f-17d0-4846-ba84-125f9a5a3ac7">
-  <value column="MsgText" original="Final Date hast to be greater than Initial Date.">Fecha final debe ser mayor que fecha inicial.</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="b32a2db2-89c9-428a-aff4-25d659f34bd9">
-  <value column="MsgText" original="The sequence already exists">La secuencia ya existe.</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="e506cab1-c59b-4e70-9705-71b933e567e9">
-  <value column="MsgText" original="Document No Length is inadequate">La longitud del número del número de documento no es adecuada</value>
-  <value column="MsgTip" original=""/>
- </row>
- <row trl="Y" uuid="d575bd70-83c7-47cb-bba5-1364bd9a5001">
-  <value column="MsgText" original="No printed form matches document information">Ningúna forma impresa coincide con la información del documento</value>
   <value column="MsgTip" original=""/>
  </row>
 </idempiereTrl>

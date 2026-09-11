@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="M_PriceList">
  <row id="101" trl="Y">
   <value column="Name" original="Standard">Estándar</value>
@@ -13,5 +13,9 @@
  <row id="103" trl="Y">
   <value column="Name" original="Export">Exportacioens</value>
   <value column="Description" original="Export Prices in EUR">Precios de Exportación en EUR</value>
+ </row>
+ <row id="200000" trl="Y">
+  <value column="Name" original="Import">Importar</value>
+  <value column="Description" original="Import Prices in EUR">Precios de Importación en EUR</value>
  </row>
 </idempiereTrl>

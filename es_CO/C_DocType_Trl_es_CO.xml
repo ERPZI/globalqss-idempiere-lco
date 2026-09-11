@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="C_DocType">
  <row id="0" trl="Y">
   <value column="Name" original="** New **">** Nuevo **</value>
@@ -250,6 +250,16 @@
  <row id="200004" trl="Y">
   <value column="Name" original="Cost Adjustment">Ajuste Costo</value>
   <value column="PrintName" original="Cost Adjustment">Ajuste Costo</value>
+  <value column="DocumentNote" original=""/>
+ </row>
+ <row id="200026" trl="Y">
+  <value column="Name" original="Warehouse Purchase Order">Orden de Compra de Almacén</value>
+  <value column="PrintName" original="Warehouse Purchase Order">Orden de Compra de Almacén</value>
+  <value column="DocumentNote" original=""/>
+ </row>
+ <row id="200027" trl="Y">
+  <value column="Name" original="Point of Purchase Order">Orden de Compra en Punto</value>
+  <value column="PrintName" original="POP Order">Orden POP</value>
   <value column="DocumentNote" original=""/>
  </row>
 </idempiereTrl>

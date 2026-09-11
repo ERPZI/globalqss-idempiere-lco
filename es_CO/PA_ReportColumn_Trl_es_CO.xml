@@ -1,53 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="PA_ReportColumn">
- <row id="100" trl="N">
-  <value column="Name" original="Begin Year Balance">Begin Year Balance</value>
+ <row id="100" trl="Y">
+  <value column="Name" original="Begin Year Balance">Saldo Inicial del Año</value>
   <value column="Description" original=""/>
  </row>
- <row id="101" trl="N">
-  <value column="Name" original="Period Activity">Period Activity</value>
+ <row id="101" trl="Y">
+  <value column="Name" original="Period Activity">Actividad del Período</value>
   <value column="Description" original=""/>
  </row>
- <row id="102" trl="N">
-  <value column="Name" original="End Year Balance">End Year Balance</value>
+ <row id="102" trl="Y">
+  <value column="Name" original="End Year Balance">Saldo Final del Año</value>
   <value column="Description" original=""/>
  </row>
- <row id="103" trl="N">
-  <value column="Name" original="End Total Balance">End Total Balance</value>
+ <row id="103" trl="Y">
+  <value column="Name" original="End Total Balance">Saldo Final Total</value>
   <value column="Description" original=""/>
  </row>
- <row id="104" trl="N">
-  <value column="Name" original="Begin Total Balance">Begin Total Balance</value>
+ <row id="104" trl="Y">
+  <value column="Name" original="Begin Total Balance">Saldo Inicial Total</value>
   <value column="Description" original=""/>
  </row>
- <row id="105" trl="N">
-  <value column="Name" original="Period Quantity">Period Quantity</value>
+ <row id="105" trl="Y">
+  <value column="Name" original="Period Quantity">Cantidad del Período</value>
   <value column="Description" original=""/>
  </row>
- <row id="106" trl="N">
-  <value column="Name" original="Budget YTD">Budget YTD</value>
-  <value column="Description" original="Budget Year to Date">Budget Year to Date</value>
+ <row id="106" trl="Y">
+  <value column="Name" original="Budget YTD">Presupuesto Acumulado Año</value>
+  <value column="Description" original="Budget Year to Date">Presupuesto Acumulado en el Año</value>
  </row>
- <row id="107" trl="N">
-  <value column="Name" original="Actual YTD">Actual YTD</value>
-  <value column="Description" original="Actual Year To Date">Actual Year To Date</value>
+ <row id="107" trl="Y">
+  <value column="Name" original="Actual YTD">Real Acumulado Año</value>
+  <value column="Description" original="Actual Year To Date">Real Acumulado en el Año</value>
  </row>
- <row id="108" trl="N">
-  <value column="Name" original="Commitment YTD">Commitment YTD</value>
-  <value column="Description" original="Commitment Year to Date">Commitment Year to Date</value>
+ <row id="108" trl="Y">
+  <value column="Name" original="Commitment YTD">Compromisos Acumulados Año</value>
+  <value column="Description" original="Commitment Year to Date">Compromisos Acumulados en el Año</value>
  </row>
- <row id="109" trl="N">
-  <value column="Name" original="Reservations YTD">Reservations YTD</value>
-  <value column="Description" original="Reservations Year to Date">Reservations Year to Date</value>
+ <row id="109" trl="Y">
+  <value column="Name" original="Reservations YTD">Reservas Acumuladas Año</value>
+  <value column="Description" original="Reservations Year to Date">Reservas Acumuladas en el Año</value>
  </row>
- <row id="110" trl="N">
-  <value column="Name" original="Budget Spent">Budget Spent</value>
+ <row id="110" trl="Y">
+  <value column="Name" original="Budget Spent">Presupuesto Ejecutado</value>
   <value column="Description" original=""/>
  </row>
- <row id="111" trl="N">
-  <value column="Name" original="Budget Available">Budget Available</value>
+ <row id="111" trl="Y">
+  <value column="Name" original="Budget Available">Presupuesto Disponible</value>
   <value column="Description" original=""/>
+ </row>
+ <row id="112" trl="Y">
+  <value column="Name" original="Beginning period ">Inicio del Período</value>
+  <value column="Description" original="Beginning Period">Inicio del Período</value>
+ </row>
+ <row id="113" trl="Y">
+  <value column="Name" original="End period">Fin del Período</value>
+  <value column="Description" original="End period">Fin del Período</value>
+ </row>
+ <row id="114" trl="Y">
+  <value column="Name" original="Net period">Neto del Período</value>
+  <value column="Description" original="Net period">Neto del Período</value>
+ </row>
+ <row id="115" trl="Y">
+  <value column="Name" original="Period debits">Débitos del Período</value>
+  <value column="Description" original=""/>
+ </row>
+ <row id="116" trl="Y">
+  <value column="Name" original="Period credits only">Solo Créditos del Período</value>
+  <value column="Description" original="Period credits only">Solo Créditos del Período</value>
  </row>
 </idempiereTrl>

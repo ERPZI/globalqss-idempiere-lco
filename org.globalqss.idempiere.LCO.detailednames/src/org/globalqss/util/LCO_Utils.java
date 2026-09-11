@@ -87,10 +87,15 @@ public class LCO_Utils
 		if (fullFirstNames.length() == 0 && fullLastNames.length() == 0)
 			return null;
 
-		if (namesFirst)
-			fullName = fullFirstNames.append(nameSeparator).append(fullLastNames);
-		else
-			fullName = fullLastNames.append(nameSeparator).append(fullFirstNames);
+		if (namesFirst) {
+			fullName = fullName.append(fullFirstNames);
+			if (fullLastNames.length() > 0)
+				fullName.append(nameSeparator).append(fullLastNames);
+		} else {
+			fullName = fullName.append(fullLastNames);
+			if (fullFirstNames.length() > 0)
+				fullName.append(nameSeparator).append(fullFirstNames);
+		}
 
 		return fullName.toString();
 	}

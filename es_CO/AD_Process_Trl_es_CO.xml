@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--GlobalQSS - iDempiere -Smart Suite ERP,CRM and SCM- (c) 1999-2012 iDempiere(r); Implementation: iDempiere - Supported by GlobalQSS - Quality Systems & Solutions-->
-<!--<!DOCTYPE idempiereTrl PUBLIC "-//ComPiere, Inc.//DTD idempiere Translation 1.0//EN" "http://www.idempiere.com/dtd/idempiereTrl.dtd">-->
+<!--<!DOCTYPE idempiereTrl PUBLIC "-//iDempiere//DTD iDempiere Translation 1.0//EN" "https://raw.githubusercontent.com/idempiere/idempiere/refs/heads/master/utils_dev/trl/idempiereTrl.dtd">-->
 <idempiereTrl language="es_CO" table="AD_Process">
  <row id="100" trl="Y">
   <value column="Name" original="Create Periods ">Crear Períodos</value>
@@ -123,7 +123,7 @@
   <value column="Help" original="The report shows transaction summary for stored products">El reporte muestra un resumen de transacciones para productos almacenados</value>
  </row>
  <row id="125" trl="Y">
-  <value column="Name" original="Replenish Report">Reporte de Reabastecimiento</value>
+  <value column="Name" original="Replenish Report (deprecated)">Reporte de Reabastecimiento</value>
   <value column="Description" original="Inventory Replenish Report"/>
   <value column="Help" original="Report lists products to be replenished. Note that a product can have only one current vendor. If there are more then vendor per product, both records are reset.  You need to select a current vendor manually.&lt;br&gt;&#10;Movements are only created, if a sourcing warehouse is defined for the warehouse to be replenished.">El reporte lista los productos que deben ser repuestos</value>
  </row>
@@ -213,9 +213,9 @@
   <value column="Help" original=""/>
  </row>
  <row id="145" trl="Y">
-  <value column="Name" original="Open Items">Saldos Abiertos</value>
-  <value column="Description" original="Open Item (Invoice) List">Saldos Abiertos</value>
-  <value column="Help" original="Displays all unpaid invoices for a given Business Partner and date range. Please note that Invoices paid in Cash will appear in Open Items until the Cash Journal is processed."/>
+  <value column="Name" original="Open Items (Aging)">Saldos Abiertos</value>
+  <value column="Description" original="Open Items (Invoice and Aging) List">Saldos Abiertos</value>
+  <value column="Help" original="Displays all unpaid invoices for a given Business Partner and date range."/>
  </row>
  <row id="146" trl="Y">
   <value column="Name" original="UnReconciled Payments">Pagos sin Conciliar</value>
@@ -248,7 +248,7 @@
   <value column="Help" original="The report lists the invoice transactions by invoice date"/>
  </row>
  <row id="152" trl="Y">
-  <value column="Name" original="Invoice Detail &amp; Margin">Detalles Facturas y Margen</value>
+  <value column="Name" original="Invoice Detail and Margin">Detalles Facturas y Margen</value>
   <value column="Description" original="Invoice (Line) Detail and Margin Report"/>
   <value column="Help" original="The Report lists Customer and Vendor Invoice Details with Margines."/>
  </row>
@@ -355,7 +355,7 @@
  <row id="179" trl="Y">
   <value column="Name" original="Language Maintenance">Mantenimiento Lenguaje</value>
   <value column="Description" original="Maintain language translation in system">Mantiene traducciones de diferentes lenguajes en el sistema</value>
-  <value column="Help" original="You can Add Missing Translation entries (required after activating an additional System Language) - Delete Translation Records - or Re-Create the translation Records (first delete and add missing entries).&#10;Note that Adding the Missing Translation records creates them by copying the System Language (English).  You would apply the Language Pack after that process.  Run Syncronize Terminology after importing the translation.">Puede Añadir traducciones faltantes (requerido despues de activar un lenguaje del sistema adicional) - Borrar registros de traducción - o recrear los registros de traducción (primero borra y luego adiciona registros faltantes).
+  <value column="Help" original="You can Add Missing Translation entries (required after activating an additional System Language) - Delete Translation Records - or Re-Create the translation Records (first delete and add missing entries).&#10;Note that Adding the Missing Translation records creates them by copying the System Language (English).  You would apply the Language Pack after that process.  Run Synchronize Terminology after importing the translation.">Puede Añadir traducciones faltantes (requerido despues de activar un lenguaje del sistema adicional) - Borrar registros de traducción - o recrear los registros de traducción (primero borra y luego adiciona registros faltantes).
 Nótese que Añadir traducciones faltantes las crea a partir del lenguaje del sistema (Inglés de Estados Unidos).  Debe aplicar un paquete de lenguaje después de este proceso.  Corra Sincronizar Terminología después de importar la traducción.</value>
  </row>
  <row id="180" trl="Y">
@@ -371,7 +371,7 @@ Nótese que Añadir traducciones faltantes las crea a partir del lenguaje del si
  <row id="182" trl="Y">
   <value column="Name" original="Standard Cost Update">Actualizar Costo de Producto</value>
   <value column="Description" original="Set standard and future cost price">Establecer precio de costo futuro y estándar</value>
-  <value column="Help" original="For Standard Costs you can set/recalculate the current or future cost price (for the cost type of the accounting schema). If the Costing Level of the Accounting Schema is set to Client, missing cost records are created. The historical costs are calculated based on the accumulated amount/quantity of the costing method.">Para costo estándar se puede actualizar el precio a futuro y establecer el costo estándar como el precio futuro</value>
+  <value column="Help" original="For Standard Costs you can set/recalculate the current or future cost price (for the cost type of the accounting schema). If the Costing Level of the Accounting Schema is set to Tenant, missing cost records are created. The historical costs are calculated based on the accumulated amount/quantity of the costing method.">Para costo estándar se puede actualizar el precio a futuro y establecer el costo estándar como el precio futuro</value>
  </row>
  <row id="184" trl="Y">
   <value column="Name" original="Process Expenses">Procesar Gastos</value>
@@ -421,7 +421,7 @@ Nótese que Añadir traducciones faltantes las crea a partir del lenguaje del si
  <row id="193" trl="Y">
   <value column="Name" original="Generate PO from Sales Order">Generar OC desde Orden de Venta</value>
   <value column="Description" original="Create Purchase Order from Sales Orders">Crear Orden de compra desde orden de ventas</value>
-  <value column="Help" original="After completing sales orders, you can create one or more purchase orders for each sales order. A purchase order references always only one sales order (i.e. no consolidation of sales orders). &#10;The Organization of the Sales Order is used to create the Purchase Order. If a (default) PO document type is defined on Organization level, that is used instead of the document types defined on Client level.&#10;&#10;POs are created for all sales order lines where the product has a current vendor, the vendor has a Vendor Price List with all Products on the most current Price List Version. The Unit of Measure is copied; PO and SO can have different currencies.&#10;&#10;Once the process is run, you need to synchronize the SO/PO manually (e.g. in case of additional lines and changed lines (product &amp; quantity).">Después de completar órdenes de ventas, el usuario puede crear una o más órdenes de compra por cada orden de venta. Una orden de compra solo esta relacionada a una orden de venta. Órdenes de compra son creadas para todas las líneas de la orden de ventas donde el producto tiene un proveedor actual, el proveedor tiene una lista de precios con todos los productos en la última versión del precio de lista. La unidad de medida es copiada, la orden de compra y de venta pueden tener monedas diferentes. Una vez este proceso es corrido, es necesario sincronizar las Órdenes manualmente (e.g. En caso de líneas adicionales)</value>
+  <value column="Help" original="After completing sales orders, you can create one or more purchase orders for each sales order. A purchase order references always only one sales order (i.e. no consolidation of sales orders). &#10;The Organization of the Sales Order is used to create the Purchase Order. If a (default) PO document type is defined on Organization level, that is used instead of the document types defined on Tenant level.&#10;&#10;POs are created for all sales order lines where the product has a current vendor, the vendor has a Vendor Price List with all Products on the most current Price List Version. The Unit of Measure is copied; PO and SO can have different currencies.&#10;&#10;Once the process is run, you need to synchronize the SO/PO manually (e.g. in case of additional lines and changed lines (product &amp; quantity).">Después de completar órdenes de ventas, el usuario puede crear una o más órdenes de compra por cada orden de venta. Una orden de compra solo esta relacionada a una orden de venta. Órdenes de compra son creadas para todas las líneas de la orden de ventas donde el producto tiene un proveedor actual, el proveedor tiene una lista de precios con todos los productos en la última versión del precio de lista. La unidad de medida es copiada, la orden de compra y de venta pueden tener monedas diferentes. Una vez este proceso es corrido, es necesario sincronizar las Órdenes manualmente (e.g. En caso de líneas adicionales)</value>
  </row>
  <row id="194" trl="Y">
   <value column="Name" original="Import Business Partners">Importar Terceros</value>
@@ -459,7 +459,7 @@ Los parámetros son valores por defecto que se asignan a valores nulos que venga
  <row id="200" trl="Y">
   <value column="Name" original="Print Invoices">Imprime Facturas</value>
   <value column="Description" original="Print Invoices to paper or send PDF">Imprima las facturas en papel o para enviar en PDF</value>
-  <value column="Help" original="(Re)Print Invoices or send them as PDF attachments to the Business Partner Contact with a valid EMail addres.&#10;&lt;br&gt;&#10;Remark: If you only enter a Document No FROM value, all invoices greater or equal that document number are printed; you can alternatively use the % character as a widcard."/>
+  <value column="Help" original="(Re)Print Invoices or send them as PDF attachments to the Business Partner Contact with a valid EMail address.&#10;&lt;br&gt;&#10;Remark: If you only enter a Document No FROM value, all invoices greater or equal that document number are printed; you can alternatively use the % character as a widcard."/>
  </row>
  <row id="201" trl="Y">
   <value column="Name" original="Deliver Assets">Entrega de Activos</value>
@@ -504,7 +504,7 @@ Los parámetros son valores por defecto que se asignan a valores nulos que venga
  <row id="209" trl="Y">
   <value column="Name" original="Send Mail Text">Envía Texto Mail</value>
   <value column="Description" original="Send EMails to active subscribers of an Interest Area OR a Business Partner Group from a selected User">Envie los Email a los suscriptores activos de un grupo de terceros o área de interés.</value>
-  <value column="Help" original="Select the Interest Area to which subscribers you send the Mail Text from the User selected.  Additionally, you can send mails to the Contacts of a Business Partner Group.&lt;br&gt;&#10;The User to send emails from needs to have valid EMail information. If you don't select a user, the Mail is sent from the Client's Request Mail User." xml:space="preserve"><![CDATA[Seleccione el área de interés, a que suscriptores usted envía el texto de correo del usuario seleccionado. Alternativamente, usted puede enviar correos a los contactos de un grupo de terceros.<br>
+  <value column="Help" original="Select the Interest Area to which subscribers you send the Mail Text from the User selected.  Additionally, you can send mails to the Contacts of a Business Partner Group.&lt;br&gt;&#10;The User to send emails from needs to have valid EMail information. If you don't select a user, the Mail is sent from the Tenant's Request Mail User." xml:space="preserve"><![CDATA[Seleccione el área de interés, a que suscriptores usted envía el texto de correo del usuario seleccionado. Alternativamente, usted puede enviar correos a los contactos de un grupo de terceros.<br>
 El usuario para enviar emails de necesidades para tener valida la información del Email. Si usted no selecciona un usuario, el mail se envia de la solicitud del cliente.]]></value>
  </row>
  <row id="210" trl="Y">
@@ -742,7 +742,7 @@ Nos ayudará, si usted permitirá publicar su uso en iDempiere. Nos pondremos en
  <row id="254" trl="Y">
   <value column="Name" original="Accounting Fact Period">Asientos Contables por Período</value>
   <value column="Description" original="Accounting Fact Details summarized by Accounting Period">Detalles de asientos contables resumidos por período de contabilización</value>
-  <value column="Help" original="The Period is based on the the Calendar defined on Client level.">El período se basa en el calendario definido en nivel del grupo empresarial.</value>
+  <value column="Help" original="The Period is based on the the Calendar defined on Tenant level.">El período se basa en el calendario definido en nivel del grupo empresarial.</value>
  </row>
  <row id="255" trl="Y">
   <value column="Name" original="Reopen Order">Reabrir Orden</value>
@@ -773,15 +773,15 @@ Nos ayudará, si usted permitirá publicar su uso en iDempiere. Nos pondremos en
  <row id="260" trl="Y">
   <value column="Name" original="Link Organization">Liga Organización</value>
   <value column="Description" original="Link Business Partner to an Organization">Integración de Tercero a una Organización</value>
-  <value column="Help" original="If the Business Partner is another Organization, select the Organization or set to empty to create a new Organization.  You link a Business Partner to an Organization to create explicit Documents for Inter-Org transaction.&#10;If you create a new Organization, you may supply a Organization Type.  If you select a Role, the access to the new Organization is limited to that role, otherwise all (non manual) roles of the Client will have access to the new Organization.">Si el tercero esta en otra organización, seleccione la organización o fije para crear una nueva organización. Usted liga a tercero a una organización para crear los documentos explícitos para la Integración-Org transacción. Si usted crea una nueva organización, usted puede proveer un tipo de la organización. Si usted selecciona un rol, el acceso a la nueva organización se limita a ese rol, si no todo los roles (no manual) del grupo empresarial tendrán acceso a la nueva organización.</value>
+  <value column="Help" original="If the Business Partner is another Organization, select the Organization or set to empty to create a new Organization.  You link a Business Partner to an Organization to create explicit Documents for Inter-Org transaction.&#10;If you create a new Organization, you may supply a Organization Type.  If you select a Role, the access to the new Organization is limited to that role, otherwise all (non manual) roles of the Tenant will have access to the new Organization.">Si el tercero esta en otra organización, seleccione la organización o fije para crear una nueva organización. Usted liga a tercero a una organización para crear los documentos explícitos para la Integración-Org transacción. Si usted crea una nueva organización, usted puede proveer un tipo de la organización. Si usted selecciona un rol, el acceso a la nueva organización se limita a ese rol, si no todo los roles (no manual) del grupo empresarial tendrán acceso a la nueva organización.</value>
  </row>
  <row id="261" trl="Y">
-  <value column="Name" original="Create &amp; Invite">Crea e Invita</value>
+  <value column="Name" original="Create and Invite">Crea e Invita</value>
   <value column="Description" original="Create RfQ and Invite Vendors">Crea SCP (RfQ) e invita a los proveedores</value>
   <value column="Help" original="Create (missing) RfQ Responses and optionally send EMail Invitation/Reminder to Vendors to respond to RfQ">Cree (faltando) las respuestas de SCP (RfQ) y envíe opcionalmente email Invitación/Remitente a los proveedores para responder a SCP (RfQ)</value>
  </row>
  <row id="262" trl="Y">
-  <value column="Name" original="Invite &amp; Remind">Invitación y Recordatorio</value>
+  <value column="Name" original="Invite and Remind">Invitación y Recordatorio</value>
   <value column="Description" original="EMail Invite or Remind Vendor to answer RfQ">Email Invitación y recordatorio al provedor para contestar la SCP (RfQ)</value>
   <value column="Help" original="Send Invitation/Reminder to Vendors to respond to RfQ per email">Envía Invitación/Recordatorio al proveedor para la respuesta de SCP (RfQ) por email</value>
  </row>
@@ -798,14 +798,14 @@ Nos ayudará, si usted permitirá publicar su uso en iDempiere. Nos pondremos en
  <row id="265" trl="Y">
   <value column="Name" original="Rank Responses">Valuación de Respuestas</value>
   <value column="Description" original="Rank Completed RfQ Responses">Valuación de las respuestas a la SCP (RfQ) completas</value>
-  <value column="Help" original="Invalid responses are ranked with 999 per Quantity. The Quantity Responses are ranked among each other and the RfQ Best Response updated.  The response Lines is maked as Selected winner, where the line quantity purchase quantity is selected.  A total winner is only selected, if the RfQ type is &quot;Quote All Lines&quot; or &quot;Quote Total only&quot;.&#10;&#10;Then the rankings of all Quantity Responses are added for the total ranking of the response. The response with the lowest total ranking is marked as Selected Winner.">Las respuestas invalidas estan valuadas por 999 en la Cantidad.  Las respuestas de la cantidad estan valuadas entre sí y la mejor respuesta a la SCP (RfQ) es actualizada. Las líneas de respuesta son marcadas como ganador seleccionado, donde esta seleccionada la cantidad de compra.
+  <value column="Help" original="Invalid responses are ranked with 999 per Quantity. The Quantity Responses are ranked among each other and the RfQ Best Response updated.  The response Lines is marked as Selected winner, where the line quantity purchase quantity is selected.  A total winner is only selected, if the RfQ type is &quot;Quote All Lines&quot; or &quot;Quote Total only&quot;.&#10;&#10;Then the rankings of all Quantity Responses are added for the total ranking of the response. The response with the lowest total ranking is marked as Selected Winner.">Las respuestas invalidas estan valuadas por 999 en la Cantidad.  Las respuestas de la cantidad estan valuadas entre sí y la mejor respuesta a la SCP (RfQ) es actualizada. Las líneas de respuesta son marcadas como ganador seleccionado, donde esta seleccionada la cantidad de compra.
 
 Entonces las valuaciones de todas las respuestas de cantidad se adicionan a la valuación total de la respuesta .  La respuesta con el valor total más bajo se marca como ganador seleccioado.</value>
  </row>
  <row id="266" trl="Y">
   <value column="Name" original="Create Purchase Order">Crea Orden de Compra</value>
   <value column="Description" original="Create Purchase Order(s) for RfQ Winner(s)">Crea Orden de Compra Para una SCP (RfQ) de los Ganadores</value>
-  <value column="Help" original="Create purchase order(s) for the resonse(s) and lines marked as Selected Winner using the selected Purchase Quantity (in RfQ Line Quantity) . If a Response is marked as Selected Winner, all lines are created (and Selected Winner of other responses ignored).  If there is no response marked as Selected Winner, the lines are used.">Crea orden(es) de compra para la respuesta(s) y las líneas marcadas como ganador seleccionado usando la cantidad seleccionada de la compra (en la línea cantidad de SCP (RfQ)). Si una respuesta está marcada como ganador seleccionado, se crean todas las líneas (y no hacen caso al ganador seleccionado de otras respuestas). Si no hay respuesta marcada como ganador seleccionado, se utilizan las líneas.</value>
+  <value column="Help" original="Create purchase order(s) for the response(s) and lines marked as Selected Winner using the selected Purchase Quantity (in RfQ Line Quantity) . If a Response is marked as Selected Winner, all lines are created (and Selected Winner of other responses ignored).  If there is no response marked as Selected Winner, the lines are used.">Crea orden(es) de compra para la respuesta(s) y las líneas marcadas como ganador seleccionado usando la cantidad seleccionada de la compra (en la línea cantidad de SCP (RfQ)). Si una respuesta está marcada como ganador seleccionado, se crean todas las líneas (y no hacen caso al ganador seleccionado de otras respuestas). Si no hay respuesta marcada como ganador seleccionado, se utilizan las líneas.</value>
  </row>
  <row id="267" trl="Y">
   <value column="Name" original="Create Sales Order">Crea Orden de Venta</value>
@@ -913,6 +913,11 @@ Entonces las valuaciones de todas las respuestas de cantidad se adicionan a la v
   <value column="Description" original="Print Format Detail Report">Formato de la impresión con los detalles del artículo</value>
   <value column="Help" original="Print Format with Item details">Formato de la impresión con los detalles del artículo</value>
  </row>
+ <row id="288" trl="Y">
+  <value column="Name" original="Reset Password">Reinicia Contraseña</value>
+  <value column="Description" original="Reset Passwords for User">Reinicia contraseñas para el usuario</value>
+  <value column="Help" original="You can change User Passwords and EMail settings.  You do not need to know/enter the password, if you are an Administrator.">Puede cambiar la contraseña del usuario y la configuración del correo electrónico. No necesita conocer la contraseña o introducirla si es Administrador.</value>
+ </row>
  <row id="289" trl="Y">
   <value column="Name" original="Create Dunning Run">Crear Cálculo de Morosidad</value>
   <value column="Description" original="Create Dunning Run Entries based on the Dunning Level criteria">Crea Cartas de Morosidad basado en criterios dados.</value>
@@ -945,8 +950,8 @@ Entonces las valuaciones de todas las respuestas de cantidad se adicionan a la v
  </row>
  <row id="295" trl="Y">
   <value column="Name" original="Role Access Update">Actualización de Rol</value>
-  <value column="Description" original="Update the access rights of a role or roles of a client">Actualizar las reglas de acceso de un rol o roles de un grupo empresarial.</value>
-  <value column="Help" original="Update the access rights of a role or all roles of a client to windows, forms, processes and workflows. If run for System, all roles of all clients are updated. Note that a role is only updated if it is not marked as manual.">Actualice las reglas de acceso de un rol o de todos los roles de un grupo empresarial para Ventanas, Formatos y Flujos de Trabajo.
+  <value column="Description" original="Update the access rights of a role or roles of a tenant">Actualizar las reglas de acceso de un rol o roles de un grupo empresarial.</value>
+  <value column="Help" original="Update the access rights of a role or all roles of a tenant to windows, forms, processes and workflows. Note that a role is only updated if it is not marked as manual. Note that if is executed from System tenant and role is not set, all tenants will be updated">Actualice las reglas de acceso de un rol o de todos los roles de un grupo empresarial para Ventanas, Formatos y Flujos de Trabajo.
 Si lo ejecuta para System, todos los roles de todos los grupo empresariales son actualizados. Observe que un rol es solamente actualizado si no está marcado como manual.</value>
  </row>
  <row id="296" trl="Y">
@@ -1015,14 +1020,14 @@ Si lo ejecuta para System, todos los roles de todos los grupo empresariales son 
   <value column="Help" original="The migration &quot;resets&quot; the system to the current/original setting.  If selected in the Change Log, you can save the customization and re-apply them.  Please note that you need to check, if your customization has no negative side effect in the new release. &lt;br&gt;&#10;Shut down the Application Server before running this process and set the Trace level (in Preference) higher or equals  WARNING.">The migration "resets" the system to the current/original setting. If selected in the Change Log, you can save the customization and re-apply them. Please note that you need to check, if your customization has no negative side effect in the new release.</value>
  </row>
  <row id="309" trl="Y">
-  <value column="Name" original="Workflow to Client">Mueve Flujo de Trabajo</value>
-  <value column="Description" original="Move custom workflow elements to the current client">Mueva los elementos personalizados de Flujo de Trabajo al grupo empresarial actual.</value>
-  <value column="Help" original="The security architecture prevents you from adding client specific modifications/customizations to existing standard workflows.  This process moves your customization made on system level to this client to add client specific details.">La arquitectura de la seguridad evita que usted agregue modificaciones/arreglos al grupo empresarial para registros particulares a los Flujos de Trabajo estandares existentes. Este proceso mueve su arreglo para requisitos particulares hechos en nivel de sistema a este grupo empresarial para arreglar los detalles específicos del grupo empresarial.</value>
+  <value column="Name" original="Workflow to Tenant">Mueve Flujo de Trabajo</value>
+  <value column="Description" original="Move custom workflow elements to the current tenant">Mueva los elementos personalizados de Flujo de Trabajo al grupo empresarial actual.</value>
+  <value column="Help" original="The security architecture prevents you from adding tenant specific modifications/customizations to existing standard workflows.  This process moves your customization made on system level to this tenant to add tenant specific details.">La arquitectura de la seguridad evita que usted agregue modificaciones/arreglos al grupo empresarial para registros particulares a los Flujos de Trabajo estandares existentes. Este proceso mueve su arreglo para requisitos particulares hechos en nivel de sistema a este grupo empresarial para arreglar los detalles específicos del grupo empresarial.</value>
  </row>
  <row id="310" trl="Y">
   <value column="Name" original="Trial Balance">Balance de Prueba</value>
   <value column="Description" original="Trial Balance for a period or date range">Balance de Prueba para un Periodo o un Rango de Fechas</value>
-  <value column="Help" original="Select a Period (current period if empty) or enter a Account Date Range. If an account is selected, the balance is calculated based on the account type and the primary calendar of the client (i.e. for revenue/expense accounts from the beginning of the year). If no account is selected, the balance is the sum of all transactions before the selected account range or first day of the period selected. You can select an alternative Reporting Hierarchy.">Seleccione un período (Campo vacío toma período actual) o indique un rango de fechas, 
+  <value column="Help" original="Select a Period (current period if empty) or enter a Account Date Range. If an account is selected, the balance is calculated based on the account type and the primary calendar of the tenant (i.e. for revenue/expense accounts from the beginning of the year). If no account is selected, the balance is the sum of all transactions before the selected account range or first day of the period selected. You can select an alternative Reporting Hierarchy.">Seleccione un período (Campo vacío toma período actual) o indique un rango de fechas, 
 
 
 Si se selecciona una cuenta, el balance es calculado en base al  tipo de cuenta y el calendario contable (Ejm. Ingresos/Gastos considerados desde el principio del año). Si no se selecciona ninguna cuenta, el balance es la suma de todas las transacciones antes de la selección de cuenta o el primer día del período seleccionado.</value>
@@ -1035,7 +1040,7 @@ Si se selecciona una cuenta, el balance es calculado en base al  tipo de cuenta 
  <row id="312" trl="Y">
   <value column="Name" original="Print Dunning Letters">Imprime Carta de Morosidad</value>
   <value column="Description" original="Print Dunning letters to paper or send PDF">Imprime Carta de Morosidad o la envía como PDF</value>
-  <value column="Help" original="(Re)Print Dunning Letters or send them as PDF attachments to the Business Partner Contact with a valid EMail addres.&#10;">(Re) Imprime Carta de Morosidad o envia como PDF anexado a un mail para el Contacto del tercero.</value>
+  <value column="Help" original="(Re)Print Dunning Letters or send them as PDF attachments to the Business Partner Contact with a valid EMail address.&#10;">(Re) Imprime Carta de Morosidad o envia como PDF anexado a un mail para el Contacto del tercero.</value>
  </row>
  <row id="313" trl="Y">
   <value column="Name" original="Payment Print ">Impresión del Pago</value>
@@ -1080,7 +1085,7 @@ Si se selecciona una cuenta, el balance es calculado en base al  tipo de cuenta 
  <row id="321" trl="Y">
   <value column="Name" original="Synchronize Doc Translation">Sincroniza la traducción del documento</value>
   <value column="Description" original="Synchronize Document Translation">Sincroniza la traducción del documento</value>
-  <value column="Help" original="This applies to the client defined document translations, e.g. for UoM, Payment Terms, Product Info, etc.&lt;br&gt;&#10;&lt;br&gt;&#10;If the current client has multi-lingual documents enabled, then the main record is copied to the client language (defined in Client window).  BE CAREFUL as this option can potentially damage data you modified, it is recommended to take a backup and plan carefully what you're doing if this is the first time running this process.&lt;br&gt;&#10;&lt;br&gt;&#10;If the current client has not multi-lingual documents enabled, the translations for documents are synchronized with the main record (i.e. it copies the content of the main record to the translation records).  This process is necessary when swiching to a mono-lingual environment as there the terminoligy is maintained not in the translation records.">Si el grupo empresarial actual no permite se hagan los documentos multilenguajes, las traducciones para los documentos se sincronizan con el registro principal (es decir copia el contenido del registro principal a los registros de la traducción). Este proceso es necesario en un ambiente monolenguaje ya que allí no se mantiene la terminologia en la traducción de registros. Esto se aplica a las traducciones definidas del documento de grupo empresarial, ej. para UM, los términos del pago, información de producto, etc.</value>
+  <value column="Help" original="This applies to the tenant defined document translations, e.g. for UoM, Payment Terms, Product Info, etc.&lt;br&gt;&#10;&lt;br&gt;&#10;If the current tenant has multi-lingual documents enabled, then the main record is copied to the tenant language (defined in Tenant window).  BE CAREFUL as this option can potentially damage data you modified, it is recommended to take a backup and plan carefully what you're doing if this is the first time running this process.&lt;br&gt;&#10;&lt;br&gt;&#10;If the current tenant has not multi-lingual documents enabled, the translations for documents are synchronized with the main record (i.e. it copies the content of the main record to the translation records).  This process is necessary when switching to a mono-lingual environment as there the terminology is maintained not in the translation records.">Si el grupo empresarial actual no permite se hagan los documentos multilenguajes, las traducciones para los documentos se sincronizan con el registro principal (es decir copia el contenido del registro principal a los registros de la traducción). Este proceso es necesario en un ambiente monolenguaje ya que allí no se mantiene la terminologia en la traducción de registros. Esto se aplica a las traducciones definidas del documento de grupo empresarial, ej. para UM, los términos del pago, información de producto, etc.</value>
  </row>
  <row id="322" trl="Y">
   <value column="Name" original="Material Reference">Referencia de Material</value>
@@ -1232,7 +1237,7 @@ y Recibi/Línea o directamente para el producto.</value>
  <row id="350" trl="Y">
   <value column="Name" original="Rebuild Index">Re construir Indice.</value>
   <value column="Description" original=""/>
-  <value column="Help" original="Be carefull, this process will reindex all tables and records which are marked to get indexed. Depending on the number of documents this could take a long time. This should only be run if you have removed stop words, if this is mentioned to be run after migration.">Sea cuidadoso, este proceso re indexara todas las tablas y registros los cuales son marcados para poder ser indexados. Dependiendo del número de documentos esto podría tomar un largo tiempo. Este debería ser ejecutado si usted ha removido palabras de parada.</value>
+  <value column="Help" original="Be careful, this process will reindex all tables and records which are marked to get indexed. Depending on the number of documents this could take a long time. This should only be run if you have removed stop words, if this is mentioned to be run after migration.">Sea cuidadoso, este proceso re indexara todas las tablas y registros los cuales son marcados para poder ser indexados. Dependiendo del número de documentos esto podría tomar un largo tiempo. Este debería ser ejecutado si usted ha removido palabras de parada.</value>
  </row>
  <row id="352" trl="Y">
   <value column="Name" original="Media Direct Deploy">Desplegar los medios de comunicación directa</value>
@@ -1261,7 +1266,7 @@ y Recibi/Línea o directamente para el producto.</value>
  </row>
  <row id="50010" trl="Y">
   <value column="Name" original="Copy Role">Copiar Rol</value>
-  <value column="Description" original="Copy Role">Copiar Rol</value>
+  <value column="Description" original="WARNING! when executing the process, all Role to access records will be lost, being replaced by Role from records">Copiar Rol</value>
   <value column="Help" original="Copy role access records from one role to another.  The existing access records for the destination role will be deleted.  This process can be executed just by advanced roles.">Copia los permisos de acceso de un rol a otro.  Los permisos de acceso existentes en el rol destino serán borrados y sobreescritos.  Este proceso sólo puede ser ejecutado por un rol avanzado.</value>
  </row>
  <row id="50011" trl="Y">
@@ -1285,8 +1290,8 @@ y Recibi/Línea o directamente para el producto.</value>
   <value column="Help" original=""/>
  </row>
  <row id="52002" trl="Y">
-  <value column="Name" original="Generate Invoices for Vendor RMA">Generar Facturas para Devolución a Proveedor</value>
-  <value column="Description" original="Generate Invoices from open vendor RMA based on selection.">Generar facturas desde devoluciones de proveedor abiertas, basado en selección.</value>
+  <value column="Name" original="Generate Invoices for RMA">Generar Facturas para Devolución a Proveedor</value>
+  <value column="Description" original="Generate Invoices from open RMA based on selection.">Generar facturas desde devoluciones de proveedor abiertas, basado en selección.</value>
   <value column="Help" original=""/>
  </row>
  <row id="52003" trl="Y">
@@ -1305,7 +1310,7 @@ y Recibi/Línea o directamente para el producto.</value>
   <value column="Help" original="This process copies BOM Lines from the Selected BOM to the Current BOM. The BOM being copied to must have any existing BOM Lines">Este proceso copia líneas de LDM de la LDM seleccionada a la LDM actual.  La LDM que es copiada debe tener líneas.</value>
  </row>
  <row id="53006" trl="Y">
-  <value column="Name" original="Multi Level BOM &amp; Formula Detail" xml:space="preserve"><![CDATA[LDM Multi Nivel & Detalle Fórmula]]></value>
+  <value column="Name" original="Multi Level BOM and Formula Detail" xml:space="preserve"><![CDATA[LDM Multi Nivel & Detalle Fórmula]]></value>
   <value column="Description" original="Shows in two different panels the parent-component relationship for the product entered in the Product field.">Muestra en dos páneles diferentes la relación componente-padre para el producdto ingresado en el campo Producto.</value>
   <value column="Help" original="The BOM &amp; Formula Review option menu shows in two different panels the parent-component relationship for the product entered in the Product field.&#10;&#10;You need to introduce the parent product you want to see its components then click the OK button, next drag the left margin of the panel to the right and you will have the two panels.&#10;&#10;When you need to consult an implosion, click the implosion check box and enter the component you wish to consult and tick the Implosion check box.&#10;&#10;You need to introduce the parent product you want to see its components then click the OK button, next drag the left margin of the panel to the right and you will have the two panels.&#10;&#10;The left panel shows the BOM hierarchies in a tree form. The right panel shows the information connected with the BOM for every product in it.">Muestra en dos páneles diferentes la relación componente-padre para el producdto ingresado en el campo Producto.
 
@@ -1316,7 +1321,7 @@ Cuando necesite consultar una implosión, chequee la bandera implosión e ingres
 El pánel izquiero muestra la jerarquía de LDM en forma de árbol.  El pánel derecho muestra la información conectada con la LDM para cada producto en ella.</value>
  </row>
  <row id="53008" trl="Y">
-  <value column="Name" original="Mutiple Components Change">Cambio Múltiples Componentes</value>
+  <value column="Name" original="Multiple Components Change">Cambio Múltiples Componentes</value>
   <value column="Description" original="This option allows the change of any component into BOM or Formula">Esta opción permite cambiar cualquier componente en la LDM o Fórmula</value>
   <value column="Help" original="This option allows the change of any component into BOM or Formula">Esta opción permite cambiar cualquier componente en la LDM o Fórmula</value>
  </row>
@@ -1341,8 +1346,8 @@ Generalmente, este proceso es ejecutado únicamente durante la implementación d
  </row>
  <row id="53016" trl="Y">
   <value column="Name" original="Calculate Material Plan">Calcular Plan Materiales</value>
-  <value column="Description" original="This process calcualte the demand, approved and open orders for a product.">Este proceso calcula la demanda, órdenes aprobadas y abiertas para un producto.</value>
-  <value column="Help" original="This process calcualte the demand, approved and open orders for a product.">Este proceso calcula la demanda, órdenes aprobadas y abiertas para un producto.</value>
+  <value column="Description" original="This process calculates the demand, approved and open orders for a product.">Este proceso calcula la demanda, órdenes aprobadas y abiertas para un producto.</value>
+  <value column="Help" original="This process calculates the demand, approved and open orders for a product.">Este proceso calcula la demanda, órdenes aprobadas y abiertas para un producto.</value>
  </row>
  <row id="53018" trl="Y">
   <value column="Name" original="MRP Details">Detalles MRP</value>
@@ -1401,7 +1406,7 @@ el inventario existente al inicio del período.
   <value column="Help" original="Before you complete a MO it is necessary to validate the components are available in the warehouse, in order to track the components availability you get a report which shows among other data: the Required Quantity for the MO, the Reserved Quantity, the On Hand Quantity and the Available Quantity.">Antes de completar una Orden de Manufactura es necesario validar si los componentes están disponibles en el almacén, para revisar la disponibilidad de los componentes usted obtiene un reporte que muestra entre otros datos: la cantidad requerida para la Orden de Manufactura, la cantidad reservada, la cantidad en existencia y la cantidad disponible.</value>
  </row>
  <row id="53034" trl="Y">
-  <value column="Name" original="Print &amp; Release Order">Imprimir y Liberar Orden</value>
+  <value column="Name" original="Print and Release Order">Imprimir y Liberar Orden</value>
   <value column="Description" original="Once the planned orders of manufacture generated by MRP, have been aprobed, has been reached the date of liberation and has been verified that the required components are in existence, the orders are emitted to the plant for its manufacture.">Una vez que las órdenes planeadas de manufactura generadas por el MRP han sido aprobadas, se ha alcanzado la fecha de liberación y ha sido verificado que los componentes requeridos están en existencia, las órdenes son emitidas a la planta para manufactura</value>
   <value column="Help" original="Once the planned orders of manufacture generated by MRP, have been aprobed, has been reached the date of liberation and has been verified that the required components are in existence, the orders are emitted to the plant for its manufacture. If you wish to print the warehouse and shop floor documentation you must tick the adequate check box:&#10;&#10;If you tick the Print Pick List check box you will get a report with the required components and quantities to help the warehouse clerk to issue the material to the shop floor. The next report is an example of this:&#10;&#10;If you tick the Print Pack List check box you will get a report with the required components and containing the material with a Component Type of Packing and Tools recorded in the BOM Window.&#10;&#10;Another report which is part of the Manufacturing Order Release Package is the Workflow(Routing). &#10;&#10;You can print this report with tick in the Print Workflow check box and it shows to the shop floor personnel the necessary steps for the manufacture of the product. &#10;&#10;This Report contains the place where the product should be made, the standard times, the tools and necessary devices. &#10;&#10;If you wish to print this report tick the check box Print Workflow.">Una vez que las órdenes planeadas de manufactura generadas por el MRP han sido aprobadas, se ha alcanzado la fecha de liberación y ha sido verificado que los componentes requeridos están en existencia, las órdenes son emitidas a la planta para su manufactura. Si desea imprimir la documentación del almacén y control de piso debe marcar la bandera adecuada:
 
@@ -1443,7 +1448,7 @@ Este reporte contiene el lugar donde el producto debe ser hecho, los tiempos est
  <row id="53046" trl="Y">
   <value column="Name" original="Generate Movement">Generar Movimiento</value>
   <value column="Description" original="Generate and print Movement from open Distribution Orders">Generar e imprimir movimientos de la orden de distribución</value>
-  <value column="Help" original="Movement for open Distribution Orders are created based on the delivery rule of the Distribution Order and the relative order priority.  If a Promise Date is selected only orders up to (including) the date are selected.&lt;br&gt;&#10;If several Distribution Orders of a business partner have the same location, the Distribution orders can be consolidated into one Movement.&lt;br&gt;&#10;You can also include Distibution orders who have outstanding confirmations (e.g. ordered=10 - not confirmed movements=4 - would create a new movement of 6 if available)." xml:space="preserve"><![CDATA[El movimiento para Órdenes de Distribución Movement es creado basado en las reglas de despacho de la Orden de Distribución y el orden de la prioridad relativa.  Si una fecha prometida es seleccionada solo se incluirán las órdenes hasta (inclusive) la fecha seleccionada.<br>
+  <value column="Help" original="Movement for open Distribution Orders are created based on the delivery rule of the Distribution Order and the relative order priority.  If a Date Promised is selected only orders up to (including) the date are selected.&lt;br&gt;&#10;If several Distribution Orders of a business partner have the same location, the Distribution orders can be consolidated into one Movement.&lt;br&gt;&#10;You can also include Distribution orders who have outstanding confirmations (e.g. ordered=10 - not confirmed movements=4 - would create a new movement of 6 if available)." xml:space="preserve"><![CDATA[El movimiento para Órdenes de Distribución Movement es creado basado en las reglas de despacho de la Orden de Distribución y el orden de la prioridad relativa.  Si una fecha prometida es seleccionada solo se incluirán las órdenes hasta (inclusive) la fecha seleccionada.<br>
 Si varias Órdenes de Distribución de un tercero tiene la misma dirección, las órdenes de distribución pueden ser consolidadas en un movimiento.<br>
 Puede también incluir órdenes de distribución que tienen confirmaciones pendientes (ej: ordenado=10 - movimientos no confirmados=4 - creará un nuevo movimiento de 6 si está disponible).]]></value>
  </row>
@@ -1455,7 +1460,7 @@ Puede también incluir órdenes de distribución que tienen confirmaciones pendi
  <row id="53050" trl="Y">
   <value column="Name" original="Create Doc Type to Manufacturing">Crear Tipo Doc para Manufactura</value>
   <value column="Description" original="Let create the document type to manufacturing">Permite crear los tipos de documento para manufactura</value>
-  <value column="Help" original="This process only need run one time by client">Solo debe ejecutar este proceso una vez por grupo empresarial</value>
+  <value column="Help" original="This process only need run one time by tenant">Solo debe ejecutar este proceso una vez por grupo empresarial</value>
  </row>
  <row id="53052" trl="Y">
   <value column="Name" original="Create Element">Crear Elemento</value>
@@ -1487,12 +1492,12 @@ Costo Flujo Trabajo = Costo Labor Flujo Trabajo + Costo General Flujo Trabajo
 </value>
  </row>
  <row id="53060" trl="Y">
-  <value column="Name" original="Cost Workflow &amp; Process Details" xml:space="preserve"><![CDATA[Costo Flujo Trabajo & Detalles Proceso]]></value>
+  <value column="Name" original="Cost Workflow and Process Details" xml:space="preserve"><![CDATA[Costo Flujo Trabajo & Detalles Proceso]]></value>
   <value column="Description" original="This report show every cost element to a BOM or Formula ">Este reporte muestra cada elemento de costo para una LDM o Fórmula</value>
   <value column="Help" original="This report show every cost element to a BOM or Formula ">Este reporte muestra cada elemento de costo para una LDM o Fórmula</value>
  </row>
  <row id="53062" trl="Y">
-  <value column="Name" original="Bill of Material &amp; Formula Cost Roll-UP" xml:space="preserve"><![CDATA[Resumen Costos Lista de Materiales & Fórmula]]></value>
+  <value column="Name" original="Bill of Material and Formula Cost Roll-Up" xml:space="preserve"><![CDATA[Resumen Costos Lista de Materiales & Fórmula]]></value>
   <value column="Description" original="This Process allow integrate Bill of Material &amp; Formula Cost" xml:space="preserve"><![CDATA[Este proceso permite integrar Costos de Lista de Materiales & Fórmula]]></value>
   <value column="Help" original="This Process allow integrate Bill of Material &amp; Formula Cost&#10;&#10;Element Cost = Element Cost this level + Element Cost this low level &#10;&#10;Total BOM Cost = Sum every Element Cost" xml:space="preserve"><![CDATA[Este proceso permite integrar Costos de Lista de Materiales & Fórmula
 
@@ -1597,7 +1602,7 @@ Costo Total LDM = Suma de cada Elemento de Costo]]></value>
  </row>
  <row id="53099" trl="Y">
   <value column="Name" original="Asset Transfer Entry">Entrada Transferencia Activo</value>
-  <value column="Description" original="Used to review Assets Transfered Entry ">Usado para revisar Entrada Transferencia Activo</value>
+  <value column="Description" original="Used to review Assets Transferred Entry ">Usado para revisar Entrada Transferencia Activo</value>
   <value column="Help" original=""/>
  </row>
  <row id="53101" trl="Y">
@@ -1720,8 +1725,8 @@ Consolidar a un documento permite la distribución en documentos actuales con ra
   <value column="Help" original=""/>
  </row>
  <row id="53153" trl="Y">
-  <value column="Name" original="Bank/Cash Transfer">Transferencia entre Bancos/Cajas</value>
-  <value column="Description" original="Bank/Cash Transfer let money tranfer between Banks">Transferencia bancaria permite transferir dinero entre cuentas bancarias</value>
+  <value column="Name" original="Bank/Cash Transfer Process">Transferencia entre Bancos/Cajas</value>
+  <value column="Description" original="Bank/Cash Transfer let money transfer between Banks">Transferencia bancaria permite transferir dinero entre cuentas bancarias</value>
   <value column="Help" original=""/>
  </row>
  <row id="53154" trl="Y">
@@ -1752,7 +1757,7 @@ Debe ser implementado cuando no haya usuarios conectados.</value>
   <value column="Help" original="Lets freeze or unfreeze the cost, If the Cost is UnFrozen then can be changed">Permite congelar o descongelar el costo, si el costo es descongelado puede ser cambiado</value>
  </row>
  <row id="53161" trl="Y">
-  <value column="Name" original="Initial Client Setup">Configuración Inicial de Grupo Empresarial</value>
+  <value column="Name" original="Initial Tenant Setup">Configuración Inicial de Grupo Empresarial</value>
   <value column="Description" original=""/>
   <value column="Help" original=""/>
  </row>
@@ -1777,9 +1782,9 @@ Debe ser implementado cuando no haya usuarios conectados.</value>
   <value column="Help" original="Copy the settings from the selected report and process to the current one.  This overwrites existing settings and translations.">Copia los parámetros de un reporte o proceso en otro.  Sobreescribe los parámetros actuales y traducciones.</value>
  </row>
  <row id="53187" trl="Y">
-  <value column="Name" original="Client Accounting Processor">Procesador Contabilidad (Cliente)</value>
-  <value column="Description" original="Client Accounting Processor">Procesador Contabilidad (Cliente)</value>
-  <value column="Help" original="The client accounting processor allows a user to run the accounting processor in a client session.  The system configurator parameter CLIENT_ACCOUNTING must be enabled (configured as [I]mmediate or [Q]ueue).">El procesador de contabilidad (cliente) permite a un usuario correr el procesador contable desde la sesión del cliente.  El parámetro de configuración del sistema CLIENT_ACCOUNTING debe estar habilitado (configurado como I/Inmediato o Q/Cola).</value>
+  <value column="Name" original="Tenant Accounting Processor">Procesador Contabilidad (Cliente)</value>
+  <value column="Description" original="Tenant Accounting Processor">Procesador Contabilidad (Cliente)</value>
+  <value column="Help" original="The tenant accounting processor allows a user to run the accounting processor in a tenant session.  The system configurator parameter CLIENT_ACCOUNTING must be enabled (configured as [I]mmediate or [Q]ueue).">El procesador de contabilidad (cliente) permite a un usuario correr el procesador contable desde la sesión del cliente.  El parámetro de configuración del sistema CLIENT_ACCOUNTING debe estar habilitado (configurado como I/Inmediato o Q/Cola).</value>
  </row>
  <row id="53189" trl="Y">
   <value column="Name" original="Storage per Product">Almacenamiento por Producto</value>
@@ -1808,8 +1813,8 @@ Debe ser implementado cuando no haya usuarios conectados.</value>
  </row>
  <row id="53206" trl="Y">
   <value column="Name" original="Copy from product">Copiar desde producto</value>
-  <value column="Description" original="Copy prices etc from other product">Copiar precios y otros datos desde otro producto</value>
-  <value column="Help" original=""/>
+  <value column="Description" original="Deep copy from other product">Copiar precios y otros datos desde otro producto</value>
+  <value column="Help" original="Copies BOM definition, prices, substitutes, related, replenish, business partner info and UOM conversions from another product"/>
  </row>
  <row id="53207" trl="Y">
   <value column="Name" original="Update depreciation">Actualizar Depreciación</value>
@@ -1919,7 +1924,7 @@ Debe ser implementado cuando no haya usuarios conectados.</value>
  <row id="53259" trl="Y">
   <value column="Name" original="Convert passwords to hashes">Convertir contraseñas a hash</value>
   <value column="Description" original="Convert existing plain text/encrypted user passwords to one way hash">Convierte las contraseñas existentes planas/encriptadas a valores hash de una sola vía</value>
-  <value column="Help" original="This process will overwrite existing user passwords with a salted SHA-512 hash of the password so that they cannot be recovered if your database is compromised.&#10;(Note: If your password column is currently encrypted, the hash will also be encrypted.)">Este proceso sobreescribirá las contraseñas de usuario existentes con un hash SHA-512 salted de manera que no pueden recuperarse las contraseñas si su base de datos es comprometida.
+  <value column="Help" original="This process will overwrite existing user passwords with a salted hash of the password so that they cannot be recovered if your database is compromised.&#10;(Note: If your password column is currently encrypted, the hash will also be encrypted.)">Este proceso sobreescribirá las contraseñas de usuario existentes con un hash SHA-512 salted de manera que no pueden recuperarse las contraseñas si su base de datos es comprometida.
 (Nota: Si su columna contraseña está actualmente encriptada, la cadena de hash también será encriptada.)</value>
  </row>
  <row id="53264" trl="Y">
@@ -1938,7 +1943,7 @@ Debe ser implementado cuando no haya usuarios conectados.</value>
   <value column="Help" original=""/>
  </row>
  <row id="53267" trl="Y">
-  <value column="Name" original="Replenish Report incl. Production">Reporte Reabastecimiento incluyendo Producción</value>
+  <value column="Name" original="Replenish Report">Reporte Reabastecimiento incluyendo Producción</value>
   <value column="Description" original="Inventory Replenish Report">Reporte Reabastecimiento incluyendo Producción</value>
   <value column="Help" original="Report lists products to be replenished. Note that a product can have only one current vendor. If there are more then vendor per product, both records are reset.  You need to select a current vendor manually.&lt;br&gt;&#13;&#10;Movements are only created, if a sourcing warehouse is defined for the warehouse to be replenished.">El reporte muestra los productos a ser reabastecidos</value>
  </row>
@@ -1953,7 +1958,7 @@ Debe ser implementado cuando no haya usuarios conectados.</value>
   <value column="Help" original="Generate GL journal based on valid revenue recognition run entries">Genera una nota contable de reconocimiento de ingresos basada en las entradas de reconocimiento válidas</value>
  </row>
  <row id="200000" trl="Y">
-  <value column="Name" original="FA_ProjectCreateAsset">Crear Activo de proyecto</value>
+  <value column="Name" original="Create Asset from Project">Crear Activo de proyecto</value>
   <value column="Description" original="This process creates asset from project and automatically close the project">Este proceso crea un activo desde un proyecto y automáticamente cierra el proyecto</value>
   <value column="Help" original="There are four parameters:&#10;a. Project, is the Project that will be converted to asset. This project will be closed after this process completes&#10;b. Product, is the asset product that will be act as the base for the newly created asset&#10;c. UseLifeYears, is an optional parameter. Use this if you want a different use life years for the newly created asset, instead of the default uselifeyears from asset group accounting.&#10;d. Transaction Date, will become in-service-date for the newly created asset.">Hay cuatro parámetros:
 a. Proyecto, si el proyecto será convertido a un activo.  Este proyecto se cerrará al finalizar este proceso
@@ -1967,19 +1972,19 @@ d. Fecha transacción, se volverá la fecha de inicio en servicio del activo</va
   <value column="Help" original=""/>
  </row>
  <row id="200006" trl="Y">
-  <value column="Name" original="OrderLine Create Production">Crear Producción Línea Orden</value>
-  <value column="Description" original="Create Production Header and Plan for single ordered product">Crear encabezado y plan de producción para un producto</value>
+  <value column="Name" original="Create Production from Order Line">Crear Producción Línea Orden</value>
+  <value column="Description" original="Create Production for single ordered product">Crear encabezado y plan de producción para un producto</value>
   <value column="Help" original=""/>
  </row>
  <row id="200007" trl="Y">
-  <value column="Name" original="OrderLine Create Shipment">Crear Despacho Línea Orden</value>
+  <value column="Name" original="Create Shipment from Order Line">Crear Despacho Línea Orden</value>
   <value column="Description" original="Create Shipment for single ordered product">Crear despacho para un producto</value>
   <value column="Help" original=""/>
  </row>
  <row id="200008" trl="Y">
-  <value column="Name" original="Reset Locked Account">Desbloquear Usuario</value>
-  <value column="Description" original="Reset Locked Account for User">Reiniciar Cuenta Bloqueada para un Usuario</value>
-  <value column="Help" original="Select a locked user from the list to unlock it.  Alternatively you can run the process without selecting any user, in this case the process will unlock all locked users from the client applying accordingly the policies configured for &quot;max account lock&quot; and &quot;max inactive period&quot;.">Seleccione en la lista una cuenta de usuario bloqueada para desbloquearla.  También puede ejecutar el proceso sin seleccionar usuario, en este caso el proceso desbloqueará todos los usuarios bloqueados en el grupo empresarial, aplicando las políticas configuradas "max account lock" y "max inactive period".</value>
+  <value column="Name" original="Unlock Account">Desbloquear Usuario</value>
+  <value column="Description" original="Unlock Account for User">Reiniciar Cuenta Bloqueada para un Usuario</value>
+  <value column="Help" original="Select a locked user from the list to unlock it.  Alternatively you can run the process without selecting any user, in this case the process will unlock all locked users from the tenant applying accordingly the policies configured for &quot;max account lock&quot; and &quot;max inactive period&quot;.">Seleccione en la lista una cuenta de usuario bloqueada para desbloquearla.  También puede ejecutar el proceso sin seleccionar usuario, en este caso el proceso desbloqueará todos los usuarios bloqueados en el grupo empresarial, aplicando las políticas configuradas "max account lock" y "max inactive period".</value>
  </row>
  <row id="200010" trl="Y">
   <value column="Name" original="Generate GL Journal">Generar Nota Contable</value>
@@ -2231,7 +2236,7 @@ Si planea usar todos los lenguajes entonces cree un lenguaje xx_XX y úselo como
  <row id="200099" trl="Y">
   <value column="Name" original="Apply Pack In from Folder">Aplicar Pack In desde un directorio</value>
   <value column="Description" original="Apply all zip files from a folder following the rules and conventions of Automatic Pack In process">Aplica todos los archivoz zip en un folder siguiendo las reglas y convenciones del proceso de Pack In Automático</value>
-  <value column="Help" original="&lt;p&gt;This process apply all the pack in files found in a folder recursively - ordered by timestamp.&lt;br /&gt;&#10;The filename of the pack in files is important, it must follow the following convention:&lt;br /&gt;&#10;[Timestamp]_[ClientValue][_AdditionalInformation].zip&lt;/p&gt;&#10;&#10;&lt;ul&gt;&#10;&#9;&lt;li&gt;&lt;strong&gt;Timestamp:&lt;/strong&gt; must be in the format yyyymmddHHMM&lt;/li&gt;&#10;&#9;&lt;li&gt;&lt;strong&gt;ClientValue:&lt;/strong&gt; case sensitive and compared against AD_Client.Value to find the tenant where the pack in must be applied&lt;/li&gt;&#10;&#9;&lt;li&gt;&lt;strong&gt;AdditionalInformation:&lt;/strong&gt; Any additional information to identify the zip file&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&#10;&lt;p&gt;NOTE that AD_Client.Value must not contain underscore in order for this process to work.&lt;br /&gt;&#10;There is a special case for ClientValue, if the ClientValue is ALL-CLIENTS then the 2pack is intended to be applied in all active non-system clients.&lt;br /&gt;&#10;If there is a need to apply initially in a seed tenant then the ClientValue must take the form ALL-CLIENTS-Seed.&lt;br /&gt;&#10;For example:&lt;br /&gt;&#10;201803151607_ALL-CLIENTS-GardenWorld_Test123.zip&lt;/p&gt;&#10;" xml:space="preserve"><![CDATA[<p>Este proceso aplica los archivos Pack In encontrados en un directorio recursivamente ordenados por fecha-hora.<br />
+  <value column="Help" original="&lt;p&gt;This process apply all the pack in files found in a folder recursively - ordered by timestamp.&lt;br /&gt;&#10;The filename of the pack in files is important, it must follow the following convention:&lt;br /&gt;&#10;[Timestamp]_[ClientValue][_AdditionalInformation].zip&lt;/p&gt;&#10;&#10;&lt;ul&gt;&#10;&#9;&lt;li&gt;&lt;strong&gt;Timestamp:&lt;/strong&gt; must be in the format yyyymmddHHMM&lt;/li&gt;&#10;&#9;&lt;li&gt;&lt;strong&gt;ClientValue:&lt;/strong&gt; case sensitive and compared against AD_Client.Value to find the tenant where the pack in must be applied&lt;/li&gt;&#10;&#9;&lt;li&gt;&lt;strong&gt;AdditionalInformation:&lt;/strong&gt; Any additional information to identify the zip file&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&#10;&lt;p&gt;NOTE that AD_Client.Value must not contain underscore in order for this process to work.&lt;br /&gt;&#10;There is a special case for ClientValue, if the ClientValue is ALL-CLIENTS then the 2pack is intended to be applied in all active non-system tenants.&lt;br /&gt;&#10;If there is a need to apply initially in a seed tenant then the ClientValue must take the form ALL-CLIENTS-Seed.&lt;br /&gt;&#10;For example:&lt;br /&gt;&#10;201803151607_ALL-CLIENTS-GardenWorld_Test123.zip&lt;/p&gt;&#10;" xml:space="preserve"><![CDATA[<p>Este proceso aplica los archivos Pack In encontrados en un directorio recursivamente ordenados por fecha-hora.<br />
 El nombre del archivo en el archivo es importante, debe seguir la siguiente convención:<br />
 [FechaHora]_[CódigoCliente][_InformaciónAdicional].zip</p>
 
@@ -2253,6 +2258,11 @@ Por ejemplo:<br />
   <value column="Description" original="Creates a credit memo based on the invoice.">Crear Nota Crédito basado en la Factura.</value>
   <value column="Help" original="The invoice should be correct and completed.">La factura debe estar correcta y completa.</value>
  </row>
+ <row id="200101" trl="Y">
+  <value column="Name" original="Process Bank Transfer">Procesar Transferencia Bancaria</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
  <row id="200102" trl="Y">
   <value column="Name" original="Clean Orphan Cascade Records">Borrar registros huérfanos en cascada</value>
   <value column="Description" original=""/>
@@ -2264,9 +2274,9 @@ Por ejemplo:<br />
   <value column="Help" original="The process checks if there are errors in storage reservartion (storageqtyReserved &lt;&gt; orderqtyreserved), if there are, it recreates all the reservation records for the offending products." xml:space="preserve"><![CDATA[El proceso verifica si hay errores en las reservas de inventario (Cantidad Reservada en Almacenamiento <> Cantidad Reservada en Órdenes), si hay diferencias recrea todos los registros de reservación de los productos con problema.]]></value>
  </row>
  <row id="200110" trl="Y">
-  <value column="Name" original="Copy Client">Copiar Grupo Empresarial</value>
-  <value column="Description" original="Process to copy a client">Proceso para copiar un grupo empresarial</value>
-  <value column="Help" original="This process can be used to copy a client from an external database to the current database, or to duplicate a template client within the current database.">Este proceso puede ser usado para copiar un grupo empresarial desde una base de datos externa hacia la base de datos actual, o para duplicar un grupo empresarial plantilla dentro de la base de datos actual.</value>
+  <value column="Name" original="Copy Tenant">Copiar Grupo Empresarial</value>
+  <value column="Description" original="Process to copy a tenant">Proceso para copiar un grupo empresarial</value>
+  <value column="Help" original="This process can be used to copy a tenant from an external database to the current database, or to duplicate a template tenant within the current database.">Este proceso puede ser usado para copiar un grupo empresarial desde una base de datos externa hacia la base de datos actual, o para duplicar un grupo empresarial plantilla dentro de la base de datos actual.</value>
  </row>
  <row id="200111" trl="Y">
   <value column="Name" original="Migrate ID">Migrar ID</value>
@@ -2291,7 +2301,7 @@ Por ejemplo:<br />
  <row id="200117" trl="Y">
   <value column="Name" original="Migrate Storage Provider">Migrar Proveedor de Almacenamiento</value>
   <value column="Description" original="Migrate the storage provider for attachments, archives and/or images">Migrar los anexos, archivos y/o imágenes desde un proveedor de almacenamiento</value>
-  <value column="Help" original="&lt;p&gt;&lt;span style=&quot;color:#ff0000&quot;&gt;&lt;b&gt;WARNING: This process can be destructive, so please be sure that you have a backup of the database, as well as a backup of your old storage provider.&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&#10;&#10;&lt;p&gt;The process migrates files between storage providers.&lt;/p&gt;&#10;&#10;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Client:&lt;/b&gt; Optional, select a client to migrate, when empty it will migrate all clients with the Actual Storage Provider&lt;/li&gt;&lt;li&gt;&lt;b&gt;Actual Storage Provider:&lt;/b&gt; Alternatively, you can define here the storage provider to migrate&lt;/li&gt;&lt;li&gt;&lt;b&gt;Storage Provider:&lt;/b&gt; The new storage provider to migrate the files&lt;/li&gt;&lt;li&gt;&lt;b&gt;Migrate Attachment:&lt;/b&gt; Migrate the attachment files&lt;/li&gt;&lt;li&gt;&lt;b&gt;Migrate Archive:&lt;/b&gt; Migate the archive files&lt;/li&gt;&lt;li&gt;&lt;b&gt;Migrate Image:&lt;/b&gt; Migrate the image  files&lt;/li&gt;&lt;li&gt;&lt;b&gt;Migrate Data:&lt;/b&gt; When unchecked, just the storage provider is changed in client, but the files are not migrated (they can be migrated in a future execution of this same process)&lt;/li&gt;&lt;li&gt;&lt;b&gt;Record ID Range:&lt;/b&gt; Optionally you can define a range of IDs for the records to migrate, so you can run this process in parallel to migrate the data&lt;/li&gt;&lt;li&gt;&lt;b&gt;Delete old/existing files:&lt;/b&gt; If enabled, when a file is migrated the program tries to free space deleting the file from the previous storage provider.  &lt;span style=&quot;color:#ff0000&quot;&gt;Note that migrating from/to a DB storage provider is a destructive action that cannot be recovered, it implies deleting the old/existing files&lt;/span&gt;.&lt;/li&gt;&lt;/ul&gt;&#10;&#10;&lt;p&gt;In case of failure or timeout, the process can be launched again, it commits on every file migrated.&lt;/p&gt;" xml:space="preserve"><![CDATA[<p><span style="color:#ff0000"><b>ADVERTENCIA: Este proceso puede ser destructivo, por favor asegúrese de tener un backup de la base de datos, así como un backup de su anterior proveedor de almacenamiento.</b></span></p>
+  <value column="Help" original="&lt;p&gt;&lt;span style=&quot;color:#ff0000&quot;&gt;&lt;b&gt;WARNING: This process can be destructive, so please be sure that you have a backup of the database, as well as a backup of your old storage provider.&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&#10;&#10;&lt;p&gt;The process migrates files between storage providers.&lt;/p&gt;&#10;&#10;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Tenant:&lt;/b&gt; Optional, select a tenant to migrate, when empty it will migrate all tenants with the Actual Storage Provider&lt;/li&gt;&lt;li&gt;&lt;b&gt;Actual Storage Provider:&lt;/b&gt; Alternatively, you can define here the storage provider to migrate&lt;/li&gt;&lt;li&gt;&lt;b&gt;Storage Provider:&lt;/b&gt; The new storage provider to migrate the files&lt;/li&gt;&lt;li&gt;&lt;b&gt;Migrate Attachment:&lt;/b&gt; Migrate the attachment files&lt;/li&gt;&lt;li&gt;&lt;b&gt;Migrate Archive:&lt;/b&gt; Migate the archive files&lt;/li&gt;&lt;li&gt;&lt;b&gt;Migrate Image:&lt;/b&gt; Migrate the image  files&lt;/li&gt;&lt;li&gt;&lt;b&gt;Migrate Data:&lt;/b&gt; When unchecked, just the storage provider is changed in tenant, but the files are not migrated (they can be migrated in a future execution of this same process)&lt;/li&gt;&lt;li&gt;&lt;b&gt;Record ID Range:&lt;/b&gt; Optionally you can define a range of IDs for the records to migrate, so you can run this process in parallel to migrate the data&lt;/li&gt;&lt;li&gt;&lt;b&gt;Delete old/existing files:&lt;/b&gt; If enabled, when a file is migrated the program tries to free space deleting the file from the previous storage provider.  &lt;span style=&quot;color:#ff0000&quot;&gt;Note that migrating from/to a DB storage provider is a destructive action that cannot be recovered, it implies deleting the old/existing files&lt;/span&gt;.&lt;/li&gt;&lt;/ul&gt;&#10;&#10;&lt;p&gt;In case of failure or timeout, the process can be launched again, it commits on every file migrated.&lt;/p&gt;" xml:space="preserve"><![CDATA[<p><span style="color:#ff0000"><b>ADVERTENCIA: Este proceso puede ser destructivo, por favor asegúrese de tener un backup de la base de datos, así como un backup de su anterior proveedor de almacenamiento.</b></span></p>
 
 <p>El proceso migra archivos entre proveedores de almacenamniento.</p>
 
@@ -2300,8 +2310,8 @@ Por ejemplo:<br />
 <p>En caso de falla o finalización por tiempo máximo permitido, el proceso se puede lanzar nuevamente, este proceso hace commit por cada archivo migrado.</p>]]></value>
  </row>
  <row id="200118" trl="Y">
-  <value column="Name" original="Create Window, Tab &amp; Field from Table">Crear Ventana, Pestaña y Campos desde la Tabla</value>
-  <value column="Description" original="Create Window, Tab &amp; Field record of the Table">Crear Ventana, Pestaña y Campos desde la Tabla</value>
+  <value column="Name" original="Create Window, Tab and Field from Table">Crear Ventana, Pestaña y Campos desde la Tabla</value>
+  <value column="Description" original="Create Window, Tab and Field record of the Table">Crear Ventana, Pestaña y Campos desde la Tabla</value>
   <value column="Help" original="This process will take the table definition and create the Window/Tab and field record with these options:&lt;br&gt;&#10;&#10;New Window: if selected the process will create a new Window record. Otherwise, the process will create a new tab and add it to the selected window.&lt;br&gt;&#10;Create Menu: if selected the process creates the menu record for the new window." xml:space="preserve"><![CDATA[Este proceso tomará la definición de la Tabla y creará una Ventana/Pestaña y Campos correspondiente a las siguientes opciones:<br>
 
 Nueva Ventana: si se selecciona creará un nuevo registro de Ventana.  De lo contrario creará una nueva Pestaña en la Ventana seleccionada.<br>
@@ -2387,34 +2397,109 @@ Crear Menú: si se selecciona el proceso creará un menú para la nueva ventana.
   <value column="Description" original=""/>
   <value column="Help" original=""/>
  </row>
- <row trl="Y" uuid="0450d998-4a98-45d6-9487-d74051bfc47f">
-  <value column="Name" original="Generate Withholding">Genera Retenciones</value>
+ <row id="200136" trl="Y">
+  <value column="Name" original="Reverse Prepare Payment">Revertir Preparación de Pago</value>
+  <value column="Description" original="Reverse what Prepare Payment process did">Revertir lo que hizo el proceso Preparar Pago</value>
+  <value column="Help" original="Delete prepared payments and allow to add/remove invoices">Eliminar pagos preparados y permitir agregar/quitar facturas</value>
+ </row>
+ <row id="200138" trl="Y">
+  <value column="Name" original="Create Production from Order">Crear Producción desde Orden</value>
+  <value column="Description" original="Create Production for BOM ordered products">Crear Producción para productos de LDM ordenados</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200141" trl="Y">
+  <value column="Name" original="Create lines from Shipment/Receipt">Crear líneas desde Despacho/Recibo</value>
+  <value column="Description" original="Create lines from Shipment/Receipt">Crear líneas desde Despacho/Recibo</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200142" trl="Y">
+  <value column="Name" original="Create lines from RMA">Crear líneas desde RMA</value>
+  <value column="Description" original="Create lines from RMA">Crear líneas desde RMA</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200143" trl="Y">
+  <value column="Name" original="Create lines from Invoice">Crear líneas desde Factura</value>
+  <value column="Description" original="Create lines from Invoice">Crear líneas desde Factura</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200146" trl="Y">
+  <value column="Name" original="Synchronize Print Format based on Report View">Sincronizar Formato de Impresión basado en Vista de Reporte</value>
   <value column="Description" original=""/>
   <value column="Help" original=""/>
  </row>
- <row trl="Y" uuid="396546ac-40f2-40e2-a84c-6b7e785de4cf">
-  <value column="Name" original="Create Withholding Reversal">Crear Reversión Retención</value>
+ <row id="200147" trl="Y">
+  <value column="Name" original="Validate">Validar</value>
+  <value column="Description" original="Validate Drill Rule Parameters">Validar Parámetros de Regla de Análisis</value>
+  <value column="Help" original="Validate the Drill Rule, if all mandatory parameters are set.">Valida la Regla de Análisis, verificando que todos los parámetros obligatorios estén configurados.</value>
+ </row>
+ <row id="200148" trl="Y">
+  <value column="Name" original="Process Deposit Batch">Procesar Lote de Depósito</value>
   <value column="Description" original=""/>
   <value column="Help" original=""/>
  </row>
- <row trl="Y" uuid="00e48c19-6679-413a-9c19-5b462595a529">
-  <value column="Name" original="Export XML">Exportar a XML</value>
+ <row id="200149" trl="Y">
+  <value column="Name" original="Verify Migration Process">Verificar Proceso de Migración</value>
+  <value column="Description" original="This process helps to verify if everything is OK after a migration and discover possible customizations lost">Este proceso ayuda a verificar si todo está correcto después de una migración y descubrir posibles personalizaciones perdidas</value>
+  <value column="Help" original="The Date To parameter serves to filter the change audit records, in case you want to detect changes just until some date, when empty it process all change audit records">El parámetro Fecha Hasta sirve para filtrar los registros de auditoría de cambios, en caso de querer detectar cambios solo hasta cierta fecha; cuando está vacío procesa todos los cambios.</value>
+ </row>
+ <row id="200150" trl="Y">
+  <value column="Name" original="Discard this Verify Migration">Descartar esta Verificación de Migración</value>
+  <value column="Description" original="Discard the current record of verify migration process">Descartar el registro actual del proceso de verificación de migración</value>
+  <value column="Help" original="This process discards the current record of verify migration process, deleting all the associated details.  It cannot be discarded when there are records marked as Ignore.">Este proceso descarta el registro actual del proceso de verificación de migración, eliminando todos los detalles asociados. No puede descartarse cuando hay registros ignorados.</value>
+ </row>
+ <row id="200153" trl="Y">
+  <value column="Name" original="TestUU Form Report">Reporte de Formulario TestUU</value>
   <value column="Description" original=""/>
   <value column="Help" original=""/>
  </row>
- <row trl="Y" uuid="374ae3a7-d7e5-4c30-9e6a-29e7fa46fa39">
-  <value column="Name" original="Generate XML">Generar Medio XML</value>
+ <row id="200154" trl="Y">
+  <value column="Name" original="Generate Model">Generar Modelo</value>
   <value column="Description" original=""/>
   <value column="Help" original=""/>
  </row>
- <row trl="Y" uuid="4fc2ddfd-ef58-40d2-94f6-69bfd27cdd05">
-  <value column="Name" original="Process Content">Procesar Contenido</value>
+ <row id="200155" trl="Y">
+  <value column="Name" original="Switch Active Flag on this Test UU and its Details">Cambiar Indicador Activo en esta Prueba UU y sus Detalles</value>
   <value column="Description" original=""/>
   <value column="Help" original=""/>
  </row>
- <row trl="Y" uuid="1c381973-b875-49d2-9741-d63b5056bc0f">
-  <value column="Name" original="Delete Lines to Reprocess">Borrar Líneas para Reproceso</value>
-  <value column="Description" original="Delete Schedule Lines to Reprocess">Borrar Líneas de Envío para Reproceso</value>
-  <value column="Help" original="This process deletes all the generated lines and reopen the schedule for reprocessing.  WARNING!  The deleted lines cannot be restored, change log is not preserved.">Este proceso borra todas las líneas generadas y reabre el envío para reproceso.  ¡ADVERTENCIA!  Las líneas borradas no pueden recuperarse, no se preserva auditoría.</value>
+ <row id="200156" trl="Y">
+  <value column="Name" original="Delete Trace Logs">Eliminar Logs de Rastreo</value>
+  <value column="Description" original="delete log files with last modified older than n days of current time">Eliminar archivos de log con última modificación anterior a n días desde el momento actual</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200157" trl="Y">
+  <value column="Name" original="Create/Update Table Partition">Crear/Actualizar Partición de Tabla</value>
+  <value column="Description" original="Process which create or update table partitions based on the table and column records">Proceso que crea o actualiza particiones de tabla basado en los registros de tabla y columna</value>
+  <value column="Help" original="The Create/update partition process will create or update table partitions based on the information in the table and column records">El proceso Crear/actualizar partición creará o actualizará particiones de tabla basándose en la información de los registros de tabla y columna.</value>
+ </row>
+ <row id="200158" trl="Y">
+  <value column="Name" original="Detach/re-attach Table Partition">Desconectar/Reconectar Partición de Tabla</value>
+  <value column="Description" original="Detach or re-attach table partition">Desconectar o reconectar partición de tabla</value>
+  <value column="Help" original="Detach an attached table partition or re-attach a detached table partition">Desconectar una partición de tabla adjunta o reconectar una partición de tabla desconectada.</value>
+ </row>
+ <row id="200162" trl="Y">
+  <value column="Name" original="Customize Grid View">Personalizar Vista de Grilla</value>
+  <value column="Description" original=""/>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200164" trl="Y">
+  <value column="Name" original="Install Extension">Instalar Extensión</value>
+  <value column="Description" original="Process to install extension">Proceso para instalar extensión</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200165" trl="Y">
+  <value column="Name" original="Uninstall Extension">Desinstalar Extensión</value>
+  <value column="Description" original="Process to uninstall extension">Proceso para desinstalar extensión</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200166" trl="Y">
+  <value column="Name" original="Disable Extension">Deshabilitar Extensión</value>
+  <value column="Description" original="Process to disable an extension">Proceso para deshabilitar una extensión</value>
+  <value column="Help" original=""/>
+ </row>
+ <row id="200167" trl="Y">
+  <value column="Name" original="Enable Extension">Habilitar Extensión</value>
+  <value column="Description" original="Process to enable an extension">Proceso para habilitar una extensión</value>
+  <value column="Help" original=""/>
  </row>
 </idempiereTrl>
